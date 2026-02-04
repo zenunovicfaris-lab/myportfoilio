@@ -1,0 +1,227 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Life recently",
+                "title_short_nav": "Updates",
+                "title_long_prefix": "Take a look at my",
+                "title_long": "Recent {{Updates}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleFacts",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": null,
+                    "faIcon": "fa-solid fa-file-lines",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "1000+",
+                            "text": "Articles Published"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": null,
+                    "faIcon": "fa-brands fa-wordpress",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "15+",
+                            "text": "WordPress Sites Managed"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": null,
+                    "faIcon": "fa-solid fa-language",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "7+",
+                            "text": "Languages Worked With"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": null,
+                    "faIcon": "fa-solid fa-link",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "500+",
+                            "text": "Backlinks Built"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": null,
+                    "faIcon": "fa-solid fa-coffee",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "5,000+",
+                            "text": "Coffees Consumed"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": null,
+                    "faIcon": "fa-solid fa-chart-line",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "100+",
+                            "text": "SEO Audits Completed"
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "img": null,
+                    "faIcon": "fa-solid fa-heart",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Infinite",
+                            "text": "Passion for Digital Marketing"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": { "title": "Quick {{Facts}}" }
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 3,
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2024, "month": 9},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Joined {{ClickOut Media!}}",
+                            "province": "Živinice",
+                            "country": "Bosnia and Herzegovina",
+                            "institution": "",
+                            "text": "Excited to announce that I've joined ClickOut Media as a [[WordPress Specialist & SEO Content Manager]]! I'll be managing multi-language iGaming affiliate websites, implementing technical SEO strategies, and building optimized WordPress page structures. Looking forward to this new challenge in the affiliate marketing industry and contributing to the growth of some amazing casino and betting platforms across multiple markets!"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2025, "month": 10},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Started {{Social Media Marketing}} Agency!",
+                            "province": "Živinice",
+                            "country": "Bosnia and Herzegovina",
+                            "institution": "",
+                            "text": "Launched my own [[SMMA services]] focusing on Facebook and Instagram advertising for local businesses! I'm helping small and medium-sized businesses grow their online presence through targeted ad campaigns, audience research, and conversion optimization. It's been an incredible journey learning Meta Ads Manager and seeing real results for my clients. If you're a local business looking to boost your social media presence, let's connect!"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2026, "month": 1},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Expanded to {{Full-Time Freelancing!}}",
+                            "province": "Živinice",
+                            "country": "Bosnia and Herzegovina",
+                            "institution": "",
+                            "text": "Big news! I've expanded my services to full-time freelancing as a [[Web Developer & SEO Consultant]]. I'm now offering comprehensive digital solutions including:",
+                            "list": [
+                                "Custom WordPress website development and optimization",
+                                "Technical SEO audits and implementation",
+                                "Keyword research and content strategy",
+                                "Backlink building and off-page SEO campaigns",
+                                "Google Analytics 4 and Search Console setup"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "date": {"year": 2026, "month": 2},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Graduated with {{Bachelor's Degree!}}",
+                            "province": "Tuzla",
+                            "country": "Bosnia and Herzegovina",
+                            "institution": "International Business-Information Academy",
+                            "text": "Proud to announce that I've successfully completed my [[Bachelor's degree in Marketing Communications]] at IPIA in Tuzla! 🎓 This 3-year journey has equipped me with comprehensive knowledge in digital marketing, e-commerce, advertising strategies, and brand management. Excited to apply everything I've learned to help businesses grow online through strategic content and SEO-driven marketing!"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "date": {"year": 2023, "month": 12},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Milestone: {{1000+ Articles Published!}}",
+                            "province": "",
+                            "country": "Remote",
+                            "institution": "",
+                            "text": "Reached an incredible milestone in my content career – [[1000+ published articles]] across major crypto and esports platforms! 🎉 From NewsBTC and Bitcoinist to CryptoNews and Esports Insider, I've been managing high-volume publishing workflows while maintaining strict SEO and editorial standards. This journey has taught me the importance of consistency, quality, and strategic keyword optimization. Here's to the next 1000 articles!"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

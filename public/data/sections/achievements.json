@@ -1,0 +1,199 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Awards",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Achievements}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {
+                "en": { "title": "Key Accomplishments" }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-trophy",
+                    "faIconColors": {"bg": "#FFD700", "fill": "#111"},
+                    "date": {"year": 2026, "month": 1},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Multi-Language}} Content Management",
+                            "text": "Successfully managed and published content across 7+ languages (Serbian, English, German, Vietnamese, Dutch, Japanese) for iGaming and news platforms."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-chart-line",
+                    "faIconColors": {"bg": "#28a745", "fill": "#FFF"},
+                    "date": {"year": 2024, "month": 3},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{1000+ Articles}} Published",
+                            "text": "Published and optimized over 1000 SEO-driven articles for major crypto and esports platforms including NewsBTC, Bitcoinist, and CryptoNews."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-rocket",
+                    "faIconColors": {"bg": "#6f42c1", "fill": "#FFF"},
+                    "date": {"year": 2025, "month": 8},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Organic Traffic}} Growth Expert",
+                            "text": "Drove significant organic rankings improvements through strategic keyword research, advanced backlink building, and comprehensive on-page optimization for iGaming affiliate websites."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-brands fa-wordpress",
+                    "faIconColors": {"bg": "#21759B", "fill": "#FFF"},
+                    "date": {"year": 2025, "month": 11},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{WordPress}} Architecture Mastery",
+                            "text": "Built and optimized complex WordPress page structures with custom HTML/CSS, schema markup, and advanced internal linking strategies for high-performance affiliate sites."
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": { "title": "Professional Milestones" }
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 4,
+                "order_items_by": "date",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2024, "month": 10},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Joined ClickOut Media}} – iGaming Industry",
+                            "province": "Remote",
+                            "country": "BiH / Malta",
+                            "institution": "ClickOut Media",
+                            "text": "Hired as WordPress Specialist and SEO Content Manager for a leading iGaming affiliate marketing company, managing multi-language casino and betting websites with focus on:",
+                            "list": [
+                                "Technical SEO implementation and site-wide optimization",
+                                "Custom WordPress page building and content architecture",
+                                "Keyword research and competitor analysis for organic growth",
+                                "Brand consistency across multiple affiliate properties"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2026, "month": 3},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Published 1000+}} Articles – Crypto & Esports",
+                            "province": "",
+                            "country": "Remote",
+                            "institution": "NewsBTC | Bitcoinist | CryptoNews",
+                            "text": "Achieved milestone of 1000+ published and optimized articles across major crypto and esports platforms, maintaining strict SEO and editorial standards:",
+                            "list": [
+                                "Maintained consistent publishing schedule of 100+ articles per month",
+                                "Implemented LSI keyword strategies for improved search visibility",
+                                "Trained junior writers on SEO best practices and content structure",
+                                "Monitored traffic analytics and adjusted content strategy accordingly"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2025, "month": 10},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Launched SMMA}} Services",
+                            "province": "Živinice",
+                            "country": "Bosnia and Herzegovina",
+                            "institution": "Self-Employed",
+                            "text": "Expanded service offering to include social media marketing and paid advertising management for local businesses:",
+                            "list": [
+                                "Built client base through Facebook and Instagram ad campaigns",
+                                "Developed expertise in Meta Ads Manager and campaign optimization",
+                                "Created comprehensive social media content strategies",
+                                "Delivered measurable ROI through targeted audience segmentation"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "date": {"year": 2025, "month": 6},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Transitioned to SEO Specialist}} Role",
+                            "province": "",
+                            "country": "Remote",
+                            "institution": "Multiple Clients",
+                            "text": "Expanded skill set from content writing to comprehensive SEO management, focusing on both on-page and off-page optimization strategies:",
+                            "list": [
+                                "Mastered technical SEO: Core Web Vitals, schema markup, canonical tags",
+                                "Developed backlink prospecting and outreach strategies",
+                                "Learned advanced keyword research using Ahrefs and SEMrush",
+                                "Implemented site-wide content maintenance workflows"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

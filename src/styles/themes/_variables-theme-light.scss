@@ -1,0 +1,285 @@
+/**
+ * @author Faris Zenunovic
+ * @description Custom Light Theme - Clean & Professional Portfolio
+ *
+ * Color Philosophy:
+ * ------------------------------------------
+ * $primary: Modern blue - consistent with dark theme, represents professionalism
+ * $secondary: Neutral gray - sophisticated balance
+ * $dark: Deep slate - strong contrast for accents
+ * $danger: Soft red - clear but not aggressive error indication
+ * $muted: Medium gray - subtle hierarchy
+ *
+ * Background Strategy:
+ * $base-bg: Pure white/light gray - clean, spacious feel
+ * $base-bg-light: Very light accent - subtle depth
+ * $base-bg-dark: Soft shadow - gentle layering
+ *
+ * Text Approach:
+ * $texts: Rich dark - excellent readability
+ * $texts-inverted: Clean white - for colored backgrounds
+ *
+ * Container System:
+ * $base-container-bg: Card background - soft separation
+ * $base-popover-bg: Overlay background - distinct but harmonious
+ * $base-boards: Element background - gentle elevation
+ * $base-info-badges: Badge background - subtle highlight
+ * $empty: Input background - inviting interaction
+ *
+ * Border & Navigation:
+ * $borders: Soft dividers - structure without harshness
+ * $scrollbar-*: Custom scrollbar - polished experience
+ */
+
+@import "theme-variables-builder";
+
+// ============================================
+// PRIMARY COLOR PALETTE - Modern Blue (matching dark theme)
+// ============================================
+$primary: #0d6efd;              // Vibrant modern blue
+$primary-hover: #0a58ca;        // Darker blue for hover
+$primary-light: #cfe2ff;        // Light blue for backgrounds
+$primary-glow: rgba(13, 110, 253, 0.15); // Subtle glow
+
+$secondary: #6c757d;            // Professional gray
+$secondary-light: #e9ecef;      // Light gray for backgrounds
+
+$dark: #212529;                 // Rich dark for accents
+$danger: #dc3545;               // Clear error red
+$success: #28a745;              // Success green
+$warning: #ffc107;              // Warning yellow
+$info: #17a2b8;                 // Info cyan
+
+$muted: #6c757d;                // Muted text
+
+// ============================================
+// BACKGROUND LAYERS - Clean System
+// ============================================
+$base-bg: #f8f9fa;              // Soft gray background
+$base-bg-light: #ffffff;        // Pure white for accents
+$base-bg-dark: #e9ecef;         // Gentle shadow
+
+// ============================================
+// TEXT COLORS - Readability First
+// ============================================
+$texts: #212529;                // Dark gray (main text)
+$texts-secondary: #495057;      // Secondary text
+$texts-muted: #6c757d;          // Muted text
+$texts-inverted: #ffffff;       // White (for colored backgrounds)
+
+// ============================================
+// CONTAINER & CARD SYSTEM
+// ============================================
+$base-container-bg: #ffffff;    // Pure white containers
+$base-container-accent: #f8f9fa; // Subtle accent
+$base-container-bg-accent: #e9ecef; // Mobile nav inactive
+
+$base-popover-bg: #ffffff;      // Dropdown/popup background
+$base-boards: #ffffff;          // Cards, timeline items
+$base-boards-accent: #f8f9fa;   // Board hover state
+
+$base-info-badges: #e7f1ff;    // Badge background (light blue)
+$empty: #f8f9fa;                // Input fields, progress bars
+
+// ============================================
+// BORDERS & DIVIDERS
+// ============================================
+$borders: #dee2e6;              // Default borders
+$borders-light: #e9ecef;        // Light borders
+$borders-accent: rgba(13, 110, 253, 0.25); // Primary borders
+$borders-nav-mobile: rgba(13, 110, 253, 0.2); // Mobile nav borders
+$borders-nav-mobile-accent: rgba(13, 110, 253, 0.4); // Mobile nav accent
+
+// ============================================
+// SCROLLBAR CUSTOMIZATION
+// ============================================
+$scrollbar-track: #f8f9fa;      // Scrollbar track
+$scrollbar-thumb: #adb5bd;      // Scrollbar thumb
+$scrollbar-thumb-hover: #6c757d; // Scrollbar hover
+
+// ============================================
+// THEME BUILD - CSS Variables
+// ============================================
+[data-theme="light"] {
+    @include build-theme(
+        // Theme Config
+        /** DARK MODE: **/                  false,
+
+        // Primary Colors
+        /** PRIMARY: **/                    $primary,
+        /** SECONDARY: **/                  $secondary,
+        /** DARK: **/                       $dark,
+        /** DANGER: **/                     $danger,
+        /** MUTED: **/                      $muted,
+
+        // Background System
+        /** BG: **/                         $base-bg,
+        /** BG CONTRAST: **/                $base-bg-light,
+        /** BG CONTRAST DARKEN: **/         $base-bg-dark,
+        
+        // Text Colors
+        /** TEXTS: **/                      $texts,
+        /** TEXTS (INVERTED): **/           $texts-inverted,
+
+        // Mobile Navigation
+        /** NAV MOBILE BG: **/              $base-boards,
+        /** NAV MOBILE: **/                 $texts,
+        /** NAV MOBILE BORDER: **/          $borders-nav-mobile-accent,
+
+        /** NAV MOBILE HOVER BG: **/        $base-boards-accent,
+        /** NAV MOBILE HOVER: **/           $primary,
+
+        /** NAV MOBILE SELECTED BG: **/     $primary,
+        /** NAV MOBILE SELECTED: **/        $texts-inverted,
+        /** NAV MOBILE SELECTED BORDER: **/ $borders-nav-mobile,
+
+        // Layout Elements
+        /** SECTION BG: **/                 $base-container-bg,
+        /** CARD BG: **/                    $base-boards,
+        /** POPUPS BG: **/                  $base-popover-bg,
+        /** BOARDS: **/                     $base-boards,
+        /** INFO BADGE BG: **/              $base-info-badges,
+        /** INFO BADGE: **/                 $primary,
+        /** EMPTY: **/                      $empty,
+
+        // Borders & Scrollbar
+        /** DEFAULT BORDERS: **/            $borders,
+        /** SCROLLBAR TRACK: **/            $scrollbar-track,
+        /** SCROLLBAR THUMB: **/            $scrollbar-thumb,
+    );
+
+    // ============================================
+    // ADDITIONAL CUSTOM PROPERTIES (Light Theme)
+    // ============================================
+    
+    // Extended primary palette
+    --theme-primary-hover: #{$primary-hover};
+    --theme-primary-light: #{$primary-light};
+    --theme-primary-glow: #{$primary-glow};
+    
+    // Success, warning, info states
+    --theme-success: #{$success};
+    --theme-warning: #{$warning};
+    --theme-info: #{$info};
+    
+    // Extended text colors
+    --theme-texts-secondary: #{$texts-secondary};
+    --theme-texts-muted: #{$texts-muted};
+    
+    // Container accents
+    --theme-container-accent: #{$base-container-accent};
+    --theme-boards-accent: #{$base-boards-accent};
+    
+    // Border variations
+    --theme-borders-light: #{$borders-light};
+    --theme-borders-accent: #{$borders-accent};
+    
+    // Scrollbar hover
+    --theme-scrollbar-thumb-hover: #{$scrollbar-thumb-hover};
+    
+    // Shadows for depth (lighter for light theme)
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --shadow-primary: 0 4px 16px #{$primary-glow};
+    
+    // Gradients
+    --gradient-primary: linear-gradient(135deg, #{$primary} 0%, #{$primary-hover} 100%);
+    --gradient-light: linear-gradient(135deg, #{$base-bg-light} 0%, #{$base-bg} 100%);
+    --gradient-card: linear-gradient(to bottom, #{$base-boards}, #{$base-container-accent});
+    
+    // Overlays
+    --overlay-light: rgba(255, 255, 255, 0.7);
+    --overlay-dark: rgba(0, 0, 0, 0.05);
+    --overlay-primary: rgba(13, 110, 253, 0.08);
+}
+
+// ============================================
+// ENHANCED SCROLLBAR STYLING (Light Theme)
+// ============================================
+[data-theme="light"] {
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $scrollbar-track;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        border-radius: 10px;
+        border: 2px solid $scrollbar-track;
+        transition: background 0.3s ease;
+        
+        &:hover {
+            background: $scrollbar-thumb-hover;
+        }
+        
+        &:active {
+            background: $primary;
+        }
+    }
+
+    // ============================================
+    // SELECTION STYLING (Light Theme)
+    // ============================================
+    ::selection {
+        background: $primary-light;
+        color: $primary;
+    }
+
+    ::-moz-selection {
+        background: $primary-light;
+        color: $primary;
+    }
+}
+// ============================================
+// ICON COLOR FIX - Light Theme
+// ============================================
+[data-theme="light"] {
+    // Fix icon visibility in light mode
+    i.fa-icon,
+    .fa-solid,
+    .fa-regular,
+    .fa-brands {
+        color: $texts !important; // Dark gray icons
+    }
+    
+    // Icons in cards/boards
+    .card i,
+    .info-list-item i,
+    .article-cards i {
+        color: $primary !important; // Blue icons for emphasis
+    }
+    
+    // Background icons (those square boxes)
+    .fa-icon-bg,
+    [class*="faIcon"] {
+        background-color: $primary-light !important; // Light blue background
+        color: $primary !important; // Blue icon
+    }
+    
+    // Hover effects
+    .card:hover i,
+    .info-list-item:hover i {
+        color: $primary-hover !important;
+    }
+    
+    // Navigation icons
+    .nav-item i {
+        color: $texts-secondary !important;
+        
+        &:hover {
+            color: $primary !important;
+        }
+    }
+    
+    // Active/selected state
+    .nav-item.active i,
+    .selected i {
+        color: $texts-inverted !important; // White on colored background
+    }
+}

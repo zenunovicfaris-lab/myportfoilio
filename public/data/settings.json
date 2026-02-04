@@ -1,0 +1,93 @@
+{
+    "developerSettings": {
+        "debugMode": false,
+        "fakeEmailRequests": false,
+        "stayOnThePreloaderScreen": false,
+        "version": "2.0.3"
+    },
+
+    "preloaderSettings": {
+        "enabled": true,
+        "title": "Faris <strong>Zenunovic</strong>",
+        "subtitle": "WordPress Specialist & SEO Expert",
+        "logoOffset": {
+            "right": 14,
+            "top": 2,
+            "bottom": 0
+        }
+    },
+
+    "templateSettings": {
+        "animatedCursorEnabled": true,
+        "backgroundStyle": "animated",
+        "defaultLanguageId": "en",
+        "defaultThemeId": "dark",
+        "fullscreenEnabled": true,
+        "showSpinnerOnThemeChange": false
+    },
+
+    "supportedLanguages": [
+        {
+            "name": "English",
+            "id": "en",
+            "flagUrl": "images/flags/en-us.png"
+        }
+    ],
+
+    "supportedThemes": [
+        {
+            "id": "dark",
+            "icon": "fa-solid fa-moon",
+            "dark": true,
+            "locales": {
+                "en": {"name": "Dark Mode"}
+            }
+        },
+        {
+            "id": "light",
+            "icon": "fa-solid fa-sun",
+            "dark": false,
+            "locales": {
+                "en": {"name": "Light Mode"}
+            }
+        }
+    ],
+
+    "consoleMessageForDevelopers": {
+        "title": "👋 Hey there, fellow developer!",
+        "items": [
+            {
+                "description": "This portfolio is built using the React Portfolio Template.",
+                "list": [],
+                "listStyle": "none"
+            },
+            {
+                "description": "Key technologies used:",
+                "list": [
+                    "React + Bootstrap 5",
+                    "EmailJS for contact forms",
+                    "Font Awesome icons",
+                    "Smooth Scrollbar"
+                ],
+                "listStyle": "bulleted"
+            },
+            {
+                "description": "Original template by Ryan Balieiro:",
+                "list": [
+                    "https://github.com/ryanbalieiro/react-portfolio-template"
+                ],
+                "listStyle": "none"
+            },
+            {
+                "description": "Get in touch:",
+                "list": [
+                    "Email: your.email@example.com",
+                    "LinkedIn: https://linkedin.com/in/yourprofile"
+                ],
+                "listStyle": "bulleted"
+            }
+        ]
+    },
+
+    "imagesToCache": []
+}

@@ -1,0 +1,129 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Experience",
+                "title_short_nav": "Experience",
+                "title_long_prefix": "Summary of my",
+                "title_long": "{{Work}} Experience"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {"bg": "#6f42c1", "fill": "#FFF"},
+                    "dateStart": {"year": 2026, "month": 2},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "{{Freelance}} Web Developer & {{SEO Consultant}}",
+                            "province": "Živinice",
+                            "country": "Bosnia and Herzegovina",
+                            "institution": "Self-Employed",
+                            "text": "Developing custom websites and providing comprehensive SEO services for businesses:",
+                            "list": [
+                                "Building responsive business websites, WooCommerce e-commerce shops, and content-rich blog platforms using WordPress and React",
+                                "Conducting full technical SEO audits: Core Web Vitals, crawlability, indexation issues",
+                                "Advanced keyword research using Ahrefs, SEMrush, and Google Keyword Planner",
+                                "On-page SEO: content optimization, meta tags, header structure, LSI keywords integration",
+                                "Off-page SEO: backlink analysis, outreach campaigns, guest posting strategies",
+                                "Setting up Google Analytics 4, Search Console, and rank tracking tools"
+                            ],
+                            "tags": ["React", "WordPress", "Technical SEO", "Backlink Strategy", "Google Analytics"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-briefcase",
+                    "faIconColors": {"bg": "#000000", "fill": "#FFF"},
+                    "dateStart": {"year": 2024, "month": 9},
+                    "dateEnd": {"year": 2026, "month": 1},
+                    "locales": {
+                        "en": {
+                            "title": "{{WordPress Specialist}} & {{SEO Content Manager}}",
+                            "province": "Remote",
+                            "country": "BiH / Malta",
+                            "institution": "ClickOut Media (Contract)",
+                            "text": "Worked as a freelance WordPress and SEO specialist for a leading iGaming affiliate marketing company:",
+                            "list": [
+                                "Managed multi-language iGaming affiliate websites with full SEO on-page optimization",
+                                "Performed keyword research and competitor analysis to improve organic rankings",
+                                "Built and structured WordPress pages with SEO-optimized HTML/CSS, schema markup, and internal linking",
+                                "Implemented technical SEO: page speed optimization, mobile responsiveness, canonical tags",
+                                "Executed off-page SEO strategies including backlink prospecting and link building campaigns",
+                                "Site-wide content maintenance and year-rollovers using standardized variables for freshness"
+                            ],
+                            "tags": ["WordPress", "On-Page SEO", "Keyword Research", "Link Building", "Content Management"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-bullhorn",
+                    "faIconColors": {"bg": "#dc3545", "fill": "#FFF"},
+                    "dateStart": {"year": 2025, "month": 10},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "{{Social Media Marketing}} & {{Ads Manager}}",
+                            "province": "Živinice",
+                            "country": "Bosnia and Herzegovina",
+                            "institution": "SMMA Services (Part-time)",
+                            "text": "Managing paid advertising campaigns and social media presence for local businesses:",
+                            "list": [
+                                "Running Facebook and Instagram ad campaigns with audience targeting and optimization",
+                                "Creating ad creatives, copywriting, and landing page recommendations",
+                                "Managing client social media accounts: content planning, scheduling, and engagement",
+                                "Tracking campaign performance with Meta Ads Manager and providing monthly reports",
+                                "Consulting on brand positioning and content strategy for service-based businesses"
+                            ],
+                            "tags": ["Facebook Ads", "Meta Ads Manager", "Instagram Marketing", "Content Creation", "SMMA"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-search",
+                    "faIconColors": {"bg": "#0d6efd", "fill": "#FFF"},
+                    "dateStart": {"year": 2022, "month": 1},
+                    "dateEnd": {"year": 2024, "month": 8},
+                    "locales": {
+                        "en": {
+                            "title": "{{SEO Medior}} & {{Content Strategist}}",
+                            "province": "",
+                            "country": "Remote",
+                            "institution": "NewsBTC | Bitcoinist | CryptoNews & Others",
+                            "text": "Managed SEO-driven content strategy and publishing workflows across major crypto and esports platforms:",
+                            "list": [
+                                "Conducted in-depth keyword research and competitor gap analysis for crypto and gaming niches",
+                                "Published and optimized 100+ articles monthly for NewsBTC, Bitcoinist, and CryptoNews.com",
+                                "Implemented on-page SEO: LSI keyword integration, strategic internal linking, meta optimization",
+                                "Executed off-page SEO strategies: backlink outreach, PR distribution via OpenPR, guest posts",
+                                "Monitored organic traffic growth using Google Analytics and Search Console data",
+                                "Trained junior writers on SEO best practices and content structure for maximum visibility"
+                            ],
+                            "tags": ["SEO Medior", "Keyword Research", "Backlink Building", "Content Strategy", "Google Analytics"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
