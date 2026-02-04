@@ -1,222 +1,290 @@
 {
-    "title": {
-        "locales": {
-            "en": {
-                "title_short": "Portfolio",
-                "title_short_nav": "Portfolio",
-                "title_long_prefix": "Take a look at",
-                "title_long": "My {{Portfolio}}"
-            }
-        }
-    },
+  "title": {
+    "locales": {
+      "en": {
+        "title_short": "Portfolio",
+        "title_short_nav": "Portfolio",
+        "title_long_prefix": "Take a look at",
+        "title_long": "My {{Portfolio}}"
+      }
+    }
+  },
 
-    "articles": [
-        {
-            "id": 1,
-            "component": "ArticlePortfolio",
-            "locales": {
-                "en": {
-                    "category_all": "All",
-                    "category_wordpress": "WordPress Sites",
-                    "category_seo": "SEO Projects",
-                    "category_content": "Content Work"
-                }
-            },
-            "settings": {
-                "categorize_by": ["category_wordpress", "category_seo", "category_content"],
-                "order_items_by": "id",
-                "order_items_sort": "desc"
-            },
-            "items": [
-                {
-                    "id": 1,
-                    "categoryId": "category_wordpress",
-                    "img": "",
-                    "faIcon": "fa-solid fa-dice",
-                    "faIconColors": {"bg": "#6f42c1", "fill": "#FFF"},
-                    "preview": {
-                        "links": [],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "iGaming Affiliate Network",
-                            "text": "Managed <b>15+ multi-language casino and betting affiliate websites</b> for ClickOut Media, implementing custom WordPress architectures with advanced SEO optimization, schema markup, and technical performance improvements.",
-                            "tags": ["WordPress", "iGaming", "Multi-language", "Technical SEO"]
-                        }
-                    }
-                },
-                {
-                    "id": 2,
-                    "categoryId": "category_content",
-                    "img": "",
-                    "faIcon": "fa-brands fa-bitcoin",
-                    "faIconColors": {"bg": "#F7931A", "fill": "#FFF"},
-                    "preview": {
-                        "links": [
-                            {"href": "https://www.newsbtc.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"},
-                            {"href": "https://bitcoinist.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"},
-                            {"href": "https://cryptonews.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Crypto News Publishing",
-                            "text": "Published and optimized <b>1000+ SEO articles</b> for major cryptocurrency platforms including NewsBTC, Bitcoinist, and CryptoNews. Managed high-volume content workflows with strict editorial standards and keyword optimization.",
-                            "tags": ["Content Strategy", "Crypto", "SEO Writing", "Publishing"]
-                        }
-                    }
-                },
-                {
-                    "id": 3,
-                    "categoryId": "category_content",
-                    "img": "",
-                    "faIcon": "fa-solid fa-gamepad",
-                    "faIconColors": {"bg": "#e74c3c", "fill": "#FFF"},
-                    "preview": {
-                        "links": [
-                            {"href": "https://esportsinsider.com/jp/", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"},
-                            {"href": "https://www.videogamer.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"},
-                            {"href": "https://www.gameshub.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Esports Content Management",
-                            "text": "Edited and published <b>daily esports news</b> for Esports Insider (JP market), VideoGamer.com, and GamesHub. Managed CMS workflows, image optimization, and rapid QA processes for time-sensitive content.",
-                            "tags": ["Esports", "Content QA", "CMS", "Japanese Market"]
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "categoryId": "category_seo",
-                    "img": "",
-                    "faIcon": "fa-solid fa-chart-line",
-                    "faIconColors": {"bg": "#28a745", "fill": "#FFF"},
-                    "preview": {
-                        "links": [],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Technical SEO Audits",
-                            "text": "Conducted comprehensive <b>technical SEO audits</b> for client websites, analyzing Core Web Vitals, crawlability, indexation issues, and implementing solutions for improved organic rankings and site performance.",
-                            "tags": ["Technical SEO", "Audits", "Core Web Vitals", "Performance"]
-                        }
-                    }
-                },
-                {
-                    "id": 5,
-                    "categoryId": "category_seo",
-                    "img": "",
-                    "faIcon": "fa-solid fa-link",
-                    "faIconColors": {"bg": "#0d6efd", "fill": "#FFF"},
-                    "preview": {
-                        "links": [],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Backlink Building Campaigns",
-                            "text": "Executed <b>off-page SEO strategies</b> including backlink prospecting, outreach campaigns, guest posting, and PR distribution via OpenPR. Improved domain authority and organic traffic for multiple client websites.",
-                            "tags": ["Link Building", "Outreach", "Off-Page SEO", "PR Distribution"]
-                        }
-                    }
-                },
-                {
-                    "id": 6,
-                    "categoryId": "category_wordpress",
-                    "img": "",
-                    "faIcon": "fa-solid fa-cart-shopping",
-                    "faIconColors": {"bg": "#96588a", "fill": "#FFF"},
-                    "preview": {
-                        "links": [],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "WooCommerce E-commerce Setup",
-                            "text": "Built and configured <b>WooCommerce online stores</b> with custom product pages, payment gateway integration, and optimized checkout flows for improved conversion rates.",
-                            "tags": ["WooCommerce", "E-commerce", "WordPress", "Conversion Optimization"]
-                        }
-                    }
-                },
-                {
-                    "id": 7,
-                    "categoryId": "category_wordpress",
-                    "img": "",
-                    "faIcon": "fa-solid fa-blog",
-                    "faIconColors": {"bg": "#21759B", "fill": "#FFF"},
-                    "preview": {
-                        "links": [],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Content-Rich Blog Platforms",
-                            "text": "Developed <b>SEO-optimized blog websites</b> using WordPress with custom themes, advanced internal linking structures, and content categorization systems for improved user experience and search visibility.",
-                            "tags": ["WordPress", "Blog Development", "SEO", "Content Structure"]
-                        }
-                    }
-                },
-                {
-                    "id": 8,
-                    "categoryId": "category_seo",
-                    "img": "",
-                    "faIcon": "fa-solid fa-magnifying-glass-chart",
-                    "faIconColors": {"bg": "#FF6600", "fill": "#FFF"},
-                    "preview": {
-                        "links": [],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Keyword Research & Strategy",
-                            "text": "Performed <b>in-depth keyword research</b> using Ahrefs and SEMrush, conducting competitor gap analysis and developing content strategies for crypto, gaming, and iGaming niches.",
-                            "tags": ["Keyword Research", "Ahrefs", "SEMrush", "Competitor Analysis"]
-                        }
-                    }
-                },
-                {
-                    "id": 9,
-                    "categoryId": "category_content",
-                    "img": "",
-                    "faIcon": "fa-solid fa-language",
-                    "faIconColors": {"bg": "#6c757d", "fill": "#FFF"},
-                    "preview": {
-                        "links": [],
-                        "screenshots": [],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Multi-Language Content Management",
-                            "text": "Managed <b>content across 7+ languages</b> (Serbian, English, German, Vietnamese, Dutch, Japanese) for international affiliate websites, ensuring cultural relevance and SEO consistency.",
-                            "tags": ["Multi-language", "Content Localization", "International SEO", "Translation"]
-                        }
-                    }
-                }
-            ]
+  "articles": [
+    {
+      "id": 1,
+      "component": "ArticlePortfolio",
+      "locales": {
+        "en": {
+          "category_all": "All",
+          "category_wordpress": "WordPress Sites",
+          "category_seo": "SEO Projects",
+          "category_content": "Content Work"
         }
-    ]
+      },
+      "settings": {
+        "categorize_by": [
+          "category_wordpress",
+          "category_seo",
+          "category_content"
+        ],
+        "order_items_by": "id",
+        "order_items_sort": "desc"
+      },
+      "items": [
+        {
+          "id": 1,
+          "categoryId": "category_wordpress",
+          "img": "",
+          "faIcon": "fa-solid fa-dice",
+          "faIconColors": { "bg": "#6f42c1", "fill": "#FFF" },
+          "preview": {
+            "links": [],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "iGaming Affiliate Network",
+              "text": "Managed <b>15+ multi-language casino and betting affiliate websites</b> for ClickOut Media, implementing custom WordPress architectures with advanced SEO optimization, schema markup, and technical performance improvements.",
+              "tags": [
+                "WordPress",
+                "iGaming",
+                "Multi-language",
+                "Technical SEO"
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "categoryId": "category_content",
+          "img": "",
+          "faIcon": "fa-brands fa-bitcoin",
+          "faIconColors": { "bg": "#F7931A", "fill": "#FFF" },
+          "preview": {
+            "links": [
+              {
+                "href": "https://www.newsbtc.com",
+                "tooltipString": "open_website",
+                "faIcon": "fa-solid fa-link"
+              },
+              {
+                "href": "https://bitcoinist.com",
+                "tooltipString": "open_website",
+                "faIcon": "fa-solid fa-link"
+              },
+              {
+                "href": "https://cryptonews.com",
+                "tooltipString": "open_website",
+                "faIcon": "fa-solid fa-link"
+              }
+            ],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "Crypto News Publishing",
+              "text": "Published and optimized <b>1000+ SEO articles</b> for major cryptocurrency platforms including NewsBTC, Bitcoinist, and CryptoNews. Managed high-volume content workflows with strict editorial standards and keyword optimization.",
+              "tags": [
+                "Content Strategy",
+                "Crypto",
+                "SEO Writing",
+                "Publishing"
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "categoryId": "category_content",
+          "img": "",
+          "faIcon": "fa-solid fa-gamepad",
+          "faIconColors": { "bg": "#e74c3c", "fill": "#FFF" },
+          "preview": {
+            "links": [
+              {
+                "href": "https://esportsinsider.com/jp/",
+                "tooltipString": "open_website",
+                "faIcon": "fa-solid fa-link"
+              },
+              {
+                "href": "https://www.videogamer.com",
+                "tooltipString": "open_website",
+                "faIcon": "fa-solid fa-link"
+              },
+              {
+                "href": "https://www.gameshub.com",
+                "tooltipString": "open_website",
+                "faIcon": "fa-solid fa-link"
+              }
+            ],
+            "screenshots": ["https://i.imgur.com/ldoUDeV.jpeg"],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "Esports Content Management",
+              "text": "Edited and published <b>daily esports news</b> for Esports Insider (JP market), VideoGamer.com, and GamesHub. Managed CMS workflows, image optimization, and rapid QA processes for time-sensitive content.",
+              "tags": ["Esports", "Content QA", "CMS", "Japanese Market"]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "categoryId": "category_seo",
+          "img": "",
+          "faIcon": "fa-solid fa-chart-line",
+          "faIconColors": { "bg": "#28a745", "fill": "#FFF" },
+          "preview": {
+            "links": [],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "Technical SEO Audits",
+              "text": "Conducted comprehensive <b>technical SEO audits</b> for client websites, analyzing Core Web Vitals, crawlability, indexation issues, and implementing solutions for improved organic rankings and site performance.",
+              "tags": [
+                "Technical SEO",
+                "Audits",
+                "Core Web Vitals",
+                "Performance"
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "categoryId": "category_seo",
+          "img": "",
+          "faIcon": "fa-solid fa-link",
+          "faIconColors": { "bg": "#0d6efd", "fill": "#FFF" },
+          "preview": {
+            "links": [],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "Backlink Building Campaigns",
+              "text": "Executed <b>off-page SEO strategies</b> including backlink prospecting, outreach campaigns, guest posting, and PR distribution via OpenPR. Improved domain authority and organic traffic for multiple client websites.",
+              "tags": [
+                "Link Building",
+                "Outreach",
+                "Off-Page SEO",
+                "PR Distribution"
+              ]
+            }
+          }
+        },
+        {
+          "id": 6,
+          "categoryId": "category_wordpress",
+          "img": "",
+          "faIcon": "fa-solid fa-cart-shopping",
+          "faIconColors": { "bg": "#96588a", "fill": "#FFF" },
+          "preview": {
+            "links": [],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "WooCommerce E-commerce Setup",
+              "text": "Built and configured <b>WooCommerce online stores</b> with custom product pages, payment gateway integration, and optimized checkout flows for improved conversion rates.",
+              "tags": [
+                "WooCommerce",
+                "E-commerce",
+                "WordPress",
+                "Conversion Optimization"
+              ]
+            }
+          }
+        },
+        {
+          "id": 7,
+          "categoryId": "category_wordpress",
+          "img": "",
+          "faIcon": "fa-solid fa-blog",
+          "faIconColors": { "bg": "#21759B", "fill": "#FFF" },
+          "preview": {
+            "links": [],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "Content-Rich Blog Platforms",
+              "text": "Developed <b>SEO-optimized blog websites</b> using WordPress with custom themes, advanced internal linking structures, and content categorization systems for improved user experience and search visibility.",
+              "tags": [
+                "WordPress",
+                "Blog Development",
+                "SEO",
+                "Content Structure"
+              ]
+            }
+          }
+        },
+        {
+          "id": 8,
+          "categoryId": "category_seo",
+          "img": "",
+          "faIcon": "fa-solid fa-magnifying-glass-chart",
+          "faIconColors": { "bg": "#FF6600", "fill": "#FFF" },
+          "preview": {
+            "links": [],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "Keyword Research & Strategy",
+              "text": "Performed <b>in-depth keyword research</b> using Ahrefs and SEMrush, conducting competitor gap analysis and developing content strategies for crypto, gaming, and iGaming niches.",
+              "tags": [
+                "Keyword Research",
+                "Ahrefs",
+                "SEMrush",
+                "Competitor Analysis"
+              ]
+            }
+          }
+        },
+        {
+          "id": 9,
+          "categoryId": "category_content",
+          "img": "",
+          "faIcon": "fa-solid fa-language",
+          "faIconColors": { "bg": "#6c757d", "fill": "#FFF" },
+          "preview": {
+            "links": [],
+            "screenshots": [],
+            "screenshotsAspectRatio": "",
+            "youtubeVideo": ""
+          },
+          "locales": {
+            "en": {
+              "title": "Multi-Language Content Management",
+              "text": "Managed <b>content across 7+ languages</b> (Serbian, English, German, Vietnamese, Dutch, Japanese) for international affiliate websites, ensuring cultural relevance and SEO consistency.",
+              "tags": [
+                "Multi-language",
+                "Content Localization",
+                "International SEO",
+                "Translation"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
