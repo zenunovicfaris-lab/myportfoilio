@@ -35,8 +35,8 @@
                 },
                 {
                     "id": 3,
-                    "label": "@zenunovic",
-                    "link": {"href": "https://github.com/zenunovic", "tooltipString": "see_on_github"},
+                    "label": "@zenunovicfaris-lab",
+                    "link": {"href": "https://github.com/zenunovicfaris-lab", "tooltipString": "see_on_github"},
                     "faIcon": "fa-brands fa-github"
                 }
             ]
@@ -56,11 +56,12 @@
                 {
                     "id": 1,
                     "img": "images/pictures/about-texts-image-1.png",
+                    "imgAlt": "Faris Zenunovic SEO Specialist and Content Strategist workspace",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "text": "<p>I'm an {{SEO Specialist}} and {{Content Strategist}} with [[over 4 years]] of experience in technical SEO, content optimization, and multi-language content management. I specialize in driving organic traffic through strategic keyword research, on-page optimization, and high-quality content creation.</p><p>My expertise includes {{keyword research}}, backlink building strategies, content gap analysis, and managing large-scale publishing workflows across 7+ languages. I've worked with leading platforms like NewsBTC, Bitcoinist, and CryptoNews, as well as iGaming affiliate networks, consistently delivering SEO-optimized content that ranks.</p><p>From conducting comprehensive {{SEO audits}} to implementing AI-enhanced content workflows and managing WordPress sites, I focus on creating content strategies that generate measurable results. Let's [[collaborate and boost your organic visibility!]]</p>"
+                            "text": "<p>I'm an {{SEO Specialist}} and {{Content Strategist}} with [[over 4 years]] of <a href='https://www.fariszenunovic.com/#experience' title='View my professional experience'>professional experience</a> in technical SEO, content optimization, and multi-language content management. I specialize in driving <a href='https://www.fariszenunovic.com/#skills' title='SEO skills and expertise'>organic traffic</a> through strategic keyword research, on-page optimization, and high-quality content creation.</p><p>My expertise includes {{keyword research}}, backlink building strategies, content gap analysis, and managing large-scale publishing workflows across 7+ languages. I've worked with leading platforms like <a href='https://www.newsbtc.com' target='_blank' rel='noopener noreferrer' title='NewsBTC - Leading cryptocurrency news platform'>NewsBTC</a>, <a href='https://bitcoinist.com' target='_blank' rel='noopener noreferrer' title='Bitcoinist - Bitcoin news and analysis'>Bitcoinist</a>, and <a href='https://cryptonews.com' target='_blank' rel='noopener noreferrer' title='CryptoNews - Global crypto news coverage'>CryptoNews</a>, as well as <a href='https://www.fariszenunovic.com/#portfolio' title='View my portfolio'>iGaming affiliate networks</a>, consistently delivering SEO-optimized content that ranks on search engine results pages (SERPs).</p><p>From conducting comprehensive {{SEO audits}} to implementing AI-enhanced content workflows and managing WordPress sites, I focus on creating <a href='https://www.fariszenunovic.com/#skills' title='Content strategy services'>data-driven content strategies</a> that generate measurable results and boost search rankings. Let's <a href='https://www.fariszenunovic.com/#contact' title='Contact Faris Zenunovic'>collaborate and boost your organic visibility!</a></p>"
                         }
                     }
                 }
@@ -81,8 +82,9 @@
                 {
                     "id": 1,
                     "label": "Hazim Tulumovic",
-                    "link": {"href": "https://www.hazimtulumovic.com", "tooltipString": "", "target": "_blank"},
+                    "link": {"href": "https://www.hazimtulumovic.com", "tooltipString": "Visit Hazim Tulumovic's website", "target": "_blank"},
                     "img": "images/testimonials/hazim-tulumovic.png",
+                    "imgAlt": "Hazim Tulumovic - Web Developer and Digital Marketer testimonial",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
@@ -95,8 +97,9 @@
                 {
                     "id": 2,
                     "label": "Thạch Tuấn",
-                    "link": {"href": "https://twitter.com/Tuanthach32", "tooltipString": "", "target": "_blank"},
+                    "link": {"href": "https://twitter.com/Tuanthach32", "tooltipString": "Follow Thạch Tuấn on Twitter", "target": "_blank"},
                     "img": "images/testimonials/thach-tuan.png",
+                    "imgAlt": "Thạch Tuấn - Senior Content Creator at CryptoNews testimonial",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
@@ -109,8 +112,9 @@
                 {
                     "id": 3,
                     "label": "Amer Brcaninovic",
-                    "link": {"href": "https://www.linkedin.com/in/amer-brcaninovic-425a81270/", "tooltipString": "", "target": "_blank"},
+                    "link": {"href": "https://www.linkedin.com/in/amer-brcaninovic-425a81270/", "tooltipString": "Connect with Amer Brcaninovic on LinkedIn", "target": "_blank"},
                     "img": "images/testimonials/amer-brcaninovic.png",
+                    "imgAlt": "Amer Brcaninovic - SEO Content Lead testimonial",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
@@ -123,8 +127,9 @@
                 {
                     "id": 4,
                     "label": "Tran Dai Phat",
-                    "link": {"href": "https://x.com/TranDaiPha", "tooltipString": "", "target": "_blank"},
+                    "link": {"href": "https://x.com/TranDaiPha", "tooltipString": "Follow Tran Dai Phat on X (Twitter)", "target": "_blank"},
                     "img": "images/testimonials/tran-dai-phat.png",
+                    "imgAlt": "Tran Dai Phat - Crypto and Tech Content Writer testimonial",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
@@ -151,7 +156,8 @@
                 {
                     "id": 1,
                     "img": "images/logos/newsbtc.png",
-                    "link": {"href": "https://www.newsbtc.com", "tooltipString": "", "target": "_blank"},
+                    "imgAlt": "NewsBTC logo - Major cryptocurrency news platform",
+                    "link": {"href": "https://www.newsbtc.com", "tooltipString": "Visit NewsBTC - Leading crypto news platform", "target": "_blank"},
                     "locales": {
                         "en": {
                             "title": "NewsBTC",
@@ -162,7 +168,8 @@
                 {
                     "id": 2,
                     "img": "images/logos/bitcoinist.png",
-                    "link": {"href": "https://bitcoinist.com", "tooltipString": "", "target": "_blank"},
+                    "imgAlt": "Bitcoinist logo - Leading Bitcoin news source",
+                    "link": {"href": "https://bitcoinist.com", "tooltipString": "Visit Bitcoinist - Bitcoin news and analysis", "target": "_blank"},
                     "locales": {
                         "en": {
                             "title": "Bitcoinist",
@@ -173,7 +180,8 @@
                 {
                     "id": 3,
                     "img": "images/logos/cryptonews.png",
-                    "link": {"href": "https://cryptonews.com", "tooltipString": "", "target": "_blank"},
+                    "imgAlt": "CryptoNews logo - Global cryptocurrency news platform",
+                    "link": {"href": "https://cryptonews.com", "tooltipString": "Visit CryptoNews - Global crypto news coverage", "target": "_blank"},
                     "locales": {
                         "en": {
                             "title": "CryptoNews",
@@ -184,7 +192,8 @@
                 {
                     "id": 4,
                     "img": "images/logos/clickout-media.png",
-                    "link": {"href": "https://clickoutmedia.com/", "tooltipString": "", "target": "_blank"},
+                    "imgAlt": "ClickOut Media logo - iGaming affiliate network",
+                    "link": {"href": "https://clickoutmedia.com/", "tooltipString": "Visit ClickOut Media - iGaming affiliate solutions", "target": "_blank"},
                     "locales": {
                         "en": {
                             "title": "ClickOut Media",
@@ -194,19 +203,21 @@
                 },
                 {
                     "id": 5,
-                    "img": "images/logos/gamesuh-logo.png",
-                    "link": {"href": "https://gamesuh.com", "tooltipString": "", "target": "_blank"},
+                    "img": "images/logos/gameshub.com.png",
+                    "imgAlt": "GamesHub logo - Gaming news platform",
+                    "link": {"href": "https://gameshub.com", "tooltipString": "Visit GamesHub - Gaming news and reviews", "target": "_blank"},
                     "locales": {
                         "en": {
-                            "title": "Gamesuh",
+                            "title": "Gameshub",
                             "text": "Gaming news platform"
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "img": "images/logos/esports-insider-logo.png",
-                    "link": {"href": "https://www.esportsinsider.com", "tooltipString": "", "target": "_blank"},
+                    "img": "images/logos/esportsinsider.com.png",
+                    "imgAlt": "Esports Insider logo - Esports industry news",
+                    "link": {"href": "https://www.esportsinsider.com", "tooltipString": "Visit Esports Insider - Esports business news", "target": "_blank"},
                     "locales": {
                         "en": {
                             "title": "Esports Insider",
@@ -238,7 +249,7 @@
                     "locales": {
                         "en": {
                             "title": "{{Technical SEO}} Audits",
-                            "text": "Conducting comprehensive site audits, identifying technical issues, and implementing fixes for optimal crawlability."
+                            "text": "Conducting comprehensive site audits, identifying technical issues, and implementing fixes for optimal crawlability and search engine indexing."
                         }
                     }
                 },
@@ -252,7 +263,7 @@
                     "locales": {
                         "en": {
                             "title": "{{Keyword Research}} Strategy",
-                            "text": "Advanced keyword research using Ahrefs, SEMrush, and content gap analysis for competitive advantage."
+                            "text": "Advanced keyword research using Ahrefs, SEMrush, and content gap analysis for competitive advantage and improved SERP rankings."
                         }
                     }
                 },
@@ -266,7 +277,7 @@
                     "locales": {
                         "en": {
                             "title": "{{SEO Content}} Writing",
-                            "text": "Creating high-ranking, engaging content optimized for both search engines and user experience."
+                            "text": "Creating high-ranking, engaging content optimized for both search engines and user experience to drive organic traffic."
                         }
                     }
                 },
@@ -280,7 +291,7 @@
                     "locales": {
                         "en": {
                             "title": "{{Backlink}} Building",
-                            "text": "Developing strategic link building campaigns and outreach for improved domain authority."
+                            "text": "Developing strategic link building campaigns and outreach for improved domain authority and search engine rankings."
                         }
                     }
                 },
@@ -294,7 +305,7 @@
                     "locales": {
                         "en": {
                             "title": "{{Multi-Language}} SEO",
-                            "text": "Managing and optimizing content across 7+ languages including Serbian, English, German, and Japanese."
+                            "text": "Managing and optimizing multilingual content across 7+ languages including Serbian, English, German, and Japanese for international reach."
                         }
                     }
                 },
@@ -308,7 +319,7 @@
                     "locales": {
                         "en": {
                             "title": "{{AI-Enhanced}} Content",
-                            "text": "Leveraging AI tools for content optimization, scaling production, and maintaining quality standards."
+                            "text": "Leveraging AI tools for content optimization, scaling production, and maintaining quality standards while improving workflow efficiency."
                         }
                     }
                 }
