@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "https://www.fariszenunovic.com/:path*",
+      "destination": "https://fariszenunovic.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
