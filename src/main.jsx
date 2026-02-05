@@ -81,10 +81,14 @@ const AppEssentialsWrapper = ({ children }) => {
     const stayOnThePreloaderScreen =
       developerSettings?.stayOnThePreloaderScreen;
 
+    // POTPUNO ONEMOGUĆAVANJE PRELOADERA
+    if (settings?.preloaderSettings) {
+      settings.preloaderSettings.enabled = false;
+    }
+
     if (constants.PRODUCTION_MODE) return settings;
 
     if (debugMode) {
-      settings.preloaderSettings.enabled = stayOnThePreloaderScreen;
       settings.templateSettings.backgroundStyle = "plain";
       utils.storage.setWindowVariable("suspendAnimations", true);
       utils.log.warn(
@@ -98,14 +102,6 @@ const AppEssentialsWrapper = ({ children }) => {
       utils.log.warn(
         "DataProvider",
         "Fake email requests are enabled. This is only for development purposes and will be disabled automatically in production.",
-      );
-    }
-
-    if (stayOnThePreloaderScreen) {
-      utils.storage.setWindowVariable("stayOnThePreloaderScreen", true);
-      utils.log.warn(
-        "DataProvider",
-        "Preloader screen will be displayed indefinitely because the developer flag 'stayOnThePreloaderScreen' is on. This is only for development purposes and will be disabled automatically in production.",
       );
     }
   };

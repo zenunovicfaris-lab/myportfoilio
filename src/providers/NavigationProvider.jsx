@@ -48,6 +48,14 @@ function NavigationProvider({ children, sections, categories }) {
 
   /** @constructs **/
   useEffect(() => {
+    // Prevent automatic redirect to #home on root URL
+    if (
+      window.location.hash === "#home" &&
+      !document.referrer.includes(window.location.hostname)
+    ) {
+      window.history.replaceState(null, "", window.location.pathname);
+    }
+
     setDidMount(true);
     _updateLinks(null, null);
     return () => {
@@ -167,7 +175,16 @@ function NavigationProvider({ children, sections, categories }) {
       setScheduledNextSection(null);
 
       setIgnoreNextLocationEvent(true);
-      location.goToSection(targetSection);
+
+      // Prevent redirect to #home on root URL
+      const isHomeSection = targetSection?.id === "home";
+      const currentHash = window.location.hash;
+      const isRootOrEmpty =
+        !currentHash || currentHash === "#" || currentHash === "#home";
+
+      if (!(isHomeSection && isRootOrEmpty)) {
+        location.goToSection(targetSection);
+      }
 
       scheduler.clearAllWithTag("set-ignore-next-location-event");
       scheduler.schedule(
