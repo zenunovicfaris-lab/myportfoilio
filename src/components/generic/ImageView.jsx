@@ -4,6 +4,7 @@ import { useConstants } from "/src/hooks/constants.js";
 import { Spinner } from "react-bootstrap";
 import { useUtils } from "/src/hooks/utils.js";
 
+
 function ImageView({
   src,
   alt = "",
@@ -17,11 +18,13 @@ function ImageView({
   const [loadedSrc, setLoadedSrc] = useState(null);
   const [errorSrc, setErrorSrc] = useState(null);
 
+
   /** @listens src **/
   useEffect(() => {
     if (src && src.length > 0) setLoadStatus(ImageView.LoadStatus.LOADING);
     else setLoadStatus(ImageView.LoadStatus.ERROR);
   }, [src]);
+
 
   /** @listens loadedSrc|errorSrc **/
   useEffect(() => {
@@ -32,25 +35,30 @@ function ImageView({
     else if (src && src.length > 0) setLoadStatus(ImageView.LoadStatus.LOADING);
   }, [loadedSrc, errorSrc]);
 
+
   /** @listens loadStatus **/
   useEffect(() => {
     onStatus && onStatus(loadStatus);
   }, [loadStatus]);
+
 
   const spinnerVisible =
     loadStatus === ImageView.LoadStatus.LOADING && !hideSpinner;
   const containerVisible = loadStatus === ImageView.LoadStatus.LOADED;
   const errorVisible = loadStatus === ImageView.LoadStatus.ERROR;
 
+
   const _onLoad = () => {
     setLoadedSrc(src);
     setErrorSrc(null);
   };
 
+
   const _onError = () => {
     setLoadedSrc(null);
     setErrorSrc(src);
   };
+
 
   return (
     <div className={`image-view ${className}`} id={id} style={style}>
@@ -63,17 +71,20 @@ function ImageView({
         onError={_onError}
       />
 
+
       <ImageViewSpinner visible={spinnerVisible} />
       <ImageViewError visible={errorVisible} hideIcon={hideSpinner} />
     </div>
   );
 }
 
+
 ImageView.LoadStatus = {
   LOADING: "loading",
   LOADED: "loaded",
   ERROR: "error",
 };
+
 
 function ImageViewContainer({
   src,
@@ -86,14 +97,18 @@ function ImageViewContainer({
   const constants = useConstants();
   const utils = useUtils();
 
+
   const resolvedSrc = utils.file.resolvePath(src);
   const visibleClass = visible ? `visible` : `invisible`;
+
 
   return (
     <img
       className={`image-view-img ${visibleClass} ${constants.HTML_CLASSES.imageView} ${constants.HTML_CLASSES.imageView}-${loadStatus}`}
       src={resolvedSrc}
       alt={alt}
+      loading="lazy"
+      decoding="async"
       onLoad={onLoad}
       style={{ objectFit: "cover" }}
       onError={onError}
@@ -101,8 +116,10 @@ function ImageViewContainer({
   );
 }
 
+
 function ImageViewSpinner({ visible }) {
   if (!visible) return <></>;
+
 
   return (
     <div className={`image-view-spinner-wrapper`}>
@@ -111,8 +128,10 @@ function ImageViewSpinner({ visible }) {
   );
 }
 
+
 function ImageViewError({ visible, hideIcon }) {
   if (!visible) return <></>;
+
 
   return (
     <div className={`image-view-error-wrapper`}>
@@ -120,5 +139,6 @@ function ImageViewError({ visible, hideIcon }) {
     </div>
   );
 }
+
 
 export default ImageView;
