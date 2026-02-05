@@ -60,7 +60,7 @@
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "text": "<p>I'm a {{Digital Content Creator}} and {{WordPress Specialist}} with [[over 4 years]] of experience in SEO, content management, and web development. I specialize in building optimized websites, managing high-volume publishing workflows, and driving organic traffic through strategic SEO.</p><p>My expertise spans across {{technical SEO}}, keyword research, backlink building, and multi-language content management. I've worked with major platforms like NewsBTC, Bitcoinist, and CryptoNews, as well as iGaming affiliate networks, managing content across 7+ languages.</p><p>Whether it's building custom WordPress sites, conducting SEO audits, or running social media ad campaigns, I'm passionate about creating digital solutions that deliver real results. Let's [[collaborate and build something great!]]</p>"
+                            "text": "<p>I'm an {{SEO Specialist}} and {{Content Strategist}} with [[over 4 years]] of experience in technical SEO, content optimization, and multi-language content management. I specialize in driving organic traffic through strategic keyword research, on-page optimization, and high-quality content creation.</p><p>My expertise includes {{keyword research}}, backlink building strategies, content gap analysis, and managing large-scale publishing workflows across 7+ languages. I've worked with leading platforms like NewsBTC, Bitcoinist, and CryptoNews, as well as iGaming affiliate networks, consistently delivering SEO-optimized content that ranks.</p><p>From conducting comprehensive {{SEO audits}} to implementing AI-enhanced content workflows and managing WordPress sites, I focus on creating content strategies that generate measurable results. Let's [[collaborate and boost your organic visibility!]]</p>"
                         }
                     }
                 }
@@ -71,7 +71,7 @@
             "id": 3,
             "component": "ArticleTestimonials",
             "locales": {
-                "en": {"title": "Client {{testimonials}}"}
+                "en": {"title": "What {{clients say}}"}
             },
             "settings": {
                 "order_items_by": "id",
@@ -80,43 +80,57 @@
             "items": [
                 {
                     "id": 1,
-                    "label": "ClickOut Media",
-                    "link": {"href": "", "tooltipString": ""},
-                    "img": "",
-                    "faIcon": "fa-solid fa-briefcase",
-                    "faIconColors": {"bg": "#000", "fill": "#FFF"},
+                    "label": "Hazim Tulumovic",
+                    "link": {"href": "https://www.hazimtulumovic.com", "tooltipString": "", "target": "_blank"},
+                    "img": "images/testimonials/hazim-tulumovic.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "iGaming Affiliate Marketing",
-                            "text": "Faris managed our [[multi-language affiliate websites]] with exceptional attention to detail. His SEO expertise and WordPress skills significantly improved our site performance and organic traffic."
+                            "title": "Web Developer & Digital Marketer",
+                            "text": "Faris has been an incredible asset on multiple projects. His [[SEO expertise and content strategy]] helped drive significant organic traffic growth. Professional, reliable, and highly skilled!"
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "label": "Crypto News Platform",
-                    "link": {"href": "", "tooltipString": ""},
-                    "img": "",
-                    "faIcon": "fa-brands fa-bitcoin",
-                    "faIconColors": {"bg": "#F7931A", "fill": "#FFF"},
+                    "label": "Thạch Tuấn",
+                    "link": {"href": "https://twitter.com/Tuanthach32", "tooltipString": "", "target": "_blank"},
+                    "img": "images/testimonials/thach-tuan.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "Content Editor & SEO Specialist",
-                            "text": "Working with Faris was a [[game changer]] for our publishing workflow. He consistently delivered high-quality, SEO-optimized content while maintaining strict editorial standards and tight deadlines."
+                            "title": "Senior Content Creator at CryptoNews",
+                            "text": "Working with Faris on [[cryptocurrency content]] was exceptional. His understanding of blockchain topics and SEO optimization helped us reach wider audiences. A true professional with deep expertise!"
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "label": "Local Business Owner",
-                    "link": {"href": "", "tooltipString": ""},
-                    "img": "",
-                    "faIcon": "fa-solid fa-store",
-                    "faIconColors": {"bg": "#28a745", "fill": "#FFF"},
+                    "label": "Amer Brcaninovic",
+                    "link": {"href": "https://www.linkedin.com/in/amer-brcaninovic-425a81270/", "tooltipString": "", "target": "_blank"},
+                    "img": "images/testimonials/amer-brcaninovic.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "E-commerce Website Client",
-                            "text": "Faris built our [[WooCommerce store from scratch]] and optimized it for SEO. His technical expertise and clear communication made the entire process smooth and professional."
+                            "title": "SEO Content Lead | Affiliate SEO | Lead Editor",
+                            "text": "Faris was a colleague I could always rely on, as far as the variety of tasks was concerned, he accepted each one without complaint. As the lead editor, I chose him for the most difficult ones. Full recommendation."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "Tran Dai Phat",
+                    "link": {"href": "https://x.com/TranDaiPha", "tooltipString": "", "target": "_blank"},
+                    "img": "images/testimonials/tran-dai-phat.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Crypto & Tech Content Writer",
+                            "text": "Faris's [[blockchain content expertise]] and SEO strategy made collaboration seamless. His ability to simplify complex crypto concepts while maintaining technical accuracy is outstanding. Highly professional!"
                         }
                     }
                 }
@@ -125,68 +139,148 @@
 
         {
             "id": 4,
+            "component": "ArticleCards",
+            "locales": {
+                "en": {"title": "Platforms {{I've worked with}}"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/logos/newsbtc.png",
+                    "link": {"href": "https://www.newsbtc.com", "tooltipString": "", "target": "_blank"},
+                    "locales": {
+                        "en": {
+                            "title": "NewsBTC",
+                            "text": "Major crypto news platform"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "images/logos/bitcoinist.png",
+                    "link": {"href": "https://bitcoinist.com", "tooltipString": "", "target": "_blank"},
+                    "locales": {
+                        "en": {
+                            "title": "Bitcoinist",
+                            "text": "Leading Bitcoin news source"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "images/logos/cryptonews.png",
+                    "link": {"href": "https://cryptonews.com", "tooltipString": "", "target": "_blank"},
+                    "locales": {
+                        "en": {
+                            "title": "CryptoNews",
+                            "text": "Global cryptocurrency news"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "images/logos/clickout-media.png",
+                    "link": {"href": "https://clickoutmedia.com/", "tooltipString": "", "target": "_blank"},
+                    "locales": {
+                        "en": {
+                            "title": "ClickOut Media",
+                            "text": "iGaming affiliate network"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "images/logos/gamesuh-logo.png",
+                    "link": {"href": "https://gamesuh.com", "tooltipString": "", "target": "_blank"},
+                    "locales": {
+                        "en": {
+                            "title": "Gamesuh",
+                            "text": "Gaming news platform"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "images/logos/esports-insider-logo.png",
+                    "link": {"href": "https://www.esportsinsider.com", "tooltipString": "", "target": "_blank"},
+                    "locales": {
+                        "en": {
+                            "title": "Esports Insider",
+                            "text": "Esports industry news"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 5,
             "component": "ArticleInfoList",
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc"
             },
             "locales": {
-                "en": {"title": "Personal {{interests}}"}
+                "en": {"title": "Professional {{focus areas}}"}
             },
             "items": [
                 {
                     "id": 1,
-                    "faIcon": "fa-solid fa-futbol",
+                    "faIcon": "fa-solid fa-search",
                     "faIconColors": {"bg": "", "fill": ""},
                     "label": null,
                     "link": {"href": null, "tooltipString": null},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Football}} & Sports",
-                            "text": "Passionate about football and player performance analysis."
+                            "title": "{{Technical SEO}} Audits",
+                            "text": "Conducting comprehensive site audits, identifying technical issues, and implementing fixes for optimal crawlability."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "faIcon": "fa-solid fa-gamepad",
+                    "faIcon": "fa-solid fa-key",
                     "faIconColors": {"bg": "", "fill": ""},
                     "label": null,
                     "link": {"href": null, "tooltipString": null},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Gaming}} & Modding",
-                            "text": "Exploring video game modding and Steam gaming community."
+                            "title": "{{Keyword Research}} Strategy",
+                            "text": "Advanced keyword research using Ahrefs, SEMrush, and content gap analysis for competitive advantage."
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "faIcon": "fa-solid fa-chart-line",
+                    "faIcon": "fa-solid fa-pen-nib",
                     "faIconColors": {"bg": "", "fill": ""},
                     "label": null,
                     "link": {"href": null, "tooltipString": null},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Digital Marketing}} Trends",
-                            "text": "Staying updated on SEO, PPC, and social media marketing strategies."
+                            "title": "{{SEO Content}} Writing",
+                            "text": "Creating high-ranking, engaging content optimized for both search engines and user experience."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "faIcon": "fa-solid fa-code",
+                    "faIcon": "fa-solid fa-link",
                     "faIconColors": {"bg": "", "fill": ""},
                     "label": null,
                     "link": {"href": null, "tooltipString": null},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Web Development}} Learning",
-                            "text": "Continuously learning React and modern JavaScript frameworks."
+                            "title": "{{Backlink}} Building",
+                            "text": "Developing strategic link building campaigns and outreach for improved domain authority."
                         }
                     }
                 },
@@ -199,22 +293,22 @@
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Multi-Language}} Content",
-                            "text": "Working with content in 7+ languages including Serbian, English, German, and Japanese."
+                            "title": "{{Multi-Language}} SEO",
+                            "text": "Managing and optimizing content across 7+ languages including Serbian, English, German, and Japanese."
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "faIcon": "fa-solid fa-laptop",
+                    "faIcon": "fa-solid fa-robot",
                     "faIconColors": {"bg": "", "fill": ""},
                     "label": null,
                     "link": {"href": null, "tooltipString": null},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Tech}} & AI Tools",
-                            "text": "Exploring AI-powered content tools and automation for productivity."
+                            "title": "{{AI-Enhanced}} Content",
+                            "text": "Leveraging AI tools for content optimization, scaling production, and maintaining quality standards."
                         }
                     }
                 }

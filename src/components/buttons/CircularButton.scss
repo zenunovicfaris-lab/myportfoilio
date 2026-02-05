@@ -1,5 +1,6 @@
 @import "/src/styles/extend.scss";
 
+
 button.circular-button {
     display: flex;
     aspect-ratio: 1/1;
@@ -7,19 +8,54 @@ button.circular-button {
     justify-content: center;
     border-radius: 100%;
     outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
 
     i {
         user-select: none;
         pointer-events: none;
-        transition: 0.1s scale ease-in-out;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .circular-button-img {
+        width: 60% !important;
+        height: 60% !important;
+        object-fit: contain !important;
+        border-radius: 50%;
+        user-select: none;
+        pointer-events: none;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+        .circular-button-img {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+
+        i {
+            transform: scale(1.1);
+        }
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
+
 
 /** Variants **/
 button.circular-button-variant-default {
     background-color: var(--theme-boards-background-accent);
     color: var(--theme-texts);
     border: 2px solid var(--theme-standard-borders-accent);
+
 
     &:hover {
         background-color: var(--theme-links);
@@ -28,14 +64,17 @@ button.circular-button-variant-default {
     }
 }
 
+
 button.circular-button-variant-blend {
     background-color: var(--theme-card-background);
     color: var(--theme-texts);
     border: 2px solid var(--theme-standard-borders);
 
+
     i {
         opacity: 0.3;
     }
+
 
     &:hover {
         background-color: var(--theme-card-background);
@@ -43,24 +82,29 @@ button.circular-button-variant-blend {
     }
 }
 
+
 button.circular-button-variant-transparent {
     background-color: transparent;
     color: var(--theme-texts);
     border: 2px solid var(--theme-standard-borders-accent);
 
+
     i {
         opacity: 0.5;
     }
+
 
     &:hover {
         border-color: var(--theme-standard-borders-accent);
     }
 }
 
+
 button.circular-button-variant-blend, button.circular-button-variant-transparent {
     i {
         scale: 0.9;
     }
+
 
     &:hover {
         i {
@@ -69,6 +113,23 @@ button.circular-button-variant-blend, button.circular-button-variant-transparent
         }
     }
 }
+
+
+button.circular-button-variant-dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--theme-texts);
+    border: 2px solid var(--theme-standard-borders-accent);
+    backdrop-filter: blur(10px);
+
+
+    &:hover {
+        background-color: var(--theme-links);
+        color: var(--theme-texts-inv);
+        border-color: var(--theme-links);
+        box-shadow: 0 0 20px rgba(var(--theme-links-rgb), 0.4);
+    }
+}
+
 
 /** Sizes **/
 @mixin create_size($class-name, $size, $responsive-size) {
@@ -80,6 +141,7 @@ button.circular-button-variant-blend, button.circular-button-variant-transparent
         min-height: $size;
         max-height: $size;
         font-size: calc(#{$size}/2.5);
+
 
         @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
             width: $responsive-size;
@@ -93,9 +155,9 @@ button.circular-button-variant-blend, button.circular-button-variant-transparent
     }
 }
 
+
 @include create_size('circular-button-size-small', 28px, 24px);
 @include create_size('circular-button-size-default', 32px, 28px);
 @include create_size('circular-button-size-large', 36px, 32px);
 @include create_size('circular-button-size-extra-large', 40px, 36px);
 @include create_size('circular-button-size-extra-extra-large', 46px, 42px);
-

@@ -5,6 +5,7 @@ import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 import CircularButton from "/src/components/buttons/CircularButton.jsx"
 import {useUtils} from "/src/hooks/utils.js"
 
+
 /**
  * @param {ArticleItemDataWrapper} itemWrapper
  * @param {String} className
@@ -15,13 +16,16 @@ import {useUtils} from "/src/hooks/utils.js"
 function ArticleItemPreviewMenu({ itemWrapper, className = "", spaceBetween }) {
     const utils = useUtils()
 
+
     const hasScreenshotsOrVideo = itemWrapper.preview?.hasScreenshotsOrYoutubeVideo
     const hasLinks = itemWrapper.preview?.hasLinks
     const links = itemWrapper.preview?.links
 
+
     const linksListClass = utils.string.if(
         hasScreenshotsOrVideo && spaceBetween,
         `justify-content-end`)
+
 
     return (
         <div className={`article-item-preview-menu ${className}`}>
@@ -40,6 +44,7 @@ function ArticleItemPreviewMenu({ itemWrapper, className = "", spaceBetween }) {
                 </div>
             )}
 
+
             {hasLinks && spaceBetween && (
                 <div className={`article-item-preview-menu-button-list ${linksListClass}`}>
                     {links.map((link, key) => (
@@ -52,13 +57,16 @@ function ArticleItemPreviewMenu({ itemWrapper, className = "", spaceBetween }) {
     )
 }
 
+
 function ItemPreviewMenuYoutubeButton({ itemWrapper }) {
     const language = useLanguage()
     const utils = useUtils()
 
+
     const title = itemWrapper.locales.title?.length < 30 ?
         itemWrapper.locales.title :
         language.getString("get_to_know_more")
+
 
     const href = itemWrapper.preview?.youtubeVideo
     const metadata = {
@@ -66,8 +74,10 @@ function ItemPreviewMenuYoutubeButton({ itemWrapper }) {
         description: utils.string.extractFirstPeriod(itemWrapper.locales.text),
     }
 
+
     if(!href)
         return <></>
+
 
     return (
         <Link href={href}
@@ -83,17 +93,21 @@ function ItemPreviewMenuYoutubeButton({ itemWrapper }) {
     )
 }
 
+
 function ItemPreviewMenuGalleryButton({ itemWrapper }) {
     const language = useLanguage()
     const utils = useUtils()
 
+
     const screenshots = itemWrapper.preview?.screenshots
     const screenshotsAspectRatio = itemWrapper.preview?.screenshotsAspectRatio
+
 
     const splitTitle = utils.string.extractFirstPart(itemWrapper.locales.title || "")
     const title = splitTitle.length < 35 ?
         splitTitle :
         language.getString("get_to_know_more")
+
 
     const metadata = {
         title: title,
@@ -101,8 +115,10 @@ function ItemPreviewMenuGalleryButton({ itemWrapper }) {
         aspectRatio: screenshotsAspectRatio,
     }
 
+
     if(!screenshots || screenshots.length === 0)
         return <></>
+
 
     return (
         <Link href={"#gallery:open"}
@@ -118,10 +134,21 @@ function ItemPreviewMenuGalleryButton({ itemWrapper }) {
     )
 }
 
+
 function ItemPreviewMenuCustomLinkButton({ link }) {
     const href = link.href
     const tooltip = link.tooltip
     const faIcon = link.faIcon
+    
+    // Automatski mapiranje domena na lokalne logoe
+    let imgSrc = null
+    if (href && href.includes('esportsinsider.com')) {
+        imgSrc = '/images/logos/esportsinsider.com.png'
+    } else if (href && href.includes('videogamer.com')) {
+        imgSrc = '/images/logos/videogamer.com.png'
+    } else if (href && href.includes('gameshub.com')) {
+        imgSrc = '/images/logos/gameshub.com.png'
+    }
 
     return (
         <Link href={href}
@@ -131,9 +158,11 @@ function ItemPreviewMenuCustomLinkButton({ link }) {
                             size={CircularButton.Sizes.EXTRA_EXTRA_LARGE}
                             className={`article-item-preview-menu-circular-button`}
                             tooltip={tooltip}
-                            faIcon={faIcon}/>
+                            faIcon={faIcon}
+                            imgSrc={imgSrc}/>
         </Link>
     )
 }
+
 
 export default ArticleItemPreviewMenu

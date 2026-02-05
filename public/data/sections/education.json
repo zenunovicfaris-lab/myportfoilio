@@ -47,6 +47,54 @@
                 {
                     "id": 2,
                     "img": "",
+                    "faIcon": "fa-solid fa-search",
+                    "faIconColors": {"bg": "#28a745", "fill": "#FFF"},
+                    "dateStart": {"year": 2022, "month": 1},
+                    "dateEnd": null,
+                    "locales": {
+                        "en": {
+                            "title": "{{SEO Specialist}} Professional Development",
+                            "province": "",
+                            "country": "Online",
+                            "institution": "Industry Experience & Professional Training",
+                            "text": "Gained comprehensive [[SEO expertise]] through hands-on professional work and continuous learning. Specialized in:",
+                            "list": [
+                                "Technical SEO: Core Web Vitals, schema markup, site architecture",
+                                "On-page optimization: keyword research, content structure, LSI keywords",
+                                "Off-page SEO: backlink building, outreach campaigns, link prospecting",
+                                "Advanced tools: Ahrefs, SEMrush, Google Analytics, Search Console"
+                            ],
+                            "tags": ["SEO", "Technical SEO", "Keyword Research", "Backlink Building"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-pen-fancy",
+                    "faIconColors": {"bg": "#e74c3c", "fill": "#FFF"},
+                    "dateStart": {"year": 2021, "month": 6},
+                    "dateEnd": null,
+                    "locales": {
+                        "en": {
+                            "title": "{{Content Strategy}} & {{Multi-language Management}}",
+                            "province": "",
+                            "country": "Remote / International",
+                            "institution": "Professional Experience & Self-Development",
+                            "text": "Developed expertise in [[SEO content writing]] and multi-language content management through high-volume publishing workflows across 7+ languages. Core competencies:",
+                            "list": [
+                                "SEO-optimized content creation and article structuring",
+                                "Multi-language content management: English, German, Japanese, Vietnamese, Dutch, Serbian",
+                                "WordPress CMS and page builder proficiency (Elementor, Gutenberg)",
+                                "Content strategy, keyword integration, and audience targeting"
+                            ],
+                            "tags": ["Content Writing", "SEO Content", "WordPress", "Multi-language"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
                     "faIcon": "fa-solid fa-laptop-code",
                     "faIconColors": {"bg": "#6f42c1", "fill": "#FFF"},
                     "dateStart": {"year": 2019, "month": 9},
@@ -65,54 +113,6 @@
                                 "Computer networks and IT infrastructure"
                             ],
                             "tags": ["IT Education", "Web Development", "Programming", "Computer Science"]
-                        }
-                    }
-                },
-                {
-                    "id": 3,
-                    "img": "",
-                    "faIcon": "fa-solid fa-search",
-                    "faIconColors": {"bg": "#28a745", "fill": "#FFF"},
-                    "dateStart": {"year": 2022, "month": 1},
-                    "dateEnd": {"year": 2024, "month": 6},
-                    "locales": {
-                        "en": {
-                            "title": "{{SEO Medior}} Certification & Training",
-                            "province": "",
-                            "country": "Online",
-                            "institution": "Professional SEO Training Programs",
-                            "text": "Completed comprehensive [[SEO training courses]] and gained certified Medior-level expertise in search engine optimization. Specialized in:",
-                            "list": [
-                                "Technical SEO: Core Web Vitals, schema markup, site architecture",
-                                "On-page optimization: keyword research, content structure, LSI keywords",
-                                "Off-page SEO: backlink building, outreach campaigns, link prospecting",
-                                "Advanced tools: Ahrefs, SEMrush, Google Analytics, Search Console"
-                            ],
-                            "tags": ["SEO Medior", "Technical SEO", "Keyword Research", "Backlink Building"]
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "img": "",
-                    "faIcon": "fa-solid fa-pen-fancy",
-                    "faIconColors": {"bg": "#e74c3c", "fill": "#FFF"},
-                    "dateStart": {"year": 2022, "month": 1},
-                    "dateEnd": {"year": 2024, "month": 12},
-                    "locales": {
-                        "en": {
-                            "title": "{{Content Writing}} & {{Digital Marketing}} Training",
-                            "province": "",
-                            "country": "Self-taught / Online",
-                            "institution": "Practical Experience & Industry Work",
-                            "text": "Gained expertise in [[SEO content writing]] and digital marketing through hands-on experience managing high-volume publishing workflows. Developed skills in:",
-                            "list": [
-                                "SEO-optimized content creation and article structuring",
-                                "Multi-language content management and localization",
-                                "WordPress CMS and page builder proficiency (Elementor, Gutenberg)",
-                                "Content strategy, keyword integration, and audience targeting"
-                            ],
-                            "tags": ["Content Writing", "SEO Writing", "WordPress", "Multi-language"]
                         }
                     }
                 }

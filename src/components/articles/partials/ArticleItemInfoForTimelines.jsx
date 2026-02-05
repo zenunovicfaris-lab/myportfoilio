@@ -7,6 +7,7 @@ import {Tags, Tag} from "/src/components/generic/Tags.jsx"
 import ArticleItemPreviewMenu from "/src/components/articles/partials/ArticleItemPreviewMenu.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 
+
 /**
  * @param {*} children
  * @param {ArticleItemDataWrapper} itemWrapper
@@ -20,12 +21,14 @@ function ArticleItemInfoForTimelines({ children, itemWrapper, className = "", sm
         `article-timeline-item-info-for-timelines-date-badge-small` :
         ``
 
+
     return (
         <div className={`article-timeline-item-info-for-timelines ${className} ${dateBadgeClass}`}>
             {children}
         </div>
     )
 }
+
 
 /**
  * @param {ArticleItemDataWrapper} itemWrapper
@@ -39,13 +42,17 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
     const shouldShowDateBadge = viewport.isBreakpoint("xl")
     const isSmallScreen =  !viewport.isBreakpoint("sm")
 
+
     const institution = itemWrapper.locales.institution
+
 
     const location = isSmallScreen && institution ?
         itemWrapper.shortLocation :
         itemWrapper.fullLocation
 
+
     const propListItems = []
+
 
     // Case 1 - The date is being displayed as a badge (no need to display it here).
     if (shouldShowDateBadge) {
@@ -57,6 +64,7 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
             })
         }
 
+
         if(location) {
             propListItems.push({
                 faIcon: `fa-regular fa-font-awesome`,
@@ -66,6 +74,7 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
         }
     }
 
+
     // Case 2 - Must display date inside the prop list.
     else {
         propListItems.push({
@@ -73,6 +82,7 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
             type: dateInterval ? PropListItem.Types.INTERVAL : PropListItem.Types.SINGLE,
             value: dateInterval ? [itemWrapper.dateStartDisplay, itemWrapper.dateEndDisplay] : [itemWrapper.dateStartDisplay]
         })
+
 
         if(institution || location) {
             propListItems.push({
@@ -83,11 +93,13 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
         }
     }
 
+
     return (
         <div className={`article-timeline-item-info-for-timelines-header ${className}`}>
             <div className={`article-timeline-item-info-for-timelines-header-title`}>
                 <h5 className={``}
                     dangerouslySetInnerHTML={{__html: itemWrapper.locales.title || itemWrapper.placeholder}}/>
+
 
                 {shouldShowDateBadge && (
                     <DateBadge dateStart={itemWrapper.dateStartDisplay}
@@ -96,6 +108,7 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
                                className={`article-timeline-item-info-for-timelines-header-date-badge`}/>
                 )}
             </div>
+
 
             <PropList className={`article-timeline-item-info-for-timelines-header-prop-list text-1`}
                       inlineBreakpoint={`xl`}>
@@ -111,6 +124,7 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
     )
 }
 
+
 /**
  * @param {ArticleItemDataWrapper} itemWrapper
  * @param {String} className
@@ -120,10 +134,12 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
 function ArticleItemInfoForTimelinesBody({ itemWrapper, className = "" }) {
     const textClass = `text-3`
 
+
     return (
         <div className={`article-timeline-item-info-for-timelines-body ${className}`}>
             <div className={`article-timeline-item-info-for-timelines-body-text ${textClass}`}
                  dangerouslySetInnerHTML={{__html: itemWrapper.locales.text}}/>
+
 
             {itemWrapper.locales.list && itemWrapper.locales.list.length > 0 && (
                 <ul className={`article-timeline-item-info-for-timelines-body-list list-mobile-small-padding ${textClass}`}>
@@ -137,6 +153,7 @@ function ArticleItemInfoForTimelinesBody({ itemWrapper, className = "" }) {
         </div>
     )
 }
+
 
 /**
  * @param {ArticleItemDataWrapper} itemWrapper
@@ -160,6 +177,7 @@ function ArticleItemInfoForTimelinesTagsFooter({ itemWrapper, className = "" }) 
     )
 }
 
+
 /**
  * @param {ArticleItemDataWrapper} itemWrapper
  * @param {String} className
@@ -171,8 +189,10 @@ function ArticleItemInfoForTimelinesPreviewFooter({ itemWrapper, className = "" 
     const hasLinks = itemWrapper.preview?.hasLinks
     const language = useLanguage()
 
+
     if(!hasScreenshotsOrVideo && !hasLinks)
         return <></>
+
 
     return (
         <div className={`article-timeline-item-info-preview-footer ${className}`}>
@@ -183,6 +203,9 @@ function ArticleItemInfoForTimelinesPreviewFooter({ itemWrapper, className = "" 
         </div>
     )
 }
+
+
+export default ArticleItemInfoForTimelines
 
 export {
     ArticleItemInfoForTimelines,

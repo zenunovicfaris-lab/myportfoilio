@@ -67,17 +67,20 @@
             "links": [
               {
                 "href": "https://www.newsbtc.com",
-                "tooltipString": "open_website",
+                "tooltipString": "",
+                "target": "_blank",
                 "faIcon": "fa-solid fa-link"
               },
               {
                 "href": "https://bitcoinist.com",
-                "tooltipString": "open_website",
+                "tooltipString": "",
+                "target": "_blank",
                 "faIcon": "fa-solid fa-link"
               },
               {
                 "href": "https://cryptonews.com",
-                "tooltipString": "open_website",
+                "tooltipString": "",
+                "target": "_blank",
                 "faIcon": "fa-solid fa-link"
               }
             ],
@@ -108,21 +111,21 @@
             "links": [
               {
                 "href": "https://esportsinsider.com/jp/",
-                "tooltipString": "open_website",
-                "faIcon": "fa-solid fa-link"
+                "tooltipString": "Esports Insider",
+                "target": "_blank"
               },
               {
                 "href": "https://www.videogamer.com",
-                "tooltipString": "open_website",
-                "faIcon": "fa-solid fa-link"
+                "tooltipString": "VideoGamer",
+                "target": "_blank"
               },
               {
                 "href": "https://www.gameshub.com",
-                "tooltipString": "open_website",
-                "faIcon": "fa-solid fa-link"
+                "tooltipString": "GamesHub",
+                "target": "_blank"
               }
             ],
-            "screenshots": ["https://i.imgur.com/ldoUDeV.jpeg"],
+            "screenshots": [],
             "screenshotsAspectRatio": "",
             "youtubeVideo": ""
           },

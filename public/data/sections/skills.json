@@ -113,13 +113,13 @@
             "id": 2,
             "component": "ArticleSkills",
             "locales": {
-                "en": {"title": "CMS & Web Management"}
+                "en": {"title": "CMS & Web Development"}
             },
             "settings": {
                 "max_items_per_row": 3,
                 "max_rows_collapse_threshold": 6,
-                "order_items_by": "percentage",
-                "order_items_sort": "desc",
+                "order_items_by": "id",
+                "order_items_sort": "asc",
                 "round_icons": false
             },
             "items": [
@@ -129,12 +129,12 @@
                     "faIcon": "fa-brands fa-wordpress",
                     "faIconColors": {"bg": "", "fill": "#21759B"},
                     "date": {"year": 2022, "month": 1},
-                    "percentage": 95,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "WordPress",
-                            "text": "4+ years experience in WordPress site setup, theme customization, plugin management, and WooCommerce configuration.",
-                            "level": ""
+                            "text": "4+ years building and managing WordPress sites with theme customization and plugin configuration.",
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -144,12 +144,12 @@
                     "faIcon": "fa-solid fa-window-restore",
                     "faIconColors": {"bg": "", "fill": "#0073aa"},
                     "date": {"year": 2022, "month": 1},
-                    "percentage": 90,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Page Builders",
-                            "text": "4+ years experience with Elementor, WPBakery, Gutenberg, and other drag-and-drop page builders.",
-                            "level": ""
+                            "text": "4+ years experience with Elementor, WPBakery, Gutenberg and other drag-and-drop builders.",
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -159,57 +159,57 @@
                     "faIcon": "fa-solid fa-file-code",
                     "faIconColors": {"bg": "", "fill": "#E34F26"},
                     "date": {"year": 2020, "month": 1},
-                    "percentage": 85,
+                    "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "HTML & CSS (Editing)",
-                            "text": "6+ years experience in basic HTML/CSS editing for WordPress customization and content formatting.",
-                            "level": ""
+                            "title": "HTML & CSS",
+                            "text": "6+ years editing and customizing code for WordPress themes, layouts, and content formatting.",
+                            "level": "Proficient"
                         }
                     }
                 },
                 {
                     "id": 4,
                     "img": "",
-                    "faIcon": "fa-solid fa-boxes-stacked",
-                    "faIconColors": {"bg": "", "fill": "#96588a"},
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "", "fill": "#563d7c"},
                     "date": {"year": 2023, "month": 1},
-                    "percentage": 80,
+                    "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "WooCommerce",
-                            "text": "1+ years experience in setting up online stores, product management, payment gateways, and shipping configuration.",
-                            "level": ""
+                            "title": "Schema Markup",
+                            "text": "3+ years implementing structured data for SEO enhancement and rich snippet optimization.",
+                            "level": "Proficient"
                         }
                     }
                 },
                 {
                     "id": 5,
                     "img": "",
-                    "faIcon": "fa-solid fa-database",
-                    "faIconColors": {"bg": "", "fill": "#6c757d"},
-                    "date": {"year": 2025, "month": 1},
-                    "percentage": 70,
+                    "faIcon": "fa-solid fa-link",
+                    "faIconColors": {"bg": "", "fill": "#16a34a"},
+                    "date": {"year": 2024, "month": 1},
+                    "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "CMS Management",
-                            "text": "1+ years experience managing content across multiple CMS platforms (WordPress, proprietary systems).",
-                            "level": ""
+                            "title": "Link Building",
+                            "text": "2+ years developing backlink strategies, outreach campaigns, and authority building.",
+                            "level": "Intermediate"
                         }
                     }
                 },
                 {
                     "id": 6,
                     "img": "",
-                    "faIcon": "fa-brands fa-git-alt",
-                    "faIconColors": {"bg": "", "fill": "#F05032"},
-                    "date": {"year": 2025, "month": 1},
-                    "percentage": 60,
+                    "faIcon": "fa-solid fa-gauge-high",
+                    "faIconColors": {"bg": "", "fill": "#ea580c"},
+                    "date": {"year": 2023, "month": 1},
+                    "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "Git & GitHub (Basics)",
-                            "text": "1+ years experience with basic version control for project management and backup purposes.",
-                            "level": ""
+                            "title": "Site Speed Optimization",
+                            "text": "3+ years optimizing Core Web Vitals, image compression, caching, and performance tuning.",
+                            "level": "Proficient"
                         }
                     }
                 }
@@ -225,8 +225,8 @@
             "settings": {
                 "max_items_per_row": 3,
                 "max_rows_collapse_threshold": 6,
-                "order_items_by": "percentage",
-                "order_items_sort": "desc",
+                "order_items_by": "id",
+                "order_items_sort": "asc",
                 "round_icons": false
             },
             "items": [
@@ -236,12 +236,12 @@
                     "faIcon": "fa-brands fa-google",
                     "faIconColors": {"bg": "", "fill": "#4285F4"},
                     "date": {"year": 2023, "month": 1},
-                    "percentage": 95,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Google Analytics 4",
-                            "text": "3+ years experience in traffic analysis, conversion tracking, and user behavior insights.",
-                            "level": ""
+                            "text": "3+ years analyzing traffic, tracking conversions, and extracting user behavior insights.",
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -251,12 +251,12 @@
                     "faIcon": "fa-solid fa-file-lines",
                     "faIconColors": {"bg": "", "fill": "#4285F4"},
                     "date": {"year": 2022, "month": 1},
-                    "percentage": 95,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Google Docs & Sheets",
-                            "text": "4+ years experience in content collaboration, data reporting, and project management.",
-                            "level": ""
+                            "text": "4+ years managing content collaboration, data reporting, and project documentation.",
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -266,12 +266,12 @@
                     "faIcon": "fa-solid fa-chart-simple",
                     "faIconColors": {"bg": "", "fill": "#E37400"},
                     "date": {"year": 2024, "month": 1},
-                    "percentage": 85,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Ahrefs",
-                            "text": "2+ years experience in keyword research, backlink analysis, competitor research, and site audits.",
-                            "level": ""
+                            "text": "2+ years conducting keyword research, backlink analysis, competitor research, and site audits.",
+                            "level": "Proficient"
                         }
                     }
                 },
@@ -281,12 +281,12 @@
                     "faIcon": "fa-solid fa-magnifying-glass-chart",
                     "faIconColors": {"bg": "", "fill": "#FF6600"},
                     "date": {"year": 2024, "month": 1},
-                    "percentage": 85,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "SEMrush",
-                            "text": "2+ years experience in SEO analysis, keyword tracking, and content optimization strategies.",
-                            "level": ""
+                            "text": "2+ years performing SEO analysis, keyword tracking, and content optimization strategies.",
+                            "level": "Proficient"
                         }
                     }
                 },
@@ -296,12 +296,12 @@
                     "faIcon": "fa-solid fa-magnifying-glass",
                     "faIconColors": {"bg": "", "fill": "#00A653"},
                     "date": {"year": 2024, "month": 1},
-                    "percentage": 80,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Google Search Console",
-                            "text": "2+ years experience in indexation monitoring, search performance analysis, and technical issue resolution.",
-                            "level": ""
+                            "text": "2+ years monitoring indexation, analyzing search performance, and resolving technical issues.",
+                            "level": "Proficient"
                         }
                     }
                 },
@@ -311,12 +311,12 @@
                     "faIcon": "fa-brands fa-meta",
                     "faIconColors": {"bg": "", "fill": "#0668E1"},
                     "date": {"year": 2025, "month": 10},
-                    "percentage": 60,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Meta Ads Manager",
-                            "text": "Less than a year experience in Facebook & Instagram ad campaign setup, optimization, and performance tracking.",
-                            "level": ""
+                            "text": "Less than a year running Facebook & Instagram campaigns with optimization and tracking.",
+                            "level": "Beginner"
                         }
                     }
                 }
@@ -332,8 +332,8 @@
             "settings": {
                 "max_items_per_row": 3,
                 "max_rows_collapse_threshold": 6,
-                "order_items_by": "percentage",
-                "order_items_sort": "desc",
+                "order_items_by": "id",
+                "order_items_sort": "asc",
                 "round_icons": false
             },
             "items": [
@@ -343,12 +343,12 @@
                     "faIcon": "fa-solid fa-wand-magic-sparkles",
                     "faIconColors": {"bg": "", "fill": "#10a37f"},
                     "date": {"year": 2023, "month": 1},
-                    "percentage": 95,
+                    "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "AI Writing Tools",
-                            "text": "ChatGPT, Claude, Gemini, and other AI platforms for content generation, editing, and optimization workflows.",
-                            "level": ""
+                            "title": "AI Writing Platforms",
+                            "text": "ChatGPT, Claude, Gemini, and other AI tools for content generation, editing, and optimization.",
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -358,12 +358,12 @@
                     "faIcon": "fa-solid fa-shield-halved",
                     "faIconColors": {"bg": "", "fill": "#7c3aed"},
                     "date": {"year": 2023, "month": 6},
-                    "percentage": 92,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "AI Detection Bypass",
-                            "text": "Advanced techniques for creating undetectable AI content that passes GPTZero and other AI detection tools.",
-                            "level": ""
+                            "text": "Advanced techniques for creating undetectable AI content that passes detection tools.",
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -373,12 +373,12 @@
                     "faIcon": "fa-solid fa-pen-fancy",
                     "faIconColors": {"bg": "", "fill": "#FF6719"},
                     "date": {"year": 2020, "month": 1},
-                    "percentage": 95,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Grammarly & Hemingway",
-                            "text": "Content quality assurance, readability optimization, grammar checking, and style enhancement.",
-                            "level": ""
+                            "text": "Quality assurance, readability optimization, grammar checking, and style enhancement.",
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -388,12 +388,12 @@
                     "faIcon": "fa-solid fa-file-pen",
                     "faIconColors": {"bg": "", "fill": "#0ea5e9"},
                     "date": {"year": 2024, "month": 1},
-                    "percentage": 88,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "SEOWriting.ai",
-                            "text": "AI-powered SEO content generation, bulk article creation, and optimization for search engine visibility.",
-                            "level": ""
+                            "text": "AI-powered SEO content generation and bulk article creation for search visibility.",
+                            "level": "Proficient"
                         }
                     }
                 },
@@ -403,12 +403,12 @@
                     "faIcon": "fa-solid fa-user-check",
                     "faIconColors": {"bg": "", "fill": "#ec4899"},
                     "date": {"year": 2023, "month": 6},
-                    "percentage": 90,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "AI Humanization",
-                            "text": "Converting AI-generated content into natural, human-like writing that maintains SEO value and reader engagement.",
-                            "level": ""
+                            "text": "Converting AI content into natural, human-like writing that maintains SEO value and engagement.",
+                            "level": "Advanced"
                         }
                     }
                 }
@@ -424,8 +424,8 @@
             "settings": {
                 "max_items_per_row": 3,
                 "max_rows_collapse_threshold": 4,
-                "order_items_by": "percentage",
-                "order_items_sort": "desc",
+                "order_items_by": "id",
+                "order_items_sort": "asc",
                 "round_icons": false
             },
             "items": [
@@ -435,12 +435,12 @@
                     "faIcon": "fa-brands fa-slack",
                     "faIconColors": {"bg": "", "fill": "#4A154B"},
                     "date": {"year": 2022, "month": 1},
-                    "percentage": 90,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Slack",
                             "text": "Team communication, client management, workflow integration, and remote collaboration.",
-                            "level": ""
+                            "level": "Advanced"
                         }
                     }
                 },
@@ -450,12 +450,12 @@
                     "faIcon": "fa-brands fa-trello",
                     "faIconColors": {"bg": "", "fill": "#0052CC"},
                     "date": {"year": 2023, "month": 1},
-                    "percentage": 85,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Trello",
                             "text": "Project management, content calendar planning, workflow automation, and team collaboration.",
-                            "level": ""
+                            "level": "Proficient"
                         }
                     }
                 },
@@ -465,12 +465,12 @@
                     "faIcon": "fa-solid fa-images",
                     "faIconColors": {"bg": "", "fill": "#00C4CC"},
                     "date": {"year": 2021, "month": 1},
-                    "percentage": 80,
+                    "percentage": null,
                     "locales": {
                         "en": {
                             "title": "Canva",
-                            "text": "Social media graphics, thumbnail creation, infographics, and visual content for marketing campaigns.",
-                            "level": ""
+                            "text": "Creating social media graphics, thumbnails, infographics, and visual content for campaigns.",
+                            "level": "Proficient"
                         }
                     }
                 }

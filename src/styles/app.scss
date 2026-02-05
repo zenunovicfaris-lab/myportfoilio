@@ -23,3 +23,92 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 @import "customization/primitives-customization";
 @import "customization/bootstrap-customization";
 @import "customization/plugin-customization";
+// ============================================
+// LOGO ICONS IN CIRCULAR BUTTONS - BALANCED
+// ============================================
+
+// NewsBC Logo
+a[href*="newsbtc.com"] {
+  .circular-button {
+    background-image: url('/images/logos/newsbtc.png') !important;
+    background-size: 75% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    
+    i {
+      opacity: 0 !important;
+    }
+  }
+}
+
+// Bitcoinist Logo
+a[href*="bitcoinist.com"] {
+  .circular-button {
+    background-image: url('/images/logos/bitcoinist.png') !important;
+    background-size: 75% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    
+    i {
+      opacity: 0 !important;
+    }
+  }
+}
+
+// CryptoNews Logo - VEĆI
+a[href*="cryptonews.com"] {
+  .circular-button {
+    background-image: url('/images/logos/cryptonews.png') !important;
+    background-size: 95% !important;  // ← NAJVEĆI
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    
+    i {
+      opacity: 0 !important;
+    }
+  }
+}
+
+// ClickOut Media Logo
+a[href*="clickoutmedia.com"] {
+  .circular-button {
+    background-image: url('/images/logos/clickout-media.png') !important;
+    background-size: 75% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    
+    i {
+      opacity: 0 !important;
+    }
+  }
+}
+// ============================================
+// INLINE TEXT LINKS
+// ============================================
+
+.inline-text-link {
+  color: var(--theme-primary) !important;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: var(--theme-primary-hover) !important;
+    text-decoration: none;
+  }
+}
+
+// Light mode
+[data-theme="light"] {
+  .inline-text-link {
+    color: var(--theme-primary) !important;
+    
+    &:hover {
+      color: var(--theme-primary-hover) !important;
+    }
+  }
+}
+/* Hide link button circles on company logos */
+.article-cards-item-link-button {
+    display: none !important;
+}
