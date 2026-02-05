@@ -1,10 +1,10 @@
 {
   "sections": [
     {
-      "id": "about",
+      "id": "home",
       "categoryId": "home",
       "jsonPath": "/data/sections/cover.json",
-      "faIcon": "fa-solid fa-address-card"
+      "faIcon": "fa-solid fa-house"
     },
     {
       "id": "education",
@@ -36,7 +36,6 @@
       "jsonPath": "/data/sections/achievements.json",
       "faIcon": "fa-solid fa-award"
     },
-
     {
       "id": "contact",
       "categoryId": "more",
