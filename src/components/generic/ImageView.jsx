@@ -13,6 +13,7 @@ function ImageView({
   hideSpinner = false,
   style = null,
   onStatus = null,
+  aspectRatio = "auto",
 }) {
   const [loadStatus, setLoadStatus] = useState(ImageView.LoadStatus.LOADING);
   const [loadedSrc, setLoadedSrc] = useState(null);
@@ -69,6 +70,7 @@ function ImageView({
         loadStatus={loadStatus}
         onLoad={_onLoad}
         onError={_onError}
+        aspectRatio={aspectRatio}
       />
 
 
@@ -93,6 +95,7 @@ function ImageViewContainer({
   loadStatus,
   onLoad,
   onError,
+  aspectRatio,
 }) {
   const constants = useConstants();
   const utils = useUtils();
@@ -109,8 +112,15 @@ function ImageViewContainer({
       alt={alt}
       loading="lazy"
       decoding="async"
+      width="auto"
+      height="auto"
       onLoad={onLoad}
-      style={{ objectFit: "cover" }}
+      style={{ 
+        objectFit: "cover",
+        aspectRatio: aspectRatio,
+        maxWidth: "100%",
+        height: "auto"
+      }}
       onError={onError}
     />
   );
