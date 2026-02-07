@@ -1,5 +1,5 @@
 import "./NavProfileCard.scss";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Card } from "react-bootstrap";
 import { useLanguage } from "/src/providers/LanguageProvider.jsx";
 import { useNavigation } from "/src/providers/NavigationProvider.jsx";
@@ -69,6 +69,11 @@ function NavProfileCard({ profile, expanded }) {
         className={`nav-profile-card-avatar`}
         hideSpinner={true}
         alt={name}
+        
+        // ✅ OPTIMIZACIJA: Prioritetno učitavanje slike
+        priority={true} 
+        width={150} 
+        height={150} 
       />
 
       {statusCircleVisible && (
