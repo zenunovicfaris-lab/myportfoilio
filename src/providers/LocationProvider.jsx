@@ -16,14 +16,14 @@ function LocationProvider({ children, sections, categories }) {
   /** @constructs **/
   useEffect(() => {
     setDidMount(true);
-    window.addEventListener("popstate", _onHashEvent);
-    window.addEventListener("hashchange", _onHashEvent);
+    //window.addEventListener("popstate", _onHashEvent);
+    //  window.addEventListener("hashchange", _onHashEvent);
 
     setActiveSectionId("home");
 
     return () => {
-      window.removeEventListener("popstate", _onHashEvent);
-      window.removeEventListener("hashchange", _onHashEvent);
+      //  window.removeEventListener("popstate", _onHashEvent);
+      // window.removeEventListener("hashchange", _onHashEvent);
       setDidMount(false);
     };
   }, []);
@@ -57,7 +57,7 @@ function LocationProvider({ children, sections, categories }) {
 
   const goToSection = (section) => {
     if (!section || activeSectionId === section.id) return;
-    window.location.hash = section.id;
+    // window.location.hash = section.id;
   };
 
   const goToSectionWithId = (sectionId) => {
