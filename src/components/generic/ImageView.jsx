@@ -4,7 +4,6 @@ import { useConstants } from "/src/hooks/constants.js";
 import { Spinner } from "react-bootstrap";
 import { useUtils } from "/src/hooks/utils.js";
 
-
 function ImageView({
   src,
   alt = "",
@@ -14,18 +13,19 @@ function ImageView({
   style = null,
   onStatus = null,
   aspectRatio = "auto",
+  priority = false, // ✅ NOVO: Dodajemo priority prop
+  width = undefined, // ✅ NOVO: Dodajemo width prop
+  height = undefined // ✅ NOVO: Dodajemo height prop
 }) {
   const [loadStatus, setLoadStatus] = useState(ImageView.LoadStatus.LOADING);
   const [loadedSrc, setLoadedSrc] = useState(null);
   const [errorSrc, setErrorSrc] = useState(null);
-
 
   /** @listens src **/
   useEffect(() => {
     if (src && src.length > 0) setLoadStatus(ImageView.LoadStatus.LOADING);
     else setLoadStatus(ImageView.LoadStatus.ERROR);
   }, [src]);
-
 
   /** @listens loadedSrc|errorSrc **/
   useEffect(() => {
@@ -36,30 +36,25 @@ function ImageView({
     else if (src && src.length > 0) setLoadStatus(ImageView.LoadStatus.LOADING);
   }, [loadedSrc, errorSrc]);
 
-
   /** @listens loadStatus **/
   useEffect(() => {
     onStatus && onStatus(loadStatus);
   }, [loadStatus]);
-
 
   const spinnerVisible =
     loadStatus === ImageView.LoadStatus.LOADING && !hideSpinner;
   const containerVisible = loadStatus === ImageView.LoadStatus.LOADED;
   const errorVisible = loadStatus === ImageView.LoadStatus.ERROR;
 
-
   const _onLoad = () => {
     setLoadedSrc(src);
     setErrorSrc(null);
   };
 
-
   const _onError = () => {
     setLoadedSrc(null);
     setErrorSrc(src);
   };
-
 
   return (
     <div className={`image-view ${className}`} id={id} style={style}>
@@ -71,8 +66,10 @@ function ImageView({
         onLoad={_onLoad}
         onError={_onError}
         aspectRatio={aspectRatio}
+        priority={priority} // ✅
+        width={width} // ✅
+        height={height} // ✅
       />
-
 
       <ImageViewSpinner visible={spinnerVisible} />
       <ImageViewError visible={errorVisible} hideIcon={hideSpinner} />
@@ -80,13 +77,11 @@ function ImageView({
   );
 }
 
-
 ImageView.LoadStatus = {
   LOADING: "loading",
   LOADED: "loaded",
   ERROR: "error",
 };
-
 
 function ImageViewContainer({
   src,
@@ -96,24 +91,30 @@ function ImageViewContainer({
   onLoad,
   onError,
   aspectRatio,
+  priority, // ✅
+  width, // ✅
+  height // ✅
 }) {
   const constants = useConstants();
   const utils = useUtils();
 
-
   const resolvedSrc = utils.file.resolvePath(src);
   const visibleClass = visible ? `visible` : `invisible`;
-
 
   return (
     <img
       className={`image-view-img ${visibleClass} ${constants.HTML_CLASSES.imageView} ${constants.HTML_CLASSES.imageView}-${loadStatus}`}
       src={resolvedSrc}
       alt={alt}
-      loading="lazy"
-      decoding="async"
-      width="auto"
-      height="auto"
+      // ✅ Ako je priority=true, učitaj ODMAH. Inače lazy.
+      loading={priority ? "eager" : "lazy"} 
+      decoding={priority ? "sync" : "async"}
+      fetchPriority={priority ? "high" : "auto"}
+      
+      // ✅ Koristi prave dimenzije ako postoje
+      width={width || "auto"} 
+      height={height || "auto"} 
+      
       onLoad={onLoad}
       style={{ 
         objectFit: "cover",
@@ -126,10 +127,8 @@ function ImageViewContainer({
   );
 }
 
-
 function ImageViewSpinner({ visible }) {
   if (!visible) return <></>;
-
 
   return (
     <div className={`image-view-spinner-wrapper`}>
@@ -138,10 +137,8 @@ function ImageViewSpinner({ visible }) {
   );
 }
 
-
 function ImageViewError({ visible, hideIcon }) {
   if (!visible) return <></>;
-
 
   return (
     <div className={`image-view-error-wrapper`}>
@@ -149,6 +146,5 @@ function ImageViewError({ visible, hideIcon }) {
     </div>
   );
 }
-
 
 export default ImageView;

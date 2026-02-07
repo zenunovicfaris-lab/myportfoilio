@@ -8,15 +8,26 @@ div.image-view {
     overflow: hidden;
     user-select: none;
     pointer-events: none;
+    
+    // ✅ NOVO: Sprečava da slika izleti van containera
+    max-width: 100%; 
 }
 
 img.image-view-img {
     width: 100%;
-    height: 100%;
+    height: auto; // ✅ PROMJENA: height: auto je bolje za responsive slike
+    display: block; // ✅ Uklanja extra space ispod slike
+    
+    // ✅ Ključno za CLS: Ako slika ima aspect-ratio, browser će znati visinu!
+    &[style*="aspect-ratio"] {
+        height: auto;
+    }
 }
 
 div.image-view-spinner-wrapper, div.image-view-error-wrapper {
     position: absolute;
+    top: 0; // ✅ Dodano
+    left: 0; // ✅ Dodano
     background-color: var(--theme-dark);
     color: var(--theme-texts);
     width: 100%;
@@ -26,6 +37,7 @@ div.image-view-spinner-wrapper, div.image-view-error-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2; // ✅ Osigurava da je spinner iznad slike dok se učitava
 }
 
 div.image-view-error-wrapper {
