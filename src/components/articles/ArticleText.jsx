@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import Article from "/src/components/articles/base/Article.jsx"
 import AvatarView from "/src/components/generic/AvatarView.jsx"
 
+
 /**
  * @param {ArticleDataWrapper} dataWrapper
  * @param {Number} id
@@ -25,6 +26,7 @@ function ArticleText({ dataWrapper, id }) {
     )
 }
 
+
 /**
  * @param {ArticleDataWrapper} dataWrapper
  * @param {String} selectedItemCategoryId
@@ -44,6 +46,7 @@ function ArticleTextItems({ dataWrapper, selectedItemCategoryId }) {
     )
 }
 
+
 /**
  * @param {ArticleItemDataWrapper} itemWrapper
  * @return {JSX.Element}
@@ -61,10 +64,11 @@ function ArticleTextItem({ itemWrapper }) {
                             src={itemWrapper.img}
                             faIcon={itemWrapper.faIconWithFallback}
                             style={itemWrapper.faIconStyle}
-                            alt={itemWrapper.imageAlt}/>
+                            alt={itemWrapper.imageAlt}
                             priority={true}
                             width={500}
                             height={300}
+                />
             </div>
 
             <div className={`article-text-excerpt last-p-no-margin text-3`}
@@ -72,5 +76,6 @@ function ArticleTextItem({ itemWrapper }) {
         </div>
     )
 }
+
 
 export default ArticleText
