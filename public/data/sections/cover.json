@@ -55,7 +55,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "images/pictures/about-texts-image-1.png",
+                    "img": "/images/pictures/seo-image.webp",
                     "imgAlt": "Faris Zenunovic SEO Specialist and Content Strategist workspace",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
