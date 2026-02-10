@@ -62,6 +62,9 @@ function ArticleTextItem({ itemWrapper }) {
                             faIcon={itemWrapper.faIconWithFallback}
                             style={itemWrapper.faIconStyle}
                             alt={itemWrapper.imageAlt}/>
+                            priority={true}
+                            width={500}
+                            height={300}
             </div>
 
             <div className={`article-text-excerpt last-p-no-margin text-3`}
