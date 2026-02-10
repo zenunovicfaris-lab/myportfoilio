@@ -1,42 +1,43 @@
-import "./AvatarView.scss"
 import React from 'react'
-import ImageView from "/src/components/generic/ImageView.jsx"
 
-// ✅ Dodali smo 'priority', 'width' i 'height' u props
-function AvatarView({ 
-    src = "", 
+/**
+ * Optimizovana ImageView komponenta koja podržava LCP i CLS fix
+ * @param {string} src - Putanja do slike
+ * @param {string} alt - Alt tekst
+ * @param {string} className - CSS klase
+ * @param {object} style - Inline stilovi
+ * @param {boolean} priority - Ako je true, učitava sliku odmah (za LCP)
+ * @param {number|string} width - Širina slike (za CLS fix)
+ * @param {number|string} height - Visina slike (za CLS fix)
+ */
+function ImageView({ 
+    src, 
     alt = "", 
-    faIcon = "", 
-    className = "",  
-    id = null, 
-    style = null,
-    priority = false, // ✅ NOVO
-    width = undefined, // ✅ NOVO
-    height = undefined // ✅ NOVO
+    className = "", 
+    style = {},
+    priority = false, 
+    width, 
+    height 
 }) {
-    return (
-        <div className={`avatar-view ${className}`}
-             id={id}
-             style={style}>
-            {src && (
-                <ImageView 
-                   src={src}
-                   alt={alt}
-                   className={`avatar-view-image-view`}
-                   // ✅ Šaljemo nove propove dalje u ImageView
-                   priority={priority}
-                   width={width}
-                   height={height}
-                />
-            )}
+    
+    // Ako nema slike, ne renderuj ništa da ne pravi prazan prostor bezveze
+    if (!src) return null;
 
-            {!src && (
-                <div className={`avatar-icon-view`}>
-                    <i className={`${faIcon}`}/>
-                </div>
-            )}
-        </div>
+    return (
+        <img 
+            src={src}
+            alt={alt}
+            className={className}
+            style={style}
+            // --- OPTIMIZACIJA ZA SEO I PERFORMANSE ---
+            // 1. Rezervisanje prostora (CLS fix)
+            width={width}   
+            height={height} 
+            // 2. Brzo učitavanje ako je prioritet (LCP fix)
+            loading={priority ? "eager" : "lazy"} 
+            fetchPriority={priority ? "high" : "auto"}
+        />
     )
 }
 
-export default AvatarView
+export default ImageView
