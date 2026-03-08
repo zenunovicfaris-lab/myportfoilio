@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Faris Zenunović" }],
   creator: "Faris Zenunović",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     title: "Faris Zenunović - SEO & Web Development",
     description: "Technical SEO, content strategy, Next.js/React development",
@@ -73,6 +78,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <Script
           id="json-ld"
           type="application/ld+json"
