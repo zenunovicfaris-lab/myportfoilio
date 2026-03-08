@@ -237,8 +237,8 @@ export default function Home() {
               {
                 icon: Mail,
                 label: "Email",
-                value: "fariszenunovic@gmail.com",
-                href: "mailto:fariszenunovic@gmail.com",
+                value: "zenunovicfaris@gmail.com",
+                href: "mailto:zenunovicfaris@gmail.com",
               },
               {
                 icon: Linkedin,
