@@ -35,8 +35,6 @@ body {
 /* ── Glassmorphism utility ── */
 .glass {
   background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -54,8 +52,9 @@ body {
   50%       { transform: translateY(-10px); }
 }
 
+/* ── Float animation disabled ── */
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  transform: translateY(0px);
 }
 
 /* ── Ambient orb animations ── */
@@ -77,9 +76,9 @@ body {
   66%       { transform: translate(40vw, 70vh) scale(0.9); }
 }
 
-.animate-orb-1 { animation: orb-1 22s ease-in-out infinite; }
-.animate-orb-2 { animation: orb-2 28s ease-in-out infinite; }
-.animate-orb-3 { animation: orb-3 20s ease-in-out infinite; }
+.animate-orb-1 { transform: translate(0, 0) scale(1); }
+.animate-orb-2 { transform: translate(100vw, 20vh) scale(1); }
+.animate-orb-3 { transform: translate(50vw, 80vh) scale(1); }
 
 /* ── Infinite logo marquee ── */
 @keyframes marquee {
@@ -88,7 +87,7 @@ body {
 }
 
 .animate-marquee {
-  animation: marquee 38s linear infinite;
+  transform: translateX(0);
   will-change: transform;
 }
 

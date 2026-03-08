@@ -54,7 +54,7 @@ export default function Scene06ContactEnd() {
                     "inset 0 0 0 1px rgba(34,211,238,0.35)",
                   ],
                 }}
-                transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ duration: 2.8, ease: "easeInOut" }}
               />
               <span className="relative text-cyan-100 transition-transform duration-300 group-hover:scale-[1.02]">
                 Get in touch

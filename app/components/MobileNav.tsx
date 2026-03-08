@@ -11,7 +11,7 @@ export default function MobileNav() {
   return (
     <>
       {/* Top bar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 z-50 flex items-center justify-between px-5 bg-[#0d0f16]/80 backdrop-blur-xl border-b border-white/8">
+      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 z-50 flex items-center justify-between px-5 bg-[#0d0f16]/80 border-b border-white/8">
         <span className="text-sm font-semibold text-white">Faris Zenunović</span>
         <button
           onClick={() => setOpen(true)}
@@ -29,7 +29,7 @@ export default function MobileNav() {
             {/* Backdrop */}
             <motion.div
               aria-label="Close menu"
-              className="fixed inset-0 z-40 bg-black/55 backdrop-blur-sm"
+              className="fixed inset-0 z-40 bg-black/55"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{    opacity: 0 }}

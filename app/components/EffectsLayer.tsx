@@ -29,12 +29,10 @@ export default function EffectsLayer() {
 
       {/* Ambient teal / cyan orbs */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-10">
-        {/* Orb 1 – large teal, top-left */}
-        <div className="absolute w-[520px] h-[520px] rounded-full blur-[120px] bg-teal-500/9 animate-orb-1 -top-32 -left-32" />
         {/* Orb 2 – cyan, top-right */}
-        <div className="absolute w-[400px] h-[400px] rounded-full blur-[100px] bg-cyan-400/8 animate-orb-2 -top-16 -right-16" />
+        <div className="absolute w-[400px] h-[400px] rounded-full bg-cyan-400/8 animate-orb-2 -top-16 -right-16" />
         {/* Orb 3 – teal, bottom-center */}
-        <div className="absolute w-[340px] h-[340px] rounded-full blur-[90px] bg-teal-400/7 animate-orb-3 bottom-0 left-1/2 -translate-x-1/2" />
+        <div className="absolute w-[340px] h-[340px] rounded-full bg-teal-400/7 animate-orb-3 bottom-0 left-1/2 -translate-x-1/2" />
       </div>
 
       {/* Cursor spotlight (teal) */}

@@ -11,13 +11,13 @@ export default function Scene01Boot() {
     <header className="relative h-dvh w-full overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0">
-        <div className="absolute left-1/2 top-[18%] -translate-x-1/2 h-[520px] w-[980px] rounded-full blur-3xl bg-cyan-500/10" />
-        <div className="absolute left-[12%] top-[62%] h-[420px] w-[420px] rounded-full blur-3xl bg-indigo-500/10" />
+        <div className="absolute left-1/2 top-[18%] -translate-x-1/2 h-[520px] w-[980px] rounded-full bg-cyan-500/10" />
+        <div className="absolute left-[12%] top-[62%] h-[420px] w-[420px] rounded-full bg-indigo-500/10" />
       </div>
 
       <div className="absolute inset-0">
-        <div className="absolute right-[15%] top-[25%] h-[320px] w-[320px] rounded-full blur-2xl bg-purple-500/8" />
-        <div className="absolute left-[20%] bottom-[30%] h-[280px] w-[280px] rounded-full blur-2xl bg-blue-500/8" />
+        <div className="absolute right-[15%] top-[25%] h-[320px] w-[320px] rounded-full bg-purple-500/8" />
+        <div className="absolute left-[20%] bottom-[30%] h-[280px] w-[280px] rounded-full bg-blue-500/8" />
       </div>
 
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[980px] h-[520px] bg-[radial-gradient(ellipse_60%_50%_at_50%_50%,rgba(255,255,255,0.12),transparent_65%)]" />
@@ -74,7 +74,7 @@ export default function Scene01Boot() {
                     "inset 0 0 0 1px rgba(34,211,238,0.35)",
                   ],
                 }}
-                transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ duration: 2.8, ease: "easeInOut" }}
               />
               <span className="relative text-cyan-100 transition-transform duration-300 group-hover:scale-[1.02]">
                 Enter the Growth System

@@ -119,7 +119,7 @@ export default function Sidebar() {
             style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
             className="relative w-14 h-14 rounded-2xl shrink-0"
           >
-            <div className="absolute -inset-2 rounded-[18px] bg-gradient-to-r from-teal-500/20 to-cyan-400/20 blur-xl" />
+            <div className="absolute -inset-2 rounded-[18px] bg-gradient-to-r from-teal-500/20 to-cyan-400/20" />
             <div className="relative w-14 h-14 rounded-2xl overflow-hidden border border-white/12 bg-[#1a1d27]">
               <Image
                 src="/profile.webp"
@@ -220,7 +220,7 @@ export default function Sidebar() {
 
               {/* Hover sheen */}
               <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
-                <span className="absolute -left-24 top-0 h-full w-24 rotate-12 bg-white/8 blur-xl opacity-0 group-hover:opacity-100 group-hover:translate-x-[380px] transition-all duration-700" />
+                <span className="absolute -left-24 top-0 h-full w-24 rotate-12 bg-white/8 opacity-0 group-hover:opacity-100 group-hover:translate-x-[380px] transition-all duration-700" />
               </span>
             </motion.a>
           );

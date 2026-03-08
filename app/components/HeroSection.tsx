@@ -142,30 +142,30 @@ export default function HeroSection() {
 
       {/* Light orbs */}
       <motion.div
-        className="pointer-events-none absolute w-[500px] h-[500px] rounded-full blur-[120px] bg-cyan-500/15"
+        className="pointer-events-none absolute w-[500px] h-[500px] rounded-full bg-cyan-500/15"
         style={{ left: "10%", top: "20%" }}
         animate={{
           opacity: [0.3, 0.5, 0.3],
           scale: [1, 1.1, 1],
         }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 8, ease: "easeInOut" }}
       />
       <motion.div
-        className="pointer-events-none absolute w-[400px] h-[400px] rounded-full blur-[100px] bg-indigo-500/10"
+        className="pointer-events-none absolute w-[400px] h-[400px] rounded-full bg-indigo-500/10"
         style={{ right: "15%", bottom: "25%" }}
         animate={{
           opacity: [0.2, 0.4, 0.2],
           scale: [1, 1.15, 1],
         }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 10, ease: "easeInOut" }}
       />
       <motion.div
-        className="pointer-events-none absolute w-[300px] h-[300px] rounded-full blur-[80px] bg-cyan-400/10"
+        className="pointer-events-none absolute w-[300px] h-[300px] rounded-full bg-cyan-400/10"
         style={{ left: "50%", top: "60%", transform: "translateX(-50%)" }}
         animate={{
           opacity: [0.15, 0.3, 0.15],
         }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 6, ease: "easeInOut" }}
       />
 
       {/* Spotlight / vignette behind headline */}
@@ -204,13 +204,11 @@ export default function HeroSection() {
                 scale: { duration: 0.6, delay: 0.5 + i * 0.1 },
                 y: {
                   duration: card.floatDur,
-                  repeat: Infinity,
                   ease: "easeInOut",
                   delay: card.floatDelay,
                 },
                 rotate: {
                   duration: card.rotDur,
-                  repeat: Infinity,
                   ease: "easeInOut",
                   delay: card.floatDelay * 2,
                 },
@@ -278,7 +276,7 @@ export default function HeroSection() {
                   "inset 0 0 0 1px rgba(34, 211, 238, 0.4)",
                 ],
               }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 3, ease: "easeInOut" }}
             />
             <span className="relative text-cyan-400">Enter the Growth System</span>
           </Link>

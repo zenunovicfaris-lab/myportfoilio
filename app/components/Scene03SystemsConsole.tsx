@@ -30,12 +30,12 @@ export default function Scene03SystemsConsole() {
     <section className="relative h-dvh w-full overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0">
-        <div className="absolute left-[15%] top-[25%] h-[380px] w-[380px] rounded-full blur-3xl bg-purple-500/10" />
-        <div className="absolute right-[20%] bottom-[20%] h-[320px] w-[320px] rounded-full blur-3xl bg-cyan-500/10" />
+        <div className="absolute left-[15%] top-[25%] h-[380px] w-[380px] rounded-full bg-purple-500/10" />
+        <div className="absolute right-[20%] bottom-[20%] h-[320px] w-[320px] rounded-full bg-cyan-500/10" />
       </div>
 
       <div className="absolute inset-0">
-        <div className="absolute left-1/2 top-1/3 -translate-x-1/2 h-[600px] w-[800px] rounded-full blur-3xl bg-white/5" />
+        <div className="absolute left-1/2 top-1/3 -translate-x-1/2 h-[600px] w-[800px] rounded-full bg-white/5" />
       </div>
 
       <div className="relative z-10 flex h-dvh items-center justify-center px-6">

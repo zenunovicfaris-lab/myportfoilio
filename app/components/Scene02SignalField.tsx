@@ -16,12 +16,12 @@ export default function Scene02SignalField() {
 
       {/* Background layers */}
       <div className="absolute inset-0">
-        <div className="absolute left-[10%] top-[18%] h-[340px] w-[340px] rounded-full blur-3xl bg-cyan-500/10" />
-        <div className="absolute right-[8%] bottom-[18%] h-[420px] w-[420px] rounded-full blur-3xl bg-indigo-500/10" />
+        <div className="absolute left-[10%] top-[18%] h-[340px] w-[340px] rounded-full bg-cyan-500/10" />
+        <div className="absolute right-[8%] bottom-[18%] h-[420px] w-[420px] rounded-full bg-indigo-500/10" />
       </div>
 
       <div className="absolute inset-0">
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[520px] w-[900px] rounded-full blur-3xl bg-white/5" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[520px] w-[900px] rounded-full bg-white/5" />
       </div>
 
       <div className="relative z-10 flex h-dvh items-center justify-center px-6">

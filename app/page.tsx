@@ -147,8 +147,8 @@ export default function Home() {
             >
               <div className="relative">
                 {/* Ambient glow rings */}
-                <div className="absolute -inset-6 rounded-full bg-teal-500/15 blur-3xl pointer-events-none" />
-                <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-teal-500/20 to-cyan-400/10 blur-xl pointer-events-none" />
+                <div className="absolute -inset-6 rounded-full bg-teal-500/15 pointer-events-none" />
+                <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-teal-500/20 to-cyan-400/10 pointer-events-none" />
 
                 {/* Photo circle */}
                 <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden
@@ -171,10 +171,10 @@ export default function Home() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.55, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
                   className="absolute bottom-6 -right-4 sm:-right-8 inline-flex items-center gap-2 rounded-full
-                             border border-teal-500/25 bg-[#0d0f16]/90 backdrop-blur-sm
+                             border border-teal-500/25 bg-[#0d0f16]/90
                              px-4 py-2 text-xs text-teal-300 font-medium shadow-lg"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-teal-400 animate-pulse" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal-400" />
                   Available for projects
                 </motion.div>
               </div>
@@ -235,7 +235,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-cyan-500/10 backdrop-blur-sm border border-cyan-500/30 p-8 rounded-2xl text-center hover:scale-105 hover:border-cyan-400/50 transition-all duration-300"
+              className="group bg-gradient-to-r from-cyan-500/10 bg-cyan-500/5 border border-cyan-500/30 p-8 rounded-2xl text-center hover:scale-105 hover:border-cyan-400/50 transition-all duration-300"
             >
               <Phone className="w-16 h-16 mx-auto mb-6 text-cyan-400 group-hover:text-cyan-300 transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Phone</h3>
@@ -250,7 +250,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-emerald-500/10 backdrop-blur-sm border border-emerald-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+              className="group bg-gradient-to-r from-emerald-500/10 bg-emerald-500/5 border border-emerald-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
             >
               <Mail className="w-16 h-16 mx-auto mb-6 text-emerald-400 group-hover:text-emerald-300 transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent text-center">Email</h3>
@@ -263,7 +263,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-blue-500/10 backdrop-blur-sm border border-blue-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+              className="group bg-gradient-to-r from-blue-500/10 bg-blue-500/5 border border-blue-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
             >
               <Linkedin className="w-16 h-16 mx-auto mb-6 text-blue-400 group-hover:text-blue-300 transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">LinkedIn</h3>
@@ -276,7 +276,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-gray-800/50 backdrop-blur-sm border border-gray-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+              className="group bg-gradient-to-r from-gray-800/50 bg-gray-800/30 border border-gray-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
             >
               <Github className="w-16 h-16 mx-auto mb-6 text-gray-400 group-hover:text-white transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-gray-300 to-white bg-clip-text text-transparent">GitHub</h3>

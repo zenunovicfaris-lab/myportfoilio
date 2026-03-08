@@ -33,7 +33,7 @@ export default function HeroLogoStrip() {
           width: max-content;
           will-change: transform;
           transform: translate3d(0,0,0);
-          animation: heroMarquee 32s linear infinite;
+          animation: heroMarquee 32s linear;
         }
 
         /* Mobile slower + pause on hover */

@@ -15,12 +15,12 @@ export default function Scene05Pipeline() {
     <section className="relative h-dvh w-full overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0">
-        <div className="absolute left-[20%] top-[30%] h-[450px] w-[450px] rounded-full blur-3xl bg-cyan-500/10" />
-        <div className="absolute right-[25%] bottom-[25%] h-[380px] w-[380px] rounded-full blur-3xl bg-purple-500/10" />
+        <div className="absolute left-[20%] top-[30%] h-[450px] w-[450px] rounded-full bg-cyan-500/10" />
+        <div className="absolute right-[25%] bottom-[25%] h-[380px] w-[380px] rounded-full bg-purple-500/10" />
       </div>
 
       <div className="absolute inset-0">
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[700px] w-[1000px] rounded-full blur-3xl bg-white/5" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[700px] w-[1000px] rounded-full bg-white/5" />
       </div>
 
       <div className="relative z-10 flex h-dvh items-center justify-center px-6">
