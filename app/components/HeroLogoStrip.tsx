@@ -36,6 +36,17 @@ export default function HeroLogoStrip() {
           animation: heroMarquee 32s linear infinite;
         }
 
+        /* Mobile slower + pause on hover */
+        @media (max-width: 768px) {
+          .hero-marquee-track {
+            animation-duration: 45s; /* Slower mobile */
+            animation-play-state: paused;
+          }
+          .hero-marquee-track:hover {
+            animation-play-state: running;
+          }
+        }
+
         @media (prefers-reduced-motion: reduce) {
           .hero-marquee-track { animation: none; }
         }
