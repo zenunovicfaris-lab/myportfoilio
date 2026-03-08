@@ -7,7 +7,7 @@ function isClickable(origin: Element): boolean {
   let node: Element | null = origin;
 
   while (node && node !== document.body) {
-    // Hard stops — disabled or explicitly muted
+    // Hard stops - disabled or explicitly muted
     if ((node as HTMLButtonElement).disabled) return false;
     if (node.classList.contains("no-sound"))  return false;
 

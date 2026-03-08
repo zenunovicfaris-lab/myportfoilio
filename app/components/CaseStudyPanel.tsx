@@ -264,7 +264,7 @@ export default function CaseStudyPanel({
             </div>
 
             <div className="mt-6 text-[10px] tracking-[0.22em] text-gray-400/60">
-              NOTE: Placeholder data — replace with real KPIs.
+              NOTE: Placeholder data - replace with real KPIs.
             </div>
           </motion.div>
         )}

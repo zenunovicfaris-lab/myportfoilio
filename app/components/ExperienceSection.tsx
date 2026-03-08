@@ -38,7 +38,7 @@ const TIMELINE: TimelineEntry[] = [
     company: "Self-directed Learning",
     muted:   true,
     bullets: [
-      "Immersed in core SEO disciplines — technical auditing, on-page optimization, keyword research, and content strategy.",
+      "Immersed in core SEO disciplines - technical auditing, on-page optimization, keyword research, and content strategy.",
       "Applied knowledge through personal test sites, studying organic ranking factors and algorithm behavior hands-on.",
       "Built a structured workflow for competitive analysis and SERP evaluation that became the foundation of all future client work.",
     ],
@@ -53,7 +53,7 @@ const TIMELINE: TimelineEntry[] = [
       "Delivered consistent organic traffic growth through structured content planning, internal linking, and on-page improvements.",
     ],
     proof:   "/images/kakolako-gsc.jpg",
-    caption: "Google Search Console — kakolako.com: Organic click growth following on-page SEO and content optimization.",
+    caption: "Google Search Console - kakolako.com: Organic click growth following on-page SEO and content optimization.",
   },
   {
     period:  "2022 – 2024",
@@ -61,12 +61,12 @@ const TIMELINE: TimelineEntry[] = [
     company: "Imperia Marketing / Finixio",
     bullets: [
       "Led SEO strategy for a portfolio of affiliate websites in the crypto, fintech, and regulated financial sectors.",
-      "Identified and targeted high-intent financial keywords — covering cards, payments, investing, and crypto exchanges — using Ahrefs and SEMrush.",
+      "Identified and targeted high-intent financial keywords - covering cards, payments, investing, and crypto exchanges - using Ahrefs and SEMrush.",
       "Executed content gap analysis and competitor benchmarking to capture underserved search demand in competitive regulated markets.",
       "Collaborated with editorial and dev teams to implement technical SEO improvements, improving crawlability and indexation across key properties.",
     ],
     proof:   "/images/99bitcoins-semrush.jpg",
-    caption: "SEMrush — 99bitcoins.com: Domain authority score of 51 with 76K+ monthly organic visits across crypto content.",
+    caption: "SEMrush - 99bitcoins.com: Domain authority score of 51 with 76K+ monthly organic visits across crypto content.",
   },
   {
     period:   "2024 – 2026",
@@ -74,13 +74,13 @@ const TIMELINE: TimelineEntry[] = [
     company:  "ClickOut Media",
     current:  true,
     bullets: [
-      "Produced and optimized long-form SEO content — including comparison guides, review articles, and topical hubs — across finance, crypto, and online services verticals.",
+      "Produced and optimized long-form SEO content - including comparison guides, review articles, and topical hubs - across finance, crypto, and online services verticals.",
       "Contributed to organic performance improvements on esports.net by supporting content restructuring, internal linking, and technical SEO initiatives.",
       "Used Ahrefs and SEMrush for continuous keyword opportunity analysis, ensuring content aligned with evolving search intent and SERP features.",
       "Worked within large-scale editorial systems, balancing SEO best practices with brand voice and content quality standards.",
     ],
     proof:   "/images/esports.net SEMrush.jpg",
-    caption: "SEMrush — esports.net: 43K+ organic keywords tracked, contributing to technical SEO and content restructuring efforts.",
+    caption: "SEMrush - esports.net: 43K+ organic keywords tracked, contributing to technical SEO and content restructuring efforts.",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function ExperienceSection() {
   const hiddenCount  = TOOLS.length - TOOLS_VISIBLE_DEFAULT;
 
   return (
-    <section className="py-24 px-6 md:px-10 bg-[#0d0f16]">
+    <section id="resume" className="py-24 px-6 md:px-10 bg-[#0a0a0f]">
       <div className="max-w-4xl mx-auto">
 
         {/* ── Header ──────────────────────────────────────────────────── */}

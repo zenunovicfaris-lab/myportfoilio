@@ -11,7 +11,58 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
 
 export const metadata: Metadata = {
-  // ... tvoj metadata ostaje ISTI
+  metadataBase: new URL("https://fariszenunovic.com"),
+  title: {
+    default: "Faris Zenunović | SEO Specialist & Growth Partner", // 58 chars
+    template: "%s | Faris Zenunović",
+  },
+  description: "Multilingual SEO specialist with 4+ years experience in technical SEO, content optimization & organic growth. React/Next.js developer. Let's scale your traffic.", // 149 chars
+  keywords: [
+    "SEO specialist",
+    "technical SEO",
+    "content optimization",
+    "organic growth",
+    "React developer",
+    "Next.js developer",
+    "multilingual SEO",
+    "web development",
+    "Faris Zenunović",
+    "Živinice",
+    "Bosnia and Herzegovina",
+    "Faris Zenunovic",
+    "Content Writer",
+    "Content Editor"
+  ],
+  authors: [{ name: "Faris Zenunović" }],
+  creator: "Faris Zenunović",
+  openGraph: {
+    title: "Faris Zenunović - SEO & Web Development",
+    description: "Technical SEO, content strategy, Next.js/React development",
+    images: ["/og-image.jpg"],
+    type: "website",
+    locale: "en_US",
+    siteName: "Faris Zenunović",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Faris Zenunović - SEO & Web Development",
+    description: "Technical SEO, content strategy, Next.js/React development",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-verification-code",
+  },
 };
 
 const jsonLd = {

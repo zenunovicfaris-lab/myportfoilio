@@ -29,7 +29,7 @@ export default function Scene06ContactEnd() {
             Let's build your growth system
           </h2>
           <p className="mt-6 text-gray-300/85 text-base sm:text-lg leading-relaxed">
-            If you want SEO that behaves like a system — measurable, shippable, and built for compounding returns —
+            If you want SEO that behaves like a system - measurable, shippable, and built for compounding returns -
             let's talk.
           </p>
 

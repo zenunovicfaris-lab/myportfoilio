@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion";
 
-// ─── Dummy timeline data — fill in your real work history here ────────────────
+// ─── Dummy timeline data - fill in your real work history here ────────────────
 
 const ENTRIES = [
   {
     year:    "2024",
     role:    "Senior Position Title",
     company: "Company Name",
-    desc:    "Replace this with a concise description of what you did here — key responsibilities, technologies used, and measurable outcomes you're proud of.",
+    desc:    "Replace this with a concise description of what you did here - key responsibilities, technologies used, and measurable outcomes you're proud of.",
   },
   {
     year:    "2022",

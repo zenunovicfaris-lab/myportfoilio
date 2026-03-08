@@ -92,7 +92,7 @@ body {
   will-change: transform;
 }
 
-/* Pause on hover — applied via group/peer or directly */
+/* Pause on hover - applied via group/peer or directly */
 .hover\:pause-marquee:hover,
 .pause-marquee {
   animation-play-state: paused;

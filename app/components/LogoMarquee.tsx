@@ -43,7 +43,7 @@ export default function LogoMarquee() {
       {/* ── Scrolling track ─────────────────────────────────────────────── */}
       {/*
         Left / right edges fade to #0f1117 via CSS mask so logos dissolve
-        cleanly at the viewport boundary — no hard clip.
+        cleanly at the viewport boundary - no hard clip.
       */}
       <div
         className="relative"
@@ -54,12 +54,12 @@ export default function LogoMarquee() {
             "linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%)",
         }}
       >
-        {/* Outer wrapper — hides overflow, pauses on hover */}
+        {/* Outer wrapper - hides overflow, pauses on hover */}
         <div className="flex overflow-hidden [--gap:theme(spacing.14)]">
           {/*
             Inner track is 200% wide (two full sets of logos).
             The CSS animation moves it left by exactly 50% (one set),
-            then snaps back to 0 — completely seamless.
+            then snaps back to 0 - completely seamless.
           */}
           <div className="flex shrink-0 gap-[var(--gap)] animate-marquee">
             {TRACK.map((logo, i) => (

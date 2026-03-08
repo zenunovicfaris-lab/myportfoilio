@@ -37,7 +37,7 @@ export default function Scene02SignalField() {
               Signals → systems → compounding growth.
             </h2>
             <p className="mt-6 text-gray-300/85 text-base sm:text-lg leading-relaxed">
-              I'm Faris Zenunović — Senior SEO & Growth Specialist and full-stack developer. I build fast web
+              I'm Faris Zenunović - Senior SEO & Growth Specialist and full-stack developer. I build fast web
               experiences and growth systems for global companies, SaaS products, affiliate brands (iGaming/crypto),
               and AI-driven startups.
             </p>

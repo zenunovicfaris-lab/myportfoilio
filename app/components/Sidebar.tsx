@@ -18,33 +18,58 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export default function Sidebar() {
-  // ── Mounted gate ──────────────────────────────────────────────────────────
-  // Must be false on first render so SSR output === first client render.
-  // Every dynamic className and every conditional Framer Motion element that
-  // depends on client state (active section, scroll position) is hidden until
-  // after hydration completes.
-  const [mounted, setMounted] = useState(false);
-
   const [activeSection, setActiveSection] = useState<Section>("about");
-  const lastActiveRef = useRef<Section>("about");
+  const [mounted, setMounted] = useState(false);
+  const lastActiveRef = useRef(activeSection);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // rAF-throttled scroll spy (only runs client-side)
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a[href^="#"]') as HTMLAnchorElement;
+      if (!target) return;
+
+      e.preventDefault();
+      const href = target.getAttribute('href');
+      if (!href || href === '#') return;
+
+      const element = document.querySelector(href) as HTMLElement | null;
+      if (!element) return;
+
+      const headerOffset = 80; // Adjust for fixed header height
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    };
+
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, []);
+
   useEffect(() => {
     let ticking = false;
 
     const computeActive = () => {
-      const y = window.scrollY + 160;
+      const y = window.scrollY + 80; // Smanjen offset za bolji detection
+
       for (const id of SECTIONS) {
         const el = document.getElementById(id);
         if (!el) continue;
-        const top    = el.offsetTop;
+        const top = el.offsetTop;
         const bottom = top + el.offsetHeight;
+
+        // Debug log
+        console.log(`Scroll check: id=${id}, y=${y}, top=${top}, bottom=${bottom}`);
+
         if (y >= top && y < bottom) {
           if (lastActiveRef.current !== id) {
+            console.log(`Setting active section: ${id}`);
             lastActiveRef.current = id;
             setActiveSection(id);
           }
@@ -87,7 +112,7 @@ export default function Sidebar() {
       {/* ── Profile ─────────────────────────────────────────────────────── */}
       <div className="mb-8">
         <div className="flex items-center gap-4">
-          {/* Avatar with 3-D tilt — tilt is purely client, no hydration risk */}
+          {/* Avatar with 3-D tilt - tilt is purely client, no hydration risk */}
           <motion.div
             onMouseMove={onAvatarMove}
             onMouseLeave={onAvatarLeave}

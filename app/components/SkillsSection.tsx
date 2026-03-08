@@ -85,7 +85,7 @@ export default function SkillsSection() {
           Skills &amp; Experience
         </h2>
         <p className="text-gray-400 max-w-lg mx-auto text-base leading-relaxed">
-          The tools and disciplines I reach for every day — from strategy and research to code and automation.
+          The tools and disciplines I reach for every day - from strategy and research to code and automation.
         </p>
       </motion.div>
 
@@ -96,7 +96,7 @@ export default function SkillsSection() {
         Each row's inner track is doubled so the loop is seamless.
       */}
 
-      {/* ── Row 1 — scrolls left ────────────────────────────────────────── */}
+      {/* ── Row 1 - scrolls left ────────────────────────────────────────── */}
       <div
         className="relative mb-4"
         style={{
@@ -113,7 +113,7 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      {/* ── Row 2 — scrolls right ───────────────────────────────────────── */}
+      {/* ── Row 2 - scrolls right ───────────────────────────────────────── */}
       <div
         className="relative"
         style={{

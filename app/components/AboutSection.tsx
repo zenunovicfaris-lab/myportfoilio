@@ -89,7 +89,7 @@ export default function AboutSection() {
             <p className="text-gray-400 text-lg leading-relaxed">
               I combine{" "}
               <span className="text-white font-medium">SEO strategy</span> with
-              hands-on execution. Not just audits and recommendations — I
+              hands-on execution. Not just audits and recommendations - I
               architect{" "}
               <span className="text-white font-medium">content systems</span>,
               build automation, and implement{" "}

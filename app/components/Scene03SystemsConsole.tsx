@@ -53,7 +53,7 @@ export default function Scene03SystemsConsole() {
                 Systems console
               </h2>
               <p className="mt-4 text-gray-300/85 max-w-2xl">
-                Modular frameworks that behave like a control panel — composable, measurable, and built to scale.
+                Modular frameworks that behave like a control panel - composable, measurable, and built to scale.
               </p>
             </div>
             <div className="text-[10px] tracking-[0.24em] text-gray-400/60">

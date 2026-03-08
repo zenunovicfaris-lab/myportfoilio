@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import {
   Mail,
+  Phone,
   Linkedin,
   Github,
   MapPin,
@@ -44,9 +45,9 @@ export default function Home() {
       <EffectsLayer />
 
       {/* ════════════════════════════════════════════════════════════════════
-          1. HERO  (also serves as "About Me" — id="about")
+          1. HERO  (also serves as "About Me" - id="about")
       ═══════════════════════════════════════════════════════════════════ */}
-      <section id="about" className="min-h-screen flex items-center px-6 md:px-10 py-24">
+      <section id="about" className="min-h-screen flex items-center px-6 md:px-10 py-24 relative">
         <div className="max-w-6xl mx-auto w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -60,26 +61,27 @@ export default function Home() {
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="text-[10px] md:text-xs font-semibold tracking-[0.22em] uppercase text-gray-500 mb-5"
               >
-                Hi, I&apos;m Faris Zenunović — a{" "}
+                Hi, I&apos;m Faris Zenunović - a{" "}
                 <span className="text-teal-400">passionate</span>
               </motion.p>
 
-              {/* Main heading */}
-              <motion.h1
-                initial={{ opacity: 0, y: 24 }}
+              {/* Main heading - SEO optimized */}
+              <motion.h1 
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1], delay: 0.07 }}
-                className="font-[family-name:var(--font-space)] text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6"
+                className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-6 text-center lg:text-left leading-tight"
               >
-                <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-teal-400 bg-clip-text text-transparent">
-                  SEO
-                </span>{" "}
-                <span className="text-white">Specialist</span>
-                <br />
-                <span className="text-white/80 text-4xl sm:text-5xl lg:text-6xl">
-                  &amp; Growth Partner
-                </span>
+                Faris Zenunović
               </motion.h1>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1], delay: 0.12 }}
+                className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto lg:mx-0 mb-12 opacity-90 text-center lg:text-left"
+              >
+                SEO Specialist & Growth Partner
+              </motion.p>
 
               {/* Description */}
               <motion.p
@@ -180,7 +182,7 @@ export default function Home() {
 
           </div>
 
-          {/* Logo strip — full-width, below both columns */}
+          {/* Logo strip - full-width, below both columns */}
           <HeroLogoStrip />
 
         </div>
@@ -205,14 +207,14 @@ export default function Home() {
           6. CONTACT  (id="contact")
       ═══════════════════════════════════════════════════════════════════ */}
       <section id="contact" className="py-24 px-6 md:px-10 pb-32 bg-[#0a0a0f]">
-        <div className="max-w-2xl mx-auto text-center">
-
+        <div className="max-w-2xl mx-auto p-8">
           {/* Label */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
+            className="text-center mb-16"
           >
             <span className="inline-block text-[11px] font-semibold tracking-[0.18em] uppercase text-teal-400 mb-4 px-3.5 py-1.5 rounded-full border border-teal-500/20 bg-teal-500/8">
               Contact
@@ -220,77 +222,67 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-space)] text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               Let&apos;s Work Together
             </h2>
-            <p className="text-gray-400 text-base leading-relaxed mb-12">
-              Have a project in mind? Reach out — I&apos;d love to discuss how we can grow your organic traffic.
+            <p className="text-gray-400 text-base leading-relaxed">
+              Have a project in mind? Reach out - I&apos;d love to discuss how we can grow your organic traffic.
             </p>
           </motion.div>
 
-          {/* Contact links */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
-            className="grid sm:grid-cols-2 gap-3"
-          >
-            {[
-              {
-                icon: Mail,
-                label: "Email",
-                value: "zenunovicfaris@gmail.com",
-                href: "mailto:zenunovicfaris@gmail.com",
-              },
-              {
-                icon: Linkedin,
-                label: "LinkedIn",
-                value: "linkedin.com/in/fariszenunovic",
-                href: "https://linkedin.com/in/fariszenunovic",
-              },
-              {
-                icon: Github,
-                label: "GitHub",
-                value: "github.com/zenunovicfaris-lab",
-                href: "https://github.com/zenunovicfaris-lab",
-              },
-              {
-                icon: MapPin,
-                label: "Location",
-                value: "Živinice, Bosnia and Herzegovina",
-                href: null,
-              },
-            ].map(({ icon: Icon, label, value, href }) => (
-              <motion.div
-                key={label}
-                whileHover={{ y: -3 }}
-                transition={{ type: "spring", stiffness: 320, damping: 20 }}
-                className="flex items-center gap-4 bg-[#111218] border border-white/8 rounded-2xl p-5
-                           hover:border-teal-500/25 transition-colors duration-200 text-left"
-              >
-                <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20
-                               flex items-center justify-center shrink-0">
-                  <Icon size={15} className="text-teal-400" />
-                </div>
-                <div className="min-w-0">
-                  <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-widest mb-0.5">
-                    {label}
-                  </div>
-                  {href ? (
-                    <a
-                      href={href}
-                      target={href.startsWith("http") ? "_blank" : undefined}
-                      rel="noopener noreferrer"
-                      className="text-sm text-gray-300 hover:text-teal-400 truncate block transition-colors duration-200"
-                    >
-                      {value}
-                    </a>
-                  ) : (
-                    <span className="text-sm text-gray-300 truncate block">{value}</span>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+          {/* Contact Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Phone Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
+              className="group bg-gradient-to-r from-cyan-500/10 backdrop-blur-sm border border-cyan-500/30 p-8 rounded-2xl text-center hover:scale-105 hover:border-cyan-400/50 transition-all duration-300"
+            >
+              <Phone className="w-16 h-16 mx-auto mb-6 text-cyan-400 group-hover:text-cyan-300 transition" />
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Phone</h3>
+              <a href="tel:+387603055894" className="text-xl font-mono hover:text-cyan-400 transition-all duration-300 block">
+                +387 60 305 5894
+              </a>
+            </motion.div>
 
+            {/* Email Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] as const }}
+              className="group bg-gradient-to-r from-emerald-500/10 backdrop-blur-sm border border-emerald-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+            >
+              <Mail className="w-16 h-16 mx-auto mb-6 text-emerald-400 group-hover:text-emerald-300 transition" />
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent text-center">Email</h3>
+              <a href="mailto:zenunovicfaris@gmail.com" className="text-xl font-medium tracking-tight hover:text-emerald-400 transition-colors inline-block mx-auto text-center w-fit">zenunovicfaris@gmail.com</a>
+            </motion.div>
+
+            {/* LinkedIn Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] as const }}
+              className="group bg-gradient-to-r from-blue-500/10 backdrop-blur-sm border border-blue-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+            >
+              <Linkedin className="w-16 h-16 mx-auto mb-6 text-blue-400 group-hover:text-blue-300 transition" />
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">LinkedIn</h3>
+              <a href="https://linkedin.com/in/fariszenunovic" target="_blank" className="text-xl font-mono hover:text-blue-400 transition">/fariszenunovic</a>
+            </motion.div>
+
+            {/* GitHub Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] as const }}
+              className="group bg-gradient-to-r from-gray-800/50 backdrop-blur-sm border border-gray-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+            >
+              <Github className="w-16 h-16 mx-auto mb-6 text-gray-400 group-hover:text-white transition" />
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-gray-300 to-white bg-clip-text text-transparent">GitHub</h3>
+              <a href="https://github.com/zenunovicfaris-lab" target="_blank" className="text-xl font-mono hover:text-white transition">/zenunovicfaris-lab</a>
+            </motion.div>
+          </div>
         </div>
       </section>
     </div>

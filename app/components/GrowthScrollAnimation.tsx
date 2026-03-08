@@ -34,7 +34,7 @@ const NODES = [
 
 const GRID_Y  = [280, 230, 180, 130, 80, 30];
 const Y_AXIS  = [
-  { y: 340, text: "—"    },
+  { y: 340, text: "-"    },
   { y: 280, text: "200K" },
   { y: 230, text: "500K" },
   { y: 180, text: "1M"   },
@@ -247,7 +247,7 @@ export default function GrowthScrollAnimation() {
               style={{ pathLength }}
             />
 
-            {/* Data nodes — each is its own component so hooks are valid */}
+            {/* Data nodes - each is its own component so hooks are valid */}
             {NODES.map((node) => (
               <GraphNode
                 key={node.label}

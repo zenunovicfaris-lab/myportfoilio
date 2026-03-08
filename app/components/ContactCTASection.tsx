@@ -23,7 +23,7 @@ export default function ContactCTASection() {
           Let&apos;s build scalable growth.
         </h2>
         <p className="text-gray-400 mb-2">
-          From audit to automation — I help brands and products grow through SEO and content systems.
+          From audit to automation - I help brands and products grow through SEO and content systems.
         </p>
         <p className="text-gray-500 text-sm mb-10">
           Based in Živinice, Bosnia and Herzegovina. Working with clients globally.
