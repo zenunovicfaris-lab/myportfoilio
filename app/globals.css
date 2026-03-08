@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+  background: #0f1117;
+  color: #e5e7eb;
+}
+
+.font-space {
+  font-family: var(--font-space);
+}
+
+/* ── Custom scrollbar (teal accent) ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #14b8a6;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2dd4bf;
+}
+
+/* ── Glassmorphism utility ── */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Gradient text (teal → cyan) ── */
+.gradient-text {
+  background: linear-gradient(135deg, #14b8a6, #22d3ee);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Float animation ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ── Ambient orb animations ── */
+@keyframes orb-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(30px, -50px) scale(1.1); }
+  66%       { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes orb-2 {
+  0%, 100% { transform: translate(100vw, 20vh) scale(1); }
+  33%       { transform: translate(80vw, 40vh) scale(1.2); }
+  66%       { transform: translate(90vw, 10vh) scale(0.8); }
+}
+
+@keyframes orb-3 {
+  0%, 100% { transform: translate(50vw, 80vh) scale(1); }
+  33%       { transform: translate(60vw, 60vh) scale(1.1); }
+  66%       { transform: translate(40vw, 70vh) scale(0.9); }
+}
+
+.animate-orb-1 { animation: orb-1 22s ease-in-out infinite; }
+.animate-orb-2 { animation: orb-2 28s ease-in-out infinite; }
+.animate-orb-3 { animation: orb-3 20s ease-in-out infinite; }
+
+/* ── Infinite logo marquee ── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover — applied via group/peer or directly */
+.hover\:pause-marquee:hover,
+.pause-marquee {
+  animation-play-state: paused;
+}
+
+/* ── Performance ── */
+.will-change-transform { will-change: transform; }
+.gpu-accelerated       { transform: translateZ(0); }
