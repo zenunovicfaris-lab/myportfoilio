@@ -24,31 +24,31 @@ export default function HeroLogoStrip() {
     <>
       <style>{`
         @keyframes heroMarquee {
-          0% { transform: translate3d(0,0,0); }
-          100% { transform: translate3d(-50%,0,0); }
+          from { transform: translate3d(0, 0, 0); }
+          to   { transform: translate3d(-50%, 0, 0); }
         }
 
         .hero-marquee-track {
           display: flex;
           width: max-content;
           will-change: transform;
-          transform: translate3d(0,0,0);
-          animation: heroMarquee 32s linear;
+          animation: heroMarquee 36s linear infinite;
         }
 
-        /* Mobile slower + pause on hover */
+        .hero-marquee-track:hover {
+          animation-play-state: paused;
+        }
+
         @media (max-width: 768px) {
           .hero-marquee-track {
-            animation-duration: 45s; /* Slower mobile */
-            animation-play-state: paused;
-          }
-          .hero-marquee-track:hover {
-            animation-play-state: running;
+            animation-duration: 48s;
           }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .hero-marquee-track { animation: none; }
+          .hero-marquee-track {
+            animation: none;
+          }
         }
       `}</style>
 
@@ -66,61 +66,45 @@ export default function HeroLogoStrip() {
           Platforms I&apos;ve worked with
         </p>
 
-        {/* Masked container (soft edge fade without overlay boxes) */}
+        {/* Masked container */}
         <div
           className="overflow-hidden"
           style={{
             WebkitMaskImage:
-              "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+              "linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)",
             maskImage:
-              "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+              "linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)",
           }}
         >
-          {/* Track: two identical groups => seamless loop */}
+          {/* Two identical groups for seamless infinite loop */}
           <div className="hero-marquee-track">
-            <div className="flex items-center gap-12 pr-12">
-              {LOGOS.map((logo) => (
-                <div
-                  key={logo.file}
-                  className="shrink-0 flex items-center justify-center bg-transparent"
-                >
-                  <Image
-                    src={`/logos/${logo.file}`}
-                    alt={logo.name}
-                    width={140}
-                    height={40}
-                    unoptimized
-                    draggable={false}
-                    className="h-9 w-auto object-contain select-none bg-transparent
-                               opacity-70 grayscale
-                               hover:opacity-100 hover:grayscale-0
-                               transition-[filter,opacity,transform] duration-300"
-                  />
-                </div>
-              ))}
-            </div>
-
-            <div className="flex items-center gap-12 pr-12" aria-hidden="true">
-              {LOGOS.map((logo) => (
-                <div
-                  key={`dup-${logo.file}`}
-                  className="shrink-0 flex items-center justify-center bg-transparent"
-                >
-                  <Image
-                    src={`/logos/${logo.file}`}
-                    alt={logo.name}
-                    width={140}
-                    height={40}
-                    unoptimized
-                    draggable={false}
-                    className="h-9 w-auto object-contain select-none bg-transparent
-                               opacity-70 grayscale
-                               hover:opacity-100 hover:grayscale-0
-                               transition-[filter,opacity,transform] duration-300"
-                  />
-                </div>
-              ))}
-            </div>
+            {[0, 1].map((set) => (
+              <div
+                key={set}
+                className="flex items-center gap-14 pr-14"
+                aria-hidden={set === 1 ? "true" : undefined}
+              >
+                {LOGOS.map((logo) => (
+                  <div
+                    key={`${set}-${logo.file}`}
+                    className="shrink-0 flex items-center justify-center"
+                  >
+                    <Image
+                      src={`/logos/${logo.file}`}
+                      alt={logo.name}
+                      width={140}
+                      height={40}
+                      unoptimized
+                      draggable={false}
+                      className="h-8 w-auto object-contain select-none
+                                 opacity-50 grayscale
+                                 hover:opacity-100 hover:grayscale-0
+                                 transition-[filter,opacity] duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </motion.div>

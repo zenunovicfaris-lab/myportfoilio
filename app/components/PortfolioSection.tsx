@@ -51,17 +51,6 @@ const PROJECTS = [
   },
   {
     id: 5,
-    title: "Business Website – Revolux",
-    image: "/images/revolux-website.jpg",
-    description:
-      "Designed and developed a modern business website focused on SEO structure, clear service presentation, and lead generation.",
-    tags: ["Web Development", "SEO", "Business Website"],
-    link: null,
-    newTab: false,
-    nofollow: false,
-  },
-  {
-    id: 6,
     title: "AI Sales Automation Concept",
     image: "/images/ai-saas-project.jpg",
     description:
