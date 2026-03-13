@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: "Faris Zenunović | SEO Specialist, Next.js & React Developer – BiH",
     template: "%s | Faris Zenunović",
   },
-  description: "Faris Zenunović - Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, BiH. Portfolio i usluge.",
+  description: "Faris Zenunović – Freelance SEO Specialist, Next.js & React Developer, WordPress Expert from Živinice, Bosnia. Portfolio & services.",
   keywords: [
     "SEO specialist",
     "technical SEO",
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     apple: '/favicon.ico',
   },
   openGraph: {
-    title: "Faris Zenunović – SEO Specialist & Next.js Developer iz BiH",
-    description: "Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, BiH. Portfolio i usluge.",
+    title: "Faris Zenunović – SEO Specialist & Next.js Developer from BiH",
+    description: "Freelance SEO Specialist, Next.js & React Developer, WordPress Expert from Živinice, Bosnia. Portfolio & services.",
     images: ["/og-image.jpg"],
     type: "website",
     locale: "en_US",
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faris Zenunović – SEO Specialist & Next.js Developer iz BiH",
-    description: "Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, BiH. Portfolio i usluge.",
+    title: "Faris Zenunović – SEO Specialist & Next.js Developer from BiH",
+    description: "Freelance SEO Specialist, Next.js & React Developer, WordPress Expert from Živinice, Bosnia. Portfolio & services.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -81,7 +81,7 @@ const jsonLd = {
   "url": "https://fariszenunovic.com",
   "image": "https://fariszenunovic.com/images/faris-about-me.jpg",
   "jobTitle": "SEO Specialist & Web Developer",
-  "description": "Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, Bosnia and Herzegovina.",
+  "description": "Freelance SEO Specialist, Next.js & React Developer and WordPress Expert from Živinice, Bosnia and Herzegovina.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Živinice",

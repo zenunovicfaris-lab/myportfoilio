@@ -73,7 +73,7 @@ export default function Home() {
                 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-6 text-center lg:text-left leading-tight"
               >
                 Faris Zenunović
-                <span className="sr-only"> – SEO Specialist, Next.js & React Developer iz Živinice, BiH</span>
+                <span className="sr-only"> – SEO Specialist, Next.js & React Developer from Živinice, Bosnia</span>
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
