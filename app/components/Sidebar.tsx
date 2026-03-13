@@ -64,12 +64,8 @@ export default function Sidebar() {
         const top = el.offsetTop;
         const bottom = top + el.offsetHeight;
 
-        // Debug log
-        console.log(`Scroll check: id=${id}, y=${y}, top=${top}, bottom=${bottom}`);
-
         if (y >= top && y < bottom) {
           if (lastActiveRef.current !== id) {
-            console.log(`Setting active section: ${id}`);
             lastActiveRef.current = id;
             setActiveSection(id);
           }

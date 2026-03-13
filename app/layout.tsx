@@ -13,10 +13,10 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 export const metadata: Metadata = {
   metadataBase: new URL("https://fariszenunovic.com"),
   title: {
-    default: "Faris Zenunović | SEO Specialist & Growth Partner", // 58 chars
+    default: "Faris Zenunović | SEO Specialist, Next.js & React Developer – BiH",
     template: "%s | Faris Zenunović",
   },
-  description: "Multilingual SEO specialist with 4+ years experience in technical SEO, content optimization & organic growth. React/Next.js developer. Let's scale your traffic.", // 149 chars
+  description: "Faris Zenunović - Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, BiH. Portfolio i usluge.",
   keywords: [
     "SEO specialist",
     "technical SEO",
@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     "organic growth",
     "React developer",
     "Next.js developer",
+    "WordPress developer",
+    "Full Stack Developer",
+    "freelance web developer",
     "multilingual SEO",
     "web development",
     "Faris Zenunović",
@@ -41,8 +44,8 @@ export const metadata: Metadata = {
     apple: '/favicon.ico',
   },
   openGraph: {
-    title: "Faris Zenunović - SEO & Web Development",
-    description: "Technical SEO, content strategy, Next.js/React development",
+    title: "Faris Zenunović – SEO Specialist & Next.js Developer iz BiH",
+    description: "Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, BiH. Portfolio i usluge.",
     images: ["/og-image.jpg"],
     type: "website",
     locale: "en_US",
@@ -50,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faris Zenunović - SEO & Web Development",
-    description: "Technical SEO, content strategy, Next.js/React development",
+    title: "Faris Zenunović – SEO Specialist & Next.js Developer iz BiH",
+    description: "Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, BiH. Portfolio i usluge.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -71,7 +74,33 @@ export const metadata: Metadata = {
 };
 
 const jsonLd = {
-  // ... tvoj jsonLd ostaje ISTI
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Faris Zenunović",
+  "alternateName": "Faris Zenunovic",
+  "url": "https://fariszenunovic.com",
+  "image": "https://fariszenunovic.com/images/faris-about-me.jpg",
+  "jobTitle": "SEO Specialist & Web Developer",
+  "description": "Freelance SEO Specialist, Next.js/React Developer i WordPress Expert iz Živinice, Bosnia and Herzegovina.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Živinice",
+    "addressCountry": "BA"
+  },
+  "email": "zenunovicfaris@gmail.com",
+  "telephone": "+387603055894",
+  "sameAs": [
+    "https://linkedin.com/in/fariszenunovic",
+    "https://github.com/zenunovicfaris-lab"
+  ],
+  "knowsAbout": [
+    "SEO", "Technical SEO", "Content Optimization",
+    "Next.js", "React", "WordPress", "Web Development"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

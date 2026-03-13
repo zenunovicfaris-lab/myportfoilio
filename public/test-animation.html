@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimatedWords — test</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f1117;
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .hero-line {
+      font-size: clamp(1.4rem, 4vw, 2.5rem);
+      font-weight: 300;
+      color: #d1d5db;
+      line-height: 1.4;
+    }
+
+    .name { font-weight: 600; color: #fff; }
+
+    /* ── Rotator container ───────────────────────────────────── */
+    .aw-rotator {
+      display: inline-block;
+      vertical-align: bottom;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      min-width: 4ch;
+    }
+
+    .aw-word {
+      display: inline-block;
+      font-weight: 600;
+
+      background: linear-gradient(90deg, #14b8a6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      opacity: 0;
+      transform: translateY(60%);
+      filter: blur(8px);
+      transition:
+        opacity   480ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 480ms cubic-bezier(0.22, 1, 0.36, 1),
+        filter    480ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .aw-word.aw-active {
+      opacity: 1;
+      transform: translateY(0%);
+      filter: drop-shadow(0 0 12px rgba(20, 184, 166, 0.6));
+    }
+
+    .aw-word.aw-leaving {
+      opacity: 0;
+      transform: translateY(-55%);
+      filter: blur(6px);
+    }
+  </style>
+</head>
+<body>
+
+  <p class="hero-line">
+    Hi, I'm <span class="name">Faris Zenunović</span> — a
+    <span class="aw-rotator" id="rotator"></span>
+    SEO Specialist &amp; Growth Partner.
+  </p>
+
+  <script>
+    const WORDS       = ['Strategic','Data-driven','Growth-focused','Technical','Innovative','Analytical','Result-oriented','Curious'];
+    const INTERVAL_MS = 2400;
+    const ANIM_MS     = 480;
+
+    const rotator = document.getElementById('rotator');
+    let current   = 0;
+
+    function makeWord(text) {
+      const el = document.createElement('span');
+      el.className  = 'aw-word';
+      el.textContent = text;
+      return el;
+    }
+
+    // First word — skip enter animation on load
+    const first = makeWord(WORDS[0]);
+    first.classList.add('aw-active');
+    rotator.appendChild(first);
+
+    function cycle() {
+      const active = rotator.querySelector('.aw-active');
+      if (!active) return;
+
+      active.classList.remove('aw-active');
+      active.classList.add('aw-leaving');
+
+      setTimeout(() => {
+        active.remove();
+        current = (current + 1) % WORDS.length;
+
+        const next = makeWord(WORDS[current]);
+        rotator.appendChild(next);
+
+        void next.offsetWidth; // force reflow → transition fires
+        next.classList.add('aw-active');
+      }, ANIM_MS);
+    }
+
+    setInterval(cycle, INTERVAL_MS);
+  </script>
+
+</body>
+</html>
