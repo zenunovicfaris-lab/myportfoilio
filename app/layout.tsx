@@ -119,6 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen text-[#e5e7eb] bg-[#0f1117] antialiased`}
+        suppressHydrationWarning
       >
         <MobileNav />
         <div className="min-h-screen flex">

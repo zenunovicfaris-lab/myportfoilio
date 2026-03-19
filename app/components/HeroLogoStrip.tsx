@@ -37,28 +37,27 @@ export default function HeroLogoStrip() {
 
   return (
     <>
+      {/* Styles live here (not in globals.css) so Tailwind v4's CSS layer
+          ordering cannot override them. Rendered only after mount → no SSR
+          mismatch because React 19 only hoists <style precedence=...> tags,
+          not plain <style> tags without that prop. */}
       <style>{`
         @keyframes heroMarquee {
           from { transform: translate3d(0, 0, 0); }
           to   { transform: translate3d(-50%, 0, 0); }
         }
-
         .hero-marquee-track {
           display: flex;
           width: max-content;
           will-change: transform;
           animation: heroMarquee 36s linear infinite;
         }
-
         @media (max-width: 768px) {
           .hero-marquee-track { animation-duration: 48s; }
         }
-
         @media (prefers-reduced-motion: reduce) {
           .hero-marquee-track { animation: none; }
         }
-
-        /* Hover state written in CSS so it survives Tailwind purging */
         .hl-logo {
           opacity: 0.5;
           filter: grayscale(1);

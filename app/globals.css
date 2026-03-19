@@ -80,7 +80,7 @@ body {
 .animate-orb-2 { transform: translate(100vw, 20vh) scale(1); }
 .animate-orb-3 { transform: translate(50vw, 80vh) scale(1); }
 
-/* ── Infinite logo marquee ── */
+/* ── Infinite logo marquee (LogoMarquee component) ── */
 @keyframes marquee {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -96,6 +96,7 @@ body {
 .pause-marquee {
   animation-play-state: paused;
 }
+
 
 /* ── Performance ── */
 .will-change-transform { will-change: transform; }
