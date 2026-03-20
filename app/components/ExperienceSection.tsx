@@ -168,11 +168,7 @@ export default function ExperienceSection() {
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
                   className="group relative flex flex-col items-center gap-2"
                 >
-                  <div className="w-14 h-14 rounded-full bg-[#1a1d27] border border-white/10
-                                 group-hover:border-teal-500/40 group-hover:bg-teal-500/6
-                                 transition-colors duration-300 overflow-hidden
-                                 flex items-center justify-center p-2.5
-                                 shadow-[0_4px_20px_-6px_rgba(0,0,0,0.6)]">
+                  <div className="w-14 h-14 rounded-full bg-[#1a1d27] border border-white/10 group-hover:border-teal-500/40 group-hover:bg-teal-500/6 transition-colors duration-300 overflow-hidden flex items-center justify-center p-2.5 shadow-[0_4px_20px_-6px_rgba(0,0,0,0.6)]">
                     <Image
                       src={`/tools/${tool.file}`}
                       alt={tool.name}
@@ -182,10 +178,7 @@ export default function ExperienceSection() {
                       draggable={false}
                     />
                   </div>
-                  <span className="absolute -bottom-6 left-1/2 -translate-x-1/2
-                                 text-[9px] font-medium text-gray-500 group-hover:text-teal-400
-                                 whitespace-nowrap opacity-0 group-hover:opacity-100
-                                 transition-all duration-200 pointer-events-none">
+                  <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-medium text-gray-500 group-hover:text-teal-400 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
                     {tool.name}
                   </span>
                 </motion.div>
@@ -199,11 +192,7 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 320, damping: 20 }}
-              className="flex items-center gap-1.5 text-[12px] font-medium text-gray-400
-                         hover:text-teal-400 transition-colors duration-200
-                         px-3 py-1.5 rounded-full border border-white/10
-                         hover:border-teal-500/30 bg-[#1a1d27] hover:bg-teal-500/5
-                         whitespace-nowrap"
+              className="flex items-center gap-1.5 text-[12px] font-medium text-gray-400 hover:text-teal-400 transition-colors duration-200 px-3 py-1.5 rounded-full border border-white/10 hover:border-teal-500/30 bg-[#1a1d27] hover:bg-teal-500/5 whitespace-nowrap"
             >
               {showAll ? (
                 <>Show less</>
@@ -239,9 +228,7 @@ export default function ExperienceSection() {
 
           {/* Scroll-driven fill line */}
           <motion.div
-            className="absolute left-[7px] top-2 w-px origin-top
-                       bg-gradient-to-b from-teal-400 via-teal-500/70 to-teal-500/20
-                       shadow-[0_0_8px_rgba(20,184,166,0.6)]"
+            className="absolute left-[7px] top-2 w-px origin-top bg-gradient-to-b from-teal-400 via-teal-500/70 to-teal-500/20 shadow-[0_0_8px_rgba(20,184,166,0.6)]"
             style={{
               scaleY: lineProgress,
               height: "calc(100% - 16px)",
@@ -288,8 +275,7 @@ export default function ExperienceSection() {
                     </h3>
                     <div className="flex items-center gap-2 shrink-0">
                       {entry.current && (
-                        <span className="flex items-center gap-1.5 text-[10px] font-semibold px-2.5 py-1 rounded-full
-                                         bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">
+                        <span className="flex items-center gap-1.5 text-[10px] font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                           Current
                         </span>
@@ -328,8 +314,7 @@ export default function ExperienceSection() {
                         <p className="text-[10px] font-semibold tracking-[0.16em] uppercase text-gray-600">
                           Traffic Growth Proof
                         </p>
-                        <span className="text-[9px] font-semibold px-2 py-0.5 rounded-full
-                                         bg-teal-500/10 border border-teal-500/20 text-teal-500 tracking-wide">
+                        <span className="text-[9px] font-semibold px-2 py-0.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-500 tracking-wide">
                           ✦ Live Data
                         </span>
                       </div>
@@ -343,10 +328,7 @@ export default function ExperienceSection() {
                           quality={100}
                           unoptimized
                           sizes="(max-width: 768px) 100vw, 700px"
-                          className="w-full h-auto object-contain
-                                     transition-transform duration-500 ease-out
-                                     group-hover/proof:scale-[1.02]
-                                     group-hover/proof:brightness-110"
+                          className="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover/proof:scale-[1.02] group-hover/proof:brightness-110"
                         />
                         <div
                           aria-hidden

@@ -5,6 +5,7 @@ import Script from "next/script";
 
 import Sidebar from "./components/Sidebar";
 import MobileNav from "./components/MobileNav";
+import ClientOnly from "./components/ClientOnly";
 import ClickSoundProvider from "./components/ClickSoundProvider"; // ← DODANO
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -116,11 +117,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen text-[#e5e7eb] bg-[#0f1117] antialiased`}
         suppressHydrationWarning
       >
-        <MobileNav />
+        {/* MobileNav: client-only — AnimatePresence + Framer Motion inline styles
+            would cause SSR/client mismatch in React Strict Mode (dev only).
+            Fallback reserves the same h-16 top bar space on mobile. */}
+        <ClientOnly fallback={<div className="lg:hidden fixed top-0 left-0 right-0 h-16 z-50 bg-[#0d0f16]/80 border-b border-white/8" aria-hidden="true" />}>
+          <MobileNav />
+        </ClientOnly>
+
         <div className="min-h-screen flex">
-          <div className="hidden lg:block w-72 shrink-0">
-            <Sidebar />
-          </div>
+          {/* Sidebar: client-only — motion values (rotateX/rotateY) differ between
+              SSR (no inline style) and first client render → hydration error in dev.
+              Fallback is an identical invisible spacer so layout doesn't shift. */}
+          <ClientOnly fallback={<div className="hidden lg:block w-72 shrink-0" aria-hidden="true" />}>
+            <div className="hidden lg:block w-72 shrink-0">
+              <Sidebar />
+            </div>
+          </ClientOnly>
           <main className="flex-1 min-w-0 pt-16 lg:pt-0">
             {children}
           </main>

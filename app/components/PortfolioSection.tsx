@@ -89,10 +89,7 @@ function ProjectCard({ p }: { p: (typeof PROJECTS)[number] }) {
       variants={cardVariants}
       whileHover={{ y: -8, scale: 1.015 }}
       transition={{ type: "spring", stiffness: 240, damping: 18 }}
-      className="group relative flex flex-col bg-[#111218] border border-white/8 rounded-2xl overflow-hidden
-                 hover:border-teal-500/35 will-change-transform transition-colors duration-300
-                 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.5)]
-                 hover:shadow-[0_16px_48px_-12px_rgba(20,184,166,0.18)]"
+      className="group relative flex flex-col bg-[#111218] border border-white/8 rounded-2xl overflow-hidden hover:border-teal-500/35 will-change-transform transition-colors duration-300 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_48px_-12px_rgba(20,184,166,0.18)]"
     >
       <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-teal-500/0 group-hover:bg-teal-500/8 blur-3xl transition-all duration-700 pointer-events-none" />
 
@@ -104,15 +101,11 @@ function ProjectCard({ p }: { p: (typeof PROJECTS)[number] }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           quality={90}
           unoptimized
-          className="object-cover object-top
-                     transition-transform duration-700 ease-out
-                     group-hover:scale-[1.06]"
+          className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.06]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111218]/60 via-transparent to-transparent" />
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500
-                        [background:radial-gradient(ellipse_at_50%_0%,rgba(20,184,166,0.13),transparent_70%)]" />
-        <span className="absolute top-3 left-3 text-[10px] font-bold font-mono text-white/20
-                         group-hover:text-teal-400/50 transition-colors duration-300 select-none">
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 [background:radial-gradient(ellipse_at_50%_0%,rgba(20,184,166,0.13),transparent_70%)]" />
+        <span className="absolute top-3 left-3 text-[10px] font-bold font-mono text-white/20 group-hover:text-teal-400/50 transition-colors duration-300 select-none">
           {String(p.id).padStart(2, "0")}
         </span>
         {p.link && (
@@ -121,9 +114,7 @@ function ProjectCard({ p }: { p: (typeof PROJECTS)[number] }) {
             whileHover={{ opacity: 1, scale: 1 }}
             className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300"
           >
-            <span className="flex items-center gap-1 text-[9px] font-semibold uppercase tracking-wider
-                             bg-teal-500/20 border border-teal-500/30 text-teal-300
-                             px-2 py-1 rounded-full backdrop-blur-sm">
+            <span className="flex items-center gap-1 text-[9px] font-semibold uppercase tracking-wider bg-teal-500/20 border border-teal-500/30 text-teal-300 px-2 py-1 rounded-full backdrop-blur-sm">
               <ExternalLink size={9} />
               Live
             </span>
@@ -132,8 +123,7 @@ function ProjectCard({ p }: { p: (typeof PROJECTS)[number] }) {
       </div>
 
       <div className="flex flex-col flex-1 p-6">
-        <h3 className="font-semibold text-white text-base mb-2 leading-snug
-                       group-hover:text-teal-100 transition-colors duration-200">
+        <h3 className="font-semibold text-white text-base mb-2 leading-snug group-hover:text-teal-100 transition-colors duration-200">
           {p.title}
         </h3>
         <p className="text-sm text-gray-400 leading-relaxed mb-4 flex-1">
@@ -148,9 +138,7 @@ function ProjectCard({ p }: { p: (typeof PROJECTS)[number] }) {
             <motion.span
               key={tag}
               variants={tagVariants}
-              className="text-[11px] px-2.5 py-1 rounded-full bg-white/5 border border-white/8
-                         text-gray-500 group-hover:border-teal-500/20 group-hover:text-gray-400
-                         transition-colors duration-200"
+              className="text-[11px] px-2.5 py-1 rounded-full bg-white/5 border border-white/8 text-gray-500 group-hover:border-teal-500/20 group-hover:text-gray-400 transition-colors duration-200"
             >
               {tag}
             </motion.span>
@@ -170,15 +158,13 @@ function ProjectCard({ p }: { p: (typeof PROJECTS)[number] }) {
                 .join(" ")}
               whileHover={{ x: 4 }}
               transition={{ type: "spring", stiffness: 320, damping: 20 }}
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-400
-                         hover:text-teal-300 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors"
             >
               View Details
               <ArrowUpRight size={14} />
             </motion.a>
           ) : (
-            <span className="inline-flex items-center gap-1.5 text-sm font-medium
-                             text-gray-700 cursor-default select-none">
+            <span className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-700 cursor-default select-none">
               View Details
               <ArrowUpRight size={14} />
             </span>

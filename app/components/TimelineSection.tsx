@@ -86,16 +86,14 @@ export default function TimelineSection() {
                 <motion.div
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 320, damping: 24 }}
-                  className="flex-1 bg-[#111218] border border-white/8 rounded-2xl p-6
-                             hover:border-teal-500/22 transition-colors duration-200"
+                  className="flex-1 bg-[#111218] border border-white/8 rounded-2xl p-6 hover:border-teal-500/22 transition-colors duration-200"
                 >
                   {/* Year badge + role row */}
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-1">
                     <h3 className="font-bold text-white text-base leading-snug">
                       {entry.role}
                     </h3>
-                    <span className="shrink-0 text-[11px] font-bold px-3 py-1 rounded-full
-                                     bg-teal-500/10 border border-teal-500/25 text-teal-400 font-mono">
+                    <span className="shrink-0 text-[11px] font-bold px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/25 text-teal-400 font-mono">
                       {entry.year}
                     </span>
                   </div>

@@ -118,10 +118,7 @@ export default function Home() {
                   whileHover={{ scale: 1.04, y: -2 }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-400
-                             text-[#0f1117] font-semibold rounded-xl
-                             shadow-[0_0_40px_-8px_rgba(20,184,166,0.55)]
-                             hover:shadow-[0_0_60px_-8px_rgba(20,184,166,0.8)] transition-shadow"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-400 text-[#0f1117] font-semibold rounded-xl shadow-[0_0_40px_-8px_rgba(20,184,166,0.55)] hover:shadow-[0_0_60px_-8px_rgba(20,184,166,0.8)] transition-shadow"
                 >
                   View Portfolio <ChevronRight size={16} />
                 </motion.a>
@@ -130,9 +127,7 @@ export default function Home() {
                   whileHover={{ scale: 1.04, y: -2 }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#1a1d27] border border-white/10
-                             text-white font-semibold rounded-xl
-                             hover:border-teal-500/40 hover:bg-teal-500/5 transition-colors"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#1a1d27] border border-white/10 text-white font-semibold rounded-xl hover:border-teal-500/40 hover:bg-teal-500/5 transition-colors"
                 >
                   Contact Me <Mail size={16} />
                 </motion.a>
@@ -152,9 +147,7 @@ export default function Home() {
                 <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-teal-500/20 to-cyan-400/10 pointer-events-none" />
 
                 {/* Photo circle */}
-                <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden
-                                border-2 border-teal-500/30
-                                shadow-[0_0_60px_-10px_rgba(20,184,166,0.45),0_32px_80px_-20px_rgba(0,0,0,0.8)]">
+                <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-teal-500/30 shadow-[0_0_60px_-10px_rgba(20,184,166,0.45),0_32px_80px_-20px_rgba(0,0,0,0.8)]">
                   <Image
                     src="/images/faris-about-me.jpg"
                     alt="Faris Zenunović"
@@ -171,9 +164,7 @@ export default function Home() {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.55, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                  className="absolute bottom-6 -right-4 sm:-right-8 inline-flex items-center gap-2 rounded-full
-                             border border-teal-500/25 bg-[#0d0f16]/90
-                             px-4 py-2 text-xs text-teal-300 font-medium shadow-lg"
+                  className="absolute bottom-6 -right-4 sm:-right-8 inline-flex items-center gap-2 rounded-full border border-teal-500/25 bg-[#0d0f16]/90 px-4 py-2 text-xs text-teal-300 font-medium shadow-lg"
                 >
                   <span className="h-1.5 w-1.5 rounded-full bg-teal-400" />
                   Available for projects

@@ -44,10 +44,7 @@ const TRACK_TWO = [...ROW_TWO, ...ROW_TWO];
 
 function SkillPill({ emoji, name }: { emoji: string; name: string }) {
   return (
-    <div className="flex-shrink-0 flex items-center gap-2.5 px-4 py-2.5 rounded-full
-                    border border-white/10 bg-[#111218]
-                    hover:border-teal-500/30 hover:bg-teal-500/6
-                    transition-colors duration-300 cursor-default select-none group">
+    <div className="flex-shrink-0 flex items-center gap-2.5 px-4 py-2.5 rounded-full border border-white/10 bg-[#111218] hover:border-teal-500/30 hover:bg-teal-500/6 transition-colors duration-300 cursor-default select-none group">
       <span
         aria-hidden
         className="text-base leading-none group-hover:scale-110 transition-transform duration-300"

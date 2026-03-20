@@ -82,9 +82,7 @@ function LogoItem({ logo }: { logo: (typeof LOGOS)[number] }) {
       {/* Glow that appears on hover */}
       <span
         aria-hidden
-        className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500
-                   [background:radial-gradient(120px_circle_at_50%_50%,rgba(20,184,166,0.22),transparent_70%)]
-                   blur-sm pointer-events-none"
+        className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 [background:radial-gradient(120px_circle_at_50%_50%,rgba(20,184,166,0.22),transparent_70%)] blur-sm pointer-events-none"
       />
 
       <Image
@@ -93,15 +91,7 @@ function LogoItem({ logo }: { logo: (typeof LOGOS)[number] }) {
         width={220}
         height={80}
         draggable={false}
-        className="
-          h-10 md:h-14 w-auto max-w-[160px] md:max-w-[200px] object-contain select-none
-          grayscale opacity-40
-          group-hover:grayscale-0 group-hover:opacity-95
-          transition-all duration-500 ease-out
-          group-hover:scale-105
-          drop-shadow-[0_0_0px_rgba(20,184,166,0)]
-          group-hover:drop-shadow-[0_0_16px_rgba(20,184,166,0.5)]
-        "
+        className="h-10 md:h-14 w-auto max-w-[160px] md:max-w-[200px] object-contain select-none grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-95 transition-all duration-500 ease-out group-hover:scale-105 drop-shadow-[0_0_0px_rgba(20,184,166,0)] group-hover:drop-shadow-[0_0_16px_rgba(20,184,166,0.5)]"
       />
     </div>
   );

@@ -230,10 +230,7 @@ export default function Sidebar() {
           whileHover={{ y: -2, scale: 1.015 }}
           whileTap={{ scale: 0.975 }}
           transition={{ type: "spring", stiffness: 280, damping: 18 }}
-          className="relative block w-full rounded-xl px-5 py-3.5 text-center text-sm font-semibold text-[#0f1117]
-                     bg-gradient-to-r from-teal-500 to-cyan-400
-                     shadow-[0_12px_40px_-14px_rgba(20,184,166,0.65)]
-                     hover:shadow-[0_16px_50px_-14px_rgba(20,184,166,0.85)] transition-shadow"
+          className="relative block w-full rounded-xl px-5 py-3.5 text-center text-sm font-semibold text-[#0f1117] bg-gradient-to-r from-teal-500 to-cyan-400 shadow-[0_12px_40px_-14px_rgba(20,184,166,0.65)] hover:shadow-[0_16px_50px_-14px_rgba(20,184,166,0.85)] transition-shadow"
         >
           Get In Touch
         </motion.a>
