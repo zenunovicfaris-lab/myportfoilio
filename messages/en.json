@@ -16,8 +16,6 @@
     }
   },
   "hero": {
-    "intro": "Hi, I'm Faris Zenunović - a",
-    "passionate": "passionate",
     "srOnly": "– SEO Specialist and Web Developer from Živinice, Bosnia",
     "role": "SEO Specialist & Growth Partner",
     "description": "I specialize in technical SEO, content optimization, and scaling multi-language projects. Explore my most powerful projects below.",
@@ -25,7 +23,8 @@
     "ctaPortfolio": "View Portfolio",
     "ctaContact": "Contact Me",
     "available": "Available for projects",
-    "platformsLabel": "Platforms I've worked with"
+    "platformsLabel": "Platforms I've worked with",
+    "rotatingWords": ["SEO Strategist", "Technical SEO", "Growth Partner", "Content Optimizer", "Link Builder", "Local SEO Expert"]
   },
   "portfolio": {
     "label": "Portfolio",

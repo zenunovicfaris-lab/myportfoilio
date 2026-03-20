@@ -16,8 +16,6 @@
     }
   },
   "hero": {
-    "intro": "Zdravo, ja sam Faris Zenunović",
-    "passionate": "",
     "srOnly": "– SEO Specialist i Web Developer iz Bosne i Hercegovine",
     "role": "SEO Specialist & Growth Partner",
     "description": "Specijaliziram se za tehničku SEO optimizaciju, content strategiju i skaliranje višejezičnih projekata. Istražite moje najmoćnije projekte.",
@@ -25,7 +23,8 @@
     "ctaPortfolio": "Pogledaj Portfolio",
     "ctaContact": "Kontaktiraj me",
     "available": "Dostupan za projekte",
-    "platformsLabel": "Platforme s kojima sam radio"
+    "platformsLabel": "Platforme s kojima sam radio",
+    "rotatingWords": ["SEO Strateg", "Tehničar za SEO", "Growth Partner", "Content Optimizator", "Link Builder", "Lokalni SEO Ekspert"]
   },
   "portfolio": {
     "label": "Portfolio",

@@ -10,6 +10,8 @@ import { Mail, Phone, Linkedin, Github, MapPin, ChevronRight } from "lucide-reac
 import PortfolioSection  from "../components/PortfolioSection";
 import ExperienceSection from "../components/ExperienceSection";
 import HeroLogoStrip     from "../components/HeroLogoStrip";
+import SocialLinks       from "../components/SocialLinks";
+import RotatingText      from "../components/RotatingText";
 
 const EffectsLayer          = dynamic(() => import("../components/EffectsLayer"),          { ssr: false });
 const GrowthScrollAnimation = dynamic(() => import("../components/GrowthScrollAnimation"), { ssr: false });
@@ -45,15 +47,6 @@ export default function Home() {
 
             {/* LEFT: Text */}
             <div className="order-2 lg:order-1 text-center lg:text-left">
-              <motion.p
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="text-[10px] md:text-xs font-semibold tracking-[0.22em] uppercase text-gray-500 mb-5"
-              >
-                {t("intro")}{" "}
-                <span className="text-teal-400">{t("passionate")}</span>
-              </motion.p>
 
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -69,9 +62,19 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1], delay: 0.12 }}
-                className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto lg:mx-0 mb-12 opacity-90 text-center lg:text-left"
+                className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto lg:mx-0 mb-4 opacity-90 text-center lg:text-left"
               >
                 {t("role")}
+              </motion.p>
+
+              <motion.p
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1], delay: 0.16 }}
+                className="text-lg text-gray-500 max-w-3xl mx-auto lg:mx-0 mb-8 text-center lg:text-left flex items-center gap-2 flex-wrap justify-center lg:justify-start"
+              >
+                {locale === "bs" ? "Specijaliziran kao" : "Specialized in"}{" "}
+                <RotatingText words={t.raw("rotatingWords") as string[]} />
               </motion.p>
 
               <motion.p
@@ -129,6 +132,9 @@ export default function Home() {
                   </motion.a>
                 )}
               </motion.div>
+              <div className="mt-6">
+                <SocialLinks />
+              </div>
             </div>
 
             {/* RIGHT: Photo */}
@@ -219,7 +225,7 @@ export default function Home() {
             >
               <Mail className="w-16 h-16 mx-auto mb-6 text-emerald-400 group-hover:text-emerald-300 transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent text-center">{tc("email")}</h3>
-              <a href="mailto:zenunovicfaris@gmail.com" className="text-xl font-medium tracking-tight hover:text-emerald-400 transition-colors inline-block mx-auto text-center w-fit">zenunovicfaris@gmail.com</a>
+              <a href="mailto:zenunovicfaris@gmail.com" className="text-xl font-medium tracking-tight hover:text-emerald-400 transition-colors block w-full text-center break-all">zenunovicfaris@gmail.com</a>
             </motion.div>
 
             <motion.div

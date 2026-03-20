@@ -426,12 +426,12 @@ export default async function UslugePage({ params }: Props) {
             </div>
 
             <div className="text-center">
-              <Link
+              <a
                 href={`/${locale}#projects`}
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors duration-200"
               >
                 {t("resultsCta")}
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -530,24 +530,24 @@ export default async function UslugePage({ params }: Props) {
                     ))}
                   </ul>
 
-                  <Link
+                  <a
                     href={`/${locale}#contact`}
                     className={`block w-full text-center py-3 rounded-xl text-sm font-semibold transition-colors duration-200 ${pkg.featured ? "bg-teal-500 hover:bg-teal-400 text-[#0f1117]" : "border border-white/15 hover:border-white/30 text-white hover:bg-white/5"}`}
                   >
                     {pkg.cta}
-                  </Link>
+                  </a>
                 </article>
               ))}
             </div>
 
             <p className="text-center mt-8 text-sm text-gray-500">
               {t("packagesNote")}{" "}
-              <Link
+              <a
                 href={`/${locale}#contact`}
                 className="text-teal-400 hover:text-teal-300 transition-colors duration-200"
               >
                 {t("packagesNoteLink")}
-              </Link>
+              </a>
             </p>
           </div>
         </section>
@@ -599,7 +599,7 @@ export default async function UslugePage({ params }: Props) {
                 </p>
               </div>
 
-              <Link
+              <a
                 href={`/${locale}#contact`}
                 className="shrink-0 inline-flex items-center gap-2 px-8 py-4 bg-teal-500 hover:bg-teal-400 text-[#0f1117] font-semibold rounded-xl transition-colors duration-200"
               >
@@ -607,7 +607,7 @@ export default async function UslugePage({ params }: Props) {
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                   <path d="M3.75 9h10.5M10.5 5.25L14.25 9l-3.75 3.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </section>

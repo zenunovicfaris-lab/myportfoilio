@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { User, Code, FileText, Phone, type LucideIcon } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import SocialLinks from "./SocialLinks";
 
 const SECTIONS = ["about", "projects", "resume", "contact"] as const;
 type Section = (typeof SECTIONS)[number];
@@ -18,10 +19,10 @@ export default function Sidebar() {
 
   // Absolute locale-prefixed hrefs so links work from any page (e.g. /bs/usluge)
   const NAV_ITEMS: NavItem[] = [
-    { href: `/${locale}/#about`,    label: t("nav.about"),    id: "about",    icon: User     },
-    { href: `/${locale}/#projects`, label: t("nav.projects"), id: "projects", icon: Code     },
-    { href: `/${locale}/#resume`,   label: t("nav.resume"),   id: "resume",   icon: FileText },
-    { href: `/${locale}/#contact`,  label: t("nav.contact"),  id: "contact",  icon: Phone    },
+    { href: `/${locale}#about`,    label: t("nav.about"),    id: "about",    icon: User     },
+    { href: `/${locale}#projects`, label: t("nav.projects"), id: "projects", icon: Code     },
+    { href: `/${locale}#resume`,   label: t("nav.resume"),   id: "resume",   icon: FileText },
+    { href: `/${locale}#contact`,  label: t("nav.contact"),  id: "contact",  icon: Phone    },
   ];
 
   const [activeSection, setActiveSection] = useState<Section>("about");
@@ -62,12 +63,22 @@ export default function Sidebar() {
     let ticking = false;
 
     const computeActive = () => {
-      const y = window.scrollY + 80; // Smanjen offset za bolji detection
+      // Bottom-of-page: force last section (contact) active
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50) {
+        const last = SECTIONS[SECTIONS.length - 1];
+        if (lastActiveRef.current !== last) {
+          lastActiveRef.current = last;
+          setActiveSection(last);
+        }
+        return;
+      }
+
+      const y = window.scrollY + 80;
 
       for (const id of SECTIONS) {
         const el = document.getElementById(id);
         if (!el) continue;
-        const top = el.offsetTop;
+        const top = el.getBoundingClientRect().top + window.scrollY;
         const bottom = top + el.offsetHeight;
 
         if (y >= top && y < bottom) {
@@ -231,8 +242,11 @@ export default function Sidebar() {
 
       {/* ── CTA button ──────────────────────────────────────────────────── */}
       <div className="pt-5 mt-5 border-t border-white/8">
+        <div className="flex justify-center mb-4">
+          <SocialLinks />
+        </div>
         <motion.a
-          href={`/${locale}/#contact`}
+          href={`/${locale}#contact`}
           whileHover={{ y: -2, scale: 1.015 }}
           whileTap={{ scale: 0.975 }}
           transition={{ type: "spring", stiffness: 280, damping: 18 }}
