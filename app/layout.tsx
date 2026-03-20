@@ -13,26 +13,21 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 export const metadata: Metadata = {
   metadataBase: new URL("https://fariszenunovic.com"),
   title: {
-    default: "Faris Zenunović | SEO Specialist, Next.js & React Developer – BiH",
+    default: "Faris Zenunović | Freelance SEO Specialist - BiH",
     template: "%s | Faris Zenunović",
   },
-  description: "Faris Zenunović – Freelance SEO Specialist, Next.js & React Developer, WordPress Expert from Živinice, Bosnia. Portfolio & services.",
+  description: "Faris Zenunović - Freelance SEO Specialist from Bosnia. Technical SEO, content optimization & multilingual organic growth.",
   keywords: [
     "SEO specialist",
     "technical SEO",
     "content optimization",
     "organic growth",
-    "React developer",
-    "Next.js developer",
-    "WordPress developer",
-    "Full Stack Developer",
-    "freelance web developer",
     "multilingual SEO",
-    "web development",
+    "freelance SEO",
     "Faris Zenunović",
+    "Faris Zenunovic",
     "Živinice",
     "Bosnia and Herzegovina",
-    "Faris Zenunovic",
     "Content Writer",
     "Content Editor"
   ],
@@ -44,8 +39,8 @@ export const metadata: Metadata = {
     apple: '/favicon.ico',
   },
   openGraph: {
-    title: "Faris Zenunović – SEO Specialist & Next.js Developer from BiH",
-    description: "Freelance SEO Specialist, Next.js & React Developer, WordPress Expert from Živinice, Bosnia. Portfolio & services.",
+    title: "Faris Zenunović - Freelance SEO Specialist from BiH",
+    description: "Faris Zenunović - Freelance SEO Specialist from Bosnia. Technical SEO, content optimization & multilingual organic growth.",
     images: ["/og-image.jpg"],
     type: "website",
     locale: "en_US",
@@ -53,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faris Zenunović – SEO Specialist & Next.js Developer from BiH",
-    description: "Freelance SEO Specialist, Next.js & React Developer, WordPress Expert from Živinice, Bosnia. Portfolio & services.",
+    title: "Faris Zenunović - Freelance SEO Specialist from BiH",
+    description: "Faris Zenunović - Freelance SEO Specialist from Bosnia. Technical SEO, content optimization & multilingual organic growth.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -80,8 +75,8 @@ const jsonLd = {
   "alternateName": "Faris Zenunovic",
   "url": "https://fariszenunovic.com",
   "image": "https://fariszenunovic.com/images/faris-about-me.jpg",
-  "jobTitle": "SEO Specialist & Web Developer",
-  "description": "Freelance SEO Specialist, Next.js & React Developer and WordPress Expert from Živinice, Bosnia and Herzegovina.",
+  "jobTitle": "Freelance SEO Specialist",
+  "description": "Freelance SEO Specialist from Živinice, Bosnia and Herzegovina. Technical SEO, content optimization & multilingual organic growth.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Živinice",
