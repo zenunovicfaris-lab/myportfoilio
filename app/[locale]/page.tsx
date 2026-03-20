@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Mail, Phone, Linkedin, Github, MapPin, ChevronRight } from "lucide-react";
@@ -15,8 +15,9 @@ const EffectsLayer          = dynamic(() => import("../components/EffectsLayer")
 const GrowthScrollAnimation = dynamic(() => import("../components/GrowthScrollAnimation"), { ssr: false });
 
 export default function Home() {
-  const t  = useTranslations("hero");
-  const tc = useTranslations("contact");
+  const t      = useTranslations("hero");
+  const tc     = useTranslations("contact");
+  const locale = useLocale();
 
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -116,6 +117,17 @@ export default function Home() {
                 >
                   {t("ctaContact")} <Mail size={16} />
                 </motion.a>
+                {locale === "bs" && (
+                  <motion.a
+                    href="/bs/usluge"
+                    whileHover={{ scale: 1.04, y: -2 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 320, damping: 18 }}
+                    className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-xl shadow-[0_0_40px_-8px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_-8px_rgba(249,115,22,0.6)] transition-shadow"
+                  >
+                    💼 SEO Usluge BiH
+                  </motion.a>
+                )}
               </motion.div>
             </div>
 

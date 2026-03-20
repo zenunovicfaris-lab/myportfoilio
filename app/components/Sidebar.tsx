@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { User, Code, FileText, Phone, type LucideIcon } from "lucide-react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const SECTIONS = ["about", "projects", "resume", "contact"] as const;
 type Section = (typeof SECTIONS)[number];
@@ -12,14 +13,15 @@ type Section = (typeof SECTIONS)[number];
 type NavItem = { href: string; label: string; id: Section; icon: LucideIcon };
 
 export default function Sidebar() {
-  const t = useTranslations("sidebar");
+  const t      = useTranslations("sidebar");
+  const locale = useLocale();
 
-  // Defined inside component so labels can use t()
+  // Absolute locale-prefixed hrefs so links work from any page (e.g. /bs/usluge)
   const NAV_ITEMS: NavItem[] = [
-    { href: "#about",    label: t("nav.about"),    id: "about",    icon: User     },
-    { href: "#projects", label: t("nav.projects"), id: "projects", icon: Code     },
-    { href: "#resume",   label: t("nav.resume"),   id: "resume",   icon: FileText },
-    { href: "#contact",  label: t("nav.contact"),  id: "contact",  icon: Phone    },
+    { href: `/${locale}/#about`,    label: t("nav.about"),    id: "about",    icon: User     },
+    { href: `/${locale}/#projects`, label: t("nav.projects"), id: "projects", icon: Code     },
+    { href: `/${locale}/#resume`,   label: t("nav.resume"),   id: "resume",   icon: FileText },
+    { href: `/${locale}/#contact`,  label: t("nav.contact"),  id: "contact",  icon: Phone    },
   ];
 
   const [activeSection, setActiveSection] = useState<Section>("about");
@@ -230,7 +232,7 @@ export default function Sidebar() {
       {/* ── CTA button ──────────────────────────────────────────────────── */}
       <div className="pt-5 mt-5 border-t border-white/8">
         <motion.a
-          href="#contact"
+          href={`/${locale}/#contact`}
           whileHover={{ y: -2, scale: 1.015 }}
           whileTap={{ scale: 0.975 }}
           transition={{ type: "spring", stiffness: 280, damping: 18 }}
@@ -238,6 +240,9 @@ export default function Sidebar() {
         >
           {t("cta")}
         </motion.a>
+        <div className="flex justify-center mt-4">
+          <LanguageSwitcher />
+        </div>
       </div>
     </aside>
   );

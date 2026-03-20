@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Sidebar from "./Sidebar";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -13,13 +14,16 @@ export default function MobileNav() {
       {/* Top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 h-16 z-50 flex items-center justify-between px-5 bg-[#0d0f16]/80 border-b border-white/8">
         <span className="text-sm font-semibold text-white">Faris Zenunović</span>
-        <button
-          onClick={() => setOpen(true)}
-          className="flex items-center justify-center w-9 h-9 rounded-xl border border-white/10 bg-white/4 text-gray-400 hover:text-white transition-colors"
-          aria-label="Open menu"
-        >
-          <Menu size={18} />
-        </button>
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher />
+          <button
+            onClick={() => setOpen(true)}
+            className="flex items-center justify-center w-9 h-9 rounded-xl border border-white/10 bg-white/4 text-gray-400 hover:text-white transition-colors"
+            aria-label="Open menu"
+          >
+            <Menu size={18} />
+          </button>
+        </div>
       </div>
 
       {/* Off-canvas drawer */}
