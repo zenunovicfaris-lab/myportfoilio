@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const LOGOS = [
   { file: "adventuregamers.png", name: "Adventure Gamers" },
@@ -21,6 +22,8 @@ const LOGOS = [
 ];
 
 export default function HeroLogoStrip() {
+  const t = useTranslations("hero");
+
   /**
    * mounted guard: server sends an invisible placeholder div.
    * Client renders the real content after first paint.
@@ -76,7 +79,7 @@ export default function HeroLogoStrip() {
         className="mt-12 w-full"
       >
         <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 text-center mb-5 select-none">
-          Platforms I&apos;ve worked with
+          {t("platformsLabel")}
         </p>
 
         <div

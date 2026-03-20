@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Faris Zenunović | Freelance SEO Specialist - BiH",
+    "description": "Faris Zenunović - Freelance SEO Specialist from Bosnia. Technical SEO, content optimization & multilingual organic growth.",
+    "ogTitle": "Faris Zenunović - Freelance SEO Specialist from BiH"
+  },
+  "sidebar": {
+    "role": "SEO Specialist",
+    "available": "Available for projects",
+    "cta": "Get In Touch",
+    "nav": {
+      "about": "About Me",
+      "projects": "Portfolio",
+      "resume": "Resume",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "intro": "Hi, I'm Faris Zenunović - a",
+    "passionate": "passionate",
+    "srOnly": "– SEO Specialist and Web Developer from Živinice, Bosnia",
+    "role": "SEO Specialist & Growth Partner",
+    "description": "I specialize in technical SEO, content optimization, and scaling multi-language projects. Explore my most powerful projects below.",
+    "location": "Živinice, Bosnia and Herzegovina",
+    "ctaPortfolio": "View Portfolio",
+    "ctaContact": "Contact Me",
+    "available": "Available for projects",
+    "platformsLabel": "Platforms I've worked with"
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "heading": "Selected Work",
+    "description": "A selection of SEO campaigns, web projects, and digital strategies I've worked on.",
+    "viewDetails": "View Details",
+    "live": "Live",
+    "projects": [
+      {
+        "title": "SEO Growth – esports.net",
+        "description": "Contributed to long-form SEO content and technical optimization for esports.net, supporting organic traffic growth and visibility across competitive search queries.",
+        "tags": ["SEO", "Content Strategy", "SEMrush"]
+      },
+      {
+        "title": "Crypto SEO – 99Bitcoins",
+        "description": "SEO strategy and keyword optimization for a high-authority crypto affiliate platform targeting competitive blockchain and cryptocurrency search queries.",
+        "tags": ["SEO", "Affiliate SEO", "Crypto"]
+      },
+      {
+        "title": "Startup SEO – kakolako.com",
+        "description": "Built SEO landing pages and optimized site structure to improve keyword rankings and organic traffic for a startup project.",
+        "tags": ["SEO", "Google Search Console", "Technical SEO"]
+      },
+      {
+        "title": "SEO Proposal Landing Page – Alfa Metabo",
+        "description": "Custom SEO proposal website created to demonstrate how targeted SEO strategy and content optimization could increase inbound leads for a local PVC window company.",
+        "tags": ["SEO Strategy", "Landing Page", "Lead Generation"]
+      },
+      {
+        "title": "AI Sales Automation Concept",
+        "description": "Concept and prototype for an AI-powered sales automation tool designed to help local businesses manage Instagram and WhatsApp customer inquiries.",
+        "tags": ["AI", "SaaS", "Automation"]
+      }
+    ]
+  },
+  "experience": {
+    "label": "Background",
+    "heading": "Skills & Experience",
+    "description": "An overview of my key skills, technologies I work with, tools I use, and my professional journey so far.",
+    "technologiesLabel": "Technologies & Tools",
+    "journeyLabel": "Changelog from my journey",
+    "showLess": "Show less",
+    "showMore": "Show {count} more",
+    "current": "Current",
+    "trafficProofLabel": "Traffic Growth Proof",
+    "liveData": "✦ Live Data",
+    "hoverZoom": "Hover to zoom",
+    "timeline": [
+      {
+        "period": "2022",
+        "role": "Foundations in SEO",
+        "company": "Self-directed Learning",
+        "bullets": [
+          "Immersed in core SEO disciplines - technical auditing, on-page optimization, keyword research, and content strategy.",
+          "Applied knowledge through personal test sites, studying organic ranking factors and algorithm behavior hands-on.",
+          "Built a structured workflow for competitive analysis and SERP evaluation that became the foundation of all future client work."
+        ]
+      },
+      {
+        "period": "2022 – Present",
+        "role": "Freelance SEO Specialist",
+        "company": "Independent Clients",
+        "bullets": [
+          "Planned and executed end-to-end SEO strategies for local and regional clients across multiple industries.",
+          "Developed and optimized SEO landing pages for kakolako.com, improving keyword coverage and click-through rates in the local Bosnian market.",
+          "Delivered consistent organic traffic growth through structured content planning, internal linking, and on-page improvements."
+        ],
+        "caption": "Google Search Console - kakolako.com: Organic click growth following on-page SEO and content optimization."
+      },
+      {
+        "period": "2022 – 2024",
+        "role": "SEO Manager",
+        "company": "Imperia Marketing / Finixio",
+        "bullets": [
+          "Led SEO strategy for a portfolio of affiliate websites in the crypto, fintech, and regulated financial sectors.",
+          "Identified and targeted high-intent financial keywords - covering cards, payments, investing, and crypto exchanges - using Ahrefs and SEMrush.",
+          "Executed content gap analysis and competitor benchmarking to capture underserved search demand in competitive regulated markets.",
+          "Collaborated with editorial and dev teams to implement technical SEO improvements, improving crawlability and indexation across key properties."
+        ],
+        "caption": "SEMrush - 99bitcoins.com: Domain authority score of 51 with 76K+ monthly organic visits across crypto content."
+      },
+      {
+        "period": "2024 – 2026",
+        "role": "Content Creator & SEO Specialist",
+        "company": "ClickOut Media",
+        "bullets": [
+          "Produced and optimized long-form SEO content - including comparison guides, review articles, and topical hubs - across finance, crypto, and online services verticals.",
+          "Contributed to organic performance improvements on esports.net by supporting content restructuring, internal linking, and technical SEO initiatives.",
+          "Used Ahrefs and SEMrush for continuous keyword opportunity analysis, ensuring content aligned with evolving search intent and SERP features.",
+          "Worked within large-scale editorial systems, balancing SEO best practices with brand voice and content quality standards."
+        ],
+        "caption": "SEMrush - esports.net: 43K+ organic keywords tracked, contributing to technical SEO and content restructuring efforts."
+      }
+    ]
+  },
+  "skills": {
+    "label": "Toolkit",
+    "heading": "Skills & Experience",
+    "description": "The tools and disciplines I reach for every day - from strategy and research to code and automation."
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Let's Work Together",
+    "description": "Have a project in mind? Reach out - I'd love to discuss how we can grow your organic traffic.",
+    "phone": "Phone",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}

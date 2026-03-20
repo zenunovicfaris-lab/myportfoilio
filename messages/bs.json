@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "SEO Usluge BiH | Faris Zenunović - SEO Specialist",
+    "description": "Faris Zenunović - Freelance SEO Specialist iz Bosne i Hercegovine. Profesionalne SEO usluge, optimizacija sajta i organski rast za BiH tržište.",
+    "ogTitle": "SEO Usluge BiH - Faris Zenunović SEO Specialist"
+  },
+  "sidebar": {
+    "role": "SEO Specialist",
+    "available": "Dostupan za projekte",
+    "cta": "Kontaktiraj me",
+    "nav": {
+      "about": "O meni",
+      "projects": "Portfolio",
+      "resume": "CV",
+      "contact": "Kontakt"
+    }
+  },
+  "hero": {
+    "intro": "Zdravo, ja sam Faris Zenunović -",
+    "passionate": "strastveni",
+    "srOnly": "– SEO Specialist i Web Developer iz Bosne i Hercegovine",
+    "role": "SEO Specialist & Growth Partner",
+    "description": "Specijaliziram se za tehničku SEO optimizaciju, content strategiju i skaliranje višejezičnih projekata. Istražite moje najmoćnije projekte.",
+    "location": "Bosna i Hercegovina",
+    "ctaPortfolio": "Pogledaj Portfolio",
+    "ctaContact": "Kontaktiraj me",
+    "available": "Dostupan za projekte",
+    "platformsLabel": "Platforme s kojima sam radio"
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "heading": "Odabrani Projekti",
+    "description": "Odabir SEO kampanja, web projekata i digitalnih strategija na kojima sam radio.",
+    "viewDetails": "Pogledaj Detalje",
+    "live": "Live",
+    "projects": [
+      {
+        "title": "SEO Rast – esports.net",
+        "description": "Doprinos long-form SEO sadržaju i tehničkoj optimizaciji za esports.net, podrška rastu organskog prometa i vidljivosti na kompetitivnim upitima.",
+        "tags": ["SEO", "Content Strategy", "SEMrush"]
+      },
+      {
+        "title": "Crypto SEO – 99Bitcoins",
+        "description": "SEO strategija i keyword optimizacija za visoko-autoritativnu crypto affiliate platformu koja targetira kompetitivne blockchain i kriptovalutne upite.",
+        "tags": ["SEO", "Affiliate SEO", "Crypto"]
+      },
+      {
+        "title": "Startup SEO – kakolako.com",
+        "description": "Izrađene SEO landing stranice i optimizirana struktura sajta za poboljšanje rangiranja i organskog prometa na lokalnom tržištu.",
+        "tags": ["SEO", "Google Search Console", "Technical SEO"]
+      },
+      {
+        "title": "SEO Prijedlog – Alfa Metabo",
+        "description": "Prilagođeni SEO prijedlog sajt kreiran kako bi demonstrirao kako ciljana SEO strategija može povećati inbound leadove za lokalno PVC poduzeće.",
+        "tags": ["SEO Strategija", "Landing Page", "Lead Generation"]
+      },
+      {
+        "title": "AI Sales Automation Koncept",
+        "description": "Koncept i prototip AI-powered alata za automatizaciju prodaje dizajniran da pomogne lokalnim biznisima upravljati Instagram i WhatsApp upitima.",
+        "tags": ["AI", "SaaS", "Automatizacija"]
+      }
+    ]
+  },
+  "experience": {
+    "label": "Iskustvo",
+    "heading": "Vještine & Iskustvo",
+    "description": "Pregled mojih ključnih vještina, tehnologija s kojima radim, alata koje koristim i mog profesionalnog puta.",
+    "technologiesLabel": "Tehnologije & Alati",
+    "journeyLabel": "Moj profesionalni put",
+    "showLess": "Prikaži manje",
+    "showMore": "Prikaži još {count}",
+    "current": "Trenutno",
+    "trafficProofLabel": "Dokaz Rasta Prometa",
+    "liveData": "✦ Živi Podaci",
+    "hoverZoom": "Hover za zoom",
+    "timeline": [
+      {
+        "period": "2022",
+        "role": "Osnove SEO-a",
+        "company": "Samouka edukacija",
+        "bullets": [
+          "Duboko učenje SEO disciplina - tehnički audit, on-page optimizacija, istraživanje ključnih riječi i content strategija.",
+          "Primjena znanja kroz vlastite test sajtove, izučavanje faktora organskog rangiranja i ponašanja algoritama.",
+          "Izgradnja strukturiranog radnog toka za kompetitivnu analizu i SERP evaluaciju koji je postao temelj svakog budućeg projekta."
+        ]
+      },
+      {
+        "period": "2022 – Danas",
+        "role": "Freelance SEO Specialist",
+        "company": "Individualni klijenti",
+        "bullets": [
+          "Planiranje i izvođenje end-to-end SEO strategija za lokalne i regionalne klijente u različitim industrijama.",
+          "Razvoj i optimizacija SEO landing stranica za kakolako.com, poboljšanje pokrivenosti ključnih riječi i CTR-a na lokalnom BiH tržištu.",
+          "Dosljedan rast organskog prometa kroz strukturirano planiranje sadržaja, interno linkovanje i on-page poboljšanja."
+        ],
+        "caption": "Google Search Console - kakolako.com: Rast organskih klikova nakon on-page SEO i content optimizacije."
+      },
+      {
+        "period": "2022 – 2024",
+        "role": "SEO Manager",
+        "company": "Imperia Marketing / Finixio",
+        "bullets": [
+          "Vođenje SEO strategije za portfolio affiliate sajtova u kripto, fintech i reguliranom finansijskom sektoru.",
+          "Identifikacija i targetiranje high-intent finansijskih ključnih riječi - kartice, plaćanja, investicije i kripto berze - koristeći Ahrefs i SEMrush.",
+          "Izvršavanje content gap analize i benchmarkinga konkurencije za osvajanje podcijenjene potražnje u kompetitivnim tržištima.",
+          "Saradnja s editorial i dev timovima na tehničkim SEO poboljšanjima, unapređenje crawlability i indexacije."
+        ],
+        "caption": "SEMrush - 99bitcoins.com: Domain authority score 51 sa 76K+ mjesečnih organskih posjeta na kripto sadržaju."
+      },
+      {
+        "period": "2024 – 2026",
+        "role": "Content Creator & SEO Specialist",
+        "company": "ClickOut Media",
+        "bullets": [
+          "Produkcija i optimizacija long-form SEO sadržaja - uključujući comparison guides, review članke i topical hubove - u finansijskom, kripto i online services vertikalu.",
+          "Doprinos organskim poboljšanjima na esports.net podrškom content restrukturiranju, internom linkovanju i tehničkim SEO inicijativama.",
+          "Korištenje Ahrefs i SEMrush za kontinuiranu analizu keyword mogućnosti, usklađivanje sadržaja s evolucijom search intent i SERP features.",
+          "Rad unutar large-scale editorial sistema, balansiranje SEO best practices s brand voiceom i standardima kvalitete sadržaja."
+        ],
+        "caption": "SEMrush - esports.net: 43K+ organskih ključnih riječi, doprinos tehničkom SEO i content restrukturiranju."
+      }
+    ]
+  },
+  "skills": {
+    "label": "Alati",
+    "heading": "Vještine & Iskustvo",
+    "description": "Alati i discipline koje koristim svakodnevno - od strategije i istraživanja do koda i automatizacije."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "heading": "Hajmo Raditi Zajedno",
+    "description": "Imate projekat? Kontaktirajte me - volio bih razgovarati o tome kako možemo povećati vaš organski promet.",
+    "phone": "Telefon",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}

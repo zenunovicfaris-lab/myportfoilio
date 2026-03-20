@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { User, Code, FileText, Phone, type LucideIcon } from "lucide-react";
 
 const SECTIONS = ["about", "projects", "resume", "contact"] as const;
@@ -10,14 +11,17 @@ type Section = (typeof SECTIONS)[number];
 
 type NavItem = { href: string; label: string; id: Section; icon: LucideIcon };
 
-const NAV_ITEMS: NavItem[] = [
-  { href: "#about",    label: "About Me",  id: "about",    icon: User     },
-  { href: "#projects", label: "Portfolio", id: "projects", icon: Code     },
-  { href: "#resume",   label: "Resume",    id: "resume",   icon: FileText },
-  { href: "#contact",  label: "Contact",   id: "contact",  icon: Phone    },
-];
-
 export default function Sidebar() {
+  const t = useTranslations("sidebar");
+
+  // Defined inside component so labels can use t()
+  const NAV_ITEMS: NavItem[] = [
+    { href: "#about",    label: t("nav.about"),    id: "about",    icon: User     },
+    { href: "#projects", label: t("nav.projects"), id: "projects", icon: Code     },
+    { href: "#resume",   label: t("nav.resume"),   id: "resume",   icon: FileText },
+    { href: "#contact",  label: t("nav.contact"),  id: "contact",  icon: Phone    },
+  ];
+
   const [activeSection, setActiveSection] = useState<Section>("about");
   const [mounted, setMounted] = useState(false);
   const lastActiveRef = useRef(activeSection);
@@ -133,7 +137,7 @@ export default function Sidebar() {
               Faris Zenunović
             </div>
             <div className="text-xs bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent font-medium mt-0.5">
-              SEO Specialist
+              {t("role")}
             </div>
           </div>
         </div>
@@ -141,7 +145,7 @@ export default function Sidebar() {
         {/* Available badge */}
         <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-teal-500/20 bg-teal-500/8 px-3 py-1 text-xs text-teal-300/80">
           <span className="h-1.5 w-1.5 rounded-full bg-teal-400 animate-pulse" />
-          Available for projects
+          {t("available")}
         </div>
       </div>
 
@@ -232,7 +236,7 @@ export default function Sidebar() {
           transition={{ type: "spring", stiffness: 280, damping: 18 }}
           className="relative block w-full rounded-xl px-5 py-3.5 text-center text-sm font-semibold text-[#0f1117] bg-gradient-to-r from-teal-500 to-cyan-400 shadow-[0_12px_40px_-14px_rgba(20,184,166,0.65)] hover:shadow-[0_16px_50px_-14px_rgba(20,184,166,0.85)] transition-shadow"
         >
-          Get In Touch
+          {t("cta")}
         </motion.a>
       </div>
     </aside>

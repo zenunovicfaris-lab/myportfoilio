@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 // ─── Skill data ───────────────────────────────────────────────────────────────
 // Two rows scroll in opposite directions for a layered marquee effect.
@@ -61,6 +62,8 @@ function SkillPill({ emoji, name }: { emoji: string; name: string }) {
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export default function SkillsSection() {
+  const t = useTranslations("skills");
+
   return (
     <section className="py-24 bg-[#0d0f16] overflow-hidden">
 
@@ -76,13 +79,13 @@ export default function SkillsSection() {
         className="text-center px-6 mb-14"
       >
         <span className="inline-block text-[11px] font-semibold tracking-[0.18em] uppercase text-teal-400 mb-4 px-3.5 py-1.5 rounded-full border border-teal-500/20 bg-teal-500/8">
-          Toolkit
+          {t("label")}
         </span>
         <h2 className="font-[family-name:var(--font-space)] text-3xl md:text-4xl font-bold text-white mb-3 tracking-tight">
-          Skills &amp; Experience
+          {t("heading")}
         </h2>
         <p className="text-gray-400 max-w-lg mx-auto text-base leading-relaxed">
-          The tools and disciplines I reach for every day - from strategy and research to code and automation.
+          {t("description")}
         </p>
       </motion.div>
 
