@@ -206,49 +206,57 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.div
+            <motion.a
+              href="tel:+387603055894"
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-cyan-500/10 bg-cyan-500/5 border border-cyan-500/30 p-8 rounded-2xl text-center hover:scale-105 hover:border-cyan-400/50 transition-all duration-300"
+              className="group bg-gradient-to-r from-cyan-500/10 bg-cyan-500/5 border border-cyan-500/30 p-8 rounded-2xl text-center hover:scale-105 hover:border-cyan-400/50 transition-all duration-300 block"
             >
               <Phone className="w-16 h-16 mx-auto mb-6 text-cyan-400 group-hover:text-cyan-300 transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">{tc("phone")}</h3>
-              <a href="tel:+387603055894" className="text-xl font-mono hover:text-cyan-400 transition-all duration-300 block">+387 60 305 5894</a>
-            </motion.div>
+              <span className="text-xl font-mono group-hover:text-cyan-400 transition-all duration-300 block">+387 60 305 5894</span>
+            </motion.a>
 
-            <motion.div
+            <motion.a
+              href="mailto:zenunovicfaris@gmail.com"
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-emerald-500/10 bg-emerald-500/5 border border-emerald-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+              className="group bg-gradient-to-r from-emerald-500/10 bg-emerald-500/5 border border-emerald-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all block"
             >
               <Mail className="w-16 h-16 mx-auto mb-6 text-emerald-400 group-hover:text-emerald-300 transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent text-center">{tc("email")}</h3>
-              <a href="mailto:zenunovicfaris@gmail.com" className="text-xl font-medium tracking-tight hover:text-emerald-400 transition-colors block w-full text-center break-all">zenunovicfaris@gmail.com</a>
-            </motion.div>
+              <span className="text-xl font-medium tracking-tight group-hover:text-emerald-400 transition-colors block w-full text-center break-all">zenunovicfaris@gmail.com</span>
+            </motion.a>
 
-            <motion.div
+            <motion.a
+              href="https://linkedin.com/in/fariszenunovic"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-blue-500/10 bg-blue-500/5 border border-blue-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+              className="group bg-gradient-to-r from-blue-500/10 bg-blue-500/5 border border-blue-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all block"
             >
               <Linkedin className="w-16 h-16 mx-auto mb-6 text-blue-400 group-hover:text-blue-300 transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">{tc("linkedin")}</h3>
-              <a href="https://linkedin.com/in/fariszenunovic" target="_blank" className="text-xl font-mono hover:text-blue-400 transition">/fariszenunovic</a>
-            </motion.div>
+              <span className="text-xl font-mono group-hover:text-blue-400 transition">/fariszenunovic</span>
+            </motion.a>
 
-            <motion.div
+            <motion.a
+              href="https://github.com/zenunovicfaris-lab"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] as const }}
-              className="group bg-gradient-to-r from-gray-800/50 bg-gray-800/30 border border-gray-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all"
+              className="group bg-gradient-to-r from-gray-800/50 bg-gray-800/30 border border-gray-500/30 p-8 rounded-2xl text-center hover:scale-105 transition-all block"
             >
               <Github className="w-16 h-16 mx-auto mb-6 text-gray-400 group-hover:text-white transition" />
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-gray-300 to-white bg-clip-text text-transparent">{tc("github")}</h3>
-              <a href="https://github.com/zenunovicfaris-lab" target="_blank" className="text-xl font-mono hover:text-white transition">/zenunovicfaris-lab</a>
-            </motion.div>
+              <span className="text-xl font-mono group-hover:text-white transition">/zenunovicfaris-lab</span>
+            </motion.a>
           </div>
         </div>
       </section>
