@@ -57,6 +57,11 @@
         "title": "AI Sales Automation Koncept",
         "description": "Koncept i prototip AI-powered alata za automatizaciju prodaje dizajniran da pomogne lokalnim biznisima upravljati Instagram i WhatsApp upitima.",
         "tags": ["AI", "SaaS", "Automatizacija"]
+      },
+      {
+        "title": "Izgradnja Sajta & SEO – Auratherm",
+        "description": "Izgradio kompletan sajt od nule koristeći Next.js i React za lokalnog prodavača vanjskih sauna. Trenutno radim SEO optimizaciju sa zamjetnim rastom organske vidljivosti.",
+        "tags": ["Next.js", "React", "SEO", "Tehnički SEO"]
       }
     ]
   },

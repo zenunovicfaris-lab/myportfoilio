@@ -57,6 +57,11 @@
         "title": "AI Sales Automation Concept",
         "description": "Concept and prototype for an AI-powered sales automation tool designed to help local businesses manage Instagram and WhatsApp customer inquiries.",
         "tags": ["AI", "SaaS", "Automation"]
+      },
+      {
+        "title": "Web Build & SEO – Auratherm",
+        "description": "Built the full website from scratch using Next.js and React for a local outdoor sauna retailer in Bosnia. Currently driving SEO growth with measurable improvements in organic visibility.",
+        "tags": ["Next.js", "React", "SEO", "Technical SEO"]
       }
     ]
   },

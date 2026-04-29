@@ -12,6 +12,7 @@ const PROJECTS_STATIC = [
   { id: 3, image: "/images/kakolako-gsc.jpg",        link: "https://kakolako.org/",                    newTab: true,  nofollow: false },
   { id: 4, image: "/images/alfa-metabo-seo-site.jpg",link: null,                                       newTab: false, nofollow: false },
   { id: 5, image: "/images/ai-saas-project.jpg",     link: "https://www.instagram.com/salecloser.ba/", newTab: true,  nofollow: false },
+  { id: 6, image: "/images/auratherm-website.jpg",  link: "https://www.auratherm.ba/",                newTab: true,  nofollow: false },
 ] as const;
 
 type ProjectMsg = { title: string; description: string; tags: string[] };
