@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: isBS
-      ? "Casino BiH – Nezavisne recenzije online casina | Faris Zenunović"
-      : "Casino BiH – Independent Online Casino Reviews | Faris Zenunović",
+      ? "Casino BiH – Nezavisne recenzije online casina u Bosni i Hercegovini"
+      : "Casino BiH – Independent Online Casino Reviews in Bosnia and Herzegovina",
     description: isBS
       ? "Izgradnja kompletne platforme za recenzije online casina od nule. Next.js, React i Tailwind CSS. Najrealnije casino recenzije za bosansko tržište."
       : "Built a full casino review platform from scratch using Next.js, React and Tailwind CSS. Independent, unbiased online casino reviews for the Bosnian market.",
