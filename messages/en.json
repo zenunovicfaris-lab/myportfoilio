@@ -62,6 +62,11 @@
         "title": "Web Build & SEO – Auratherm",
         "description": "Built the full website from scratch using Next.js and React for a local outdoor sauna retailer in Bosnia. Currently driving SEO growth with measurable improvements in organic visibility.",
         "tags": ["Next.js", "React", "SEO", "Technical SEO"]
+      },
+      {
+        "title": "Casino BiH – Independent Casino Reviews",
+        "description": "Built a full casino review platform from scratch using Next.js, React, and Tailwind CSS. The site delivers honest, unbiased ratings for online casinos targeting the Bosnian market.",
+        "tags": ["Next.js", "React", "Tailwind CSS", "Affiliate SEO"]
       }
     ]
   },

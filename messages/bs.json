@@ -62,6 +62,11 @@
         "title": "Izgradnja Sajta & SEO – Auratherm",
         "description": "Izgradio kompletan sajt od nule koristeći Next.js i React za lokalnog prodavača vanjskih sauna. Trenutno radim SEO optimizaciju sa zamjetnim rastom organske vidljivosti.",
         "tags": ["Next.js", "React", "SEO", "Tehnički SEO"]
+      },
+      {
+        "title": "Casino BiH – Nezavisne Recenzije Casina",
+        "description": "Izgradio kompletnu platformu za recenzije online casina od nule koristeći Next.js, React i Tailwind CSS. Sajt pruža najrealnije i najpouzdanije ocjene casina za bosansko tržište.",
+        "tags": ["Next.js", "React", "Tailwind CSS", "Affiliate SEO"]
       }
     ]
   },
