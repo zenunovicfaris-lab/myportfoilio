@@ -3,18 +3,17 @@
 import { motion, type Variants } from "framer-motion";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 // Non-translatable data (links, flags, image paths) — same for all locales
 const PROJECTS_STATIC = [
-  { id: 1, image: "/images/esports.net SEMrush.jpg", link: "https://www.esports.net/",                 newTab: true,  nofollow: true,  caseStudyPath: null },
-  { id: 2, image: "/images/99bitcoins-semrush.jpg",  link: "https://99bitcoins.com/",                  newTab: true,  nofollow: true,  caseStudyPath: null },
-  { id: 3, image: "/images/kakolako-gsc.jpg",        link: "https://kakolako.org/",                    newTab: true,  nofollow: false, caseStudyPath: null },
-  { id: 4, image: "/images/alfa-metabo-seo-site.jpg",link: null,                                       newTab: false, nofollow: false, caseStudyPath: null },
-  { id: 5, image: "/images/ai-saas-project.jpg",     link: "https://www.instagram.com/salecloser.ba/", newTab: true,  nofollow: false, caseStudyPath: null },
-  { id: 6, image: "/images/auratherm-website.jpg",   link: "https://www.auratherm.ba/",                newTab: true,  nofollow: false, caseStudyPath: null },
-  { id: 7, image: "/images/casino-bih.jpg",          link: "https://www.casino-bih.com/",              newTab: true,  nofollow: false, caseStudyPath: "/portfolio/casino-bih" },
+  { id: 1, image: "/images/esports.net SEMrush.jpg", link: "https://www.esports.net/",                 newTab: true,  nofollow: true  },
+  { id: 2, image: "/images/99bitcoins-semrush.jpg",  link: "https://99bitcoins.com/",                  newTab: true,  nofollow: true  },
+  { id: 3, image: "/images/kakolako-gsc.jpg",        link: "https://kakolako.org/",                    newTab: true,  nofollow: false },
+  { id: 4, image: "/images/alfa-metabo-seo-site.jpg",link: null,                                       newTab: false, nofollow: false },
+  { id: 5, image: "/images/ai-saas-project.jpg",     link: "https://www.instagram.com/salecloser.ba/", newTab: true,  nofollow: false },
+  { id: 6, image: "/images/auratherm-website.jpg",   link: "https://www.auratherm.ba/",                newTab: true,  nofollow: false },
+  { id: 7, image: "/images/casino-bih.jpg",          link: "https://www.casino-bih.com/",              newTab: true,  nofollow: false },
 ] as const;
 
 type ProjectMsg = { title: string; description: string; tags: string[] };
@@ -37,9 +36,6 @@ const tagVariants: Variants = {
 };
 
 function ProjectCard({ p, t }: { p: Project; t: ReturnType<typeof useTranslations> }) {
-  const locale = useLocale();
-  const viewHref = p.caseStudyPath ? `/${locale}${p.caseStudyPath}` : p.link;
-
   return (
     <motion.article
       variants={cardVariants}
@@ -100,26 +96,17 @@ function ProjectCard({ p, t }: { p: Project; t: ReturnType<typeof useTranslation
         </motion.div>
 
         <div className="flex justify-end border-t border-white/6 pt-4">
-          {viewHref ? (
-            p.caseStudyPath ? (
-              <Link
-                href={viewHref}
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors"
-              >
-                {t("viewDetails")} <ArrowUpRight size={14} />
-              </Link>
-            ) : (
-              <motion.a
-                href={viewHref}
-                target={p.newTab ? "_blank" : undefined}
-                rel={[p.newTab ? "noopener noreferrer" : "", p.nofollow ? "nofollow" : ""].filter(Boolean).join(" ")}
-                whileHover={{ x: 4 }}
-                transition={{ type: "spring", stiffness: 320, damping: 20 }}
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors"
-              >
-                {t("viewDetails")} <ArrowUpRight size={14} />
-              </motion.a>
-            )
+          {p.link ? (
+            <motion.a
+              href={p.link}
+              target={p.newTab ? "_blank" : undefined}
+              rel={[p.newTab ? "noopener noreferrer" : "", p.nofollow ? "nofollow" : ""].filter(Boolean).join(" ")}
+              whileHover={{ x: 4 }}
+              transition={{ type: "spring", stiffness: 320, damping: 20 }}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors"
+            >
+              {t("viewDetails")} <ArrowUpRight size={14} />
+            </motion.a>
           ) : (
             <span className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-700 cursor-default select-none">
               {t("viewDetails")} <ArrowUpRight size={14} />
