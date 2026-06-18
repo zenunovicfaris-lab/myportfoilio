@@ -9,6 +9,7 @@ import { Mail, Phone, Linkedin, Github, MapPin, ChevronRight } from "lucide-reac
 
 import PortfolioSection  from "../components/PortfolioSection";
 import ExperienceSection from "../components/ExperienceSection";
+import EducationSection  from "../components/EducationSection";
 import HeroLogoStrip     from "../components/HeroLogoStrip";
 import SocialLinks       from "../components/SocialLinks";
 import RotatingText      from "../components/RotatingText";
@@ -183,6 +184,9 @@ export default function Home() {
 
       {/* ═══ 4+5. SKILLS & EXPERIENCE (id="resume") ════════════════════════ */}
       <ExperienceSection />
+
+      {/* ═══ 5b. EDUCATION & LANGUAGES (id="education") ════════════════════ */}
+      <EducationSection />
 
       {/* ═══ 6. CONTACT (id="contact") ══════════════════════════════════════ */}
       <section id="contact" className="py-24 px-6 md:px-10 pb-32 bg-[#0a0a0f]">

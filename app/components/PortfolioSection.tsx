@@ -1,9 +1,12 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
+import { ArrowUpRight, ExternalLink, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+
+const PROJECTS_VISIBLE_DEFAULT = 6;
 
 // Non-translatable data (links, flags, image paths) — same for all locales
 const PROJECTS_STATIC = [
@@ -25,6 +28,10 @@ const cardVariants: Variants = {
     opacity: 1, y: 0, scale: 1, filter: "blur(0px)",
     transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const },
   },
+  exit: {
+    opacity: 0, y: 24, scale: 0.96, filter: "blur(4px)",
+    transition: { duration: 0.35, ease: [0.16, 1, 0.3, 1] as const },
+  },
 };
 const gridVariants: Variants = {
   hidden: {},
@@ -35,10 +42,16 @@ const tagVariants: Variants = {
   show: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
 };
 
-function ProjectCard({ p, t }: { p: Project; t: ReturnType<typeof useTranslations> }) {
+function ProjectCard({ p, t, revealed }: { p: Project; t: ReturnType<typeof useTranslations>; revealed?: boolean }) {
+  // Cards revealed via "Show more" animate themselves in/out; the initial
+  // cards inherit their enter animation from the parent grid's scroll stagger.
+  const animationProps = revealed
+    ? { variants: cardVariants, initial: "hidden" as const, animate: "show" as const, exit: "exit" as const }
+    : { variants: cardVariants };
+
   return (
     <motion.article
-      variants={cardVariants}
+      {...animationProps}
       whileHover={{ y: -8, scale: 1.015 }}
       transition={{ type: "spring", stiffness: 240, damping: 18 }}
       className="group relative flex flex-col bg-[#111218] border border-white/8 rounded-2xl overflow-hidden hover:border-teal-500/35 will-change-transform transition-colors duration-300 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_48px_-12px_rgba(20,184,166,0.18)]"
@@ -120,12 +133,16 @@ function ProjectCard({ p, t }: { p: Project; t: ReturnType<typeof useTranslation
 
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");
+  const [showAll, setShowAll] = useState(false);
 
   // Merge translated strings with static data by index
   const projects: Project[] = (t.raw("projects") as ProjectMsg[]).map((msg, i) => ({
     ...msg,
     ...PROJECTS_STATIC[i],
   }));
+
+  const visibleProjects = showAll ? projects : projects.slice(0, PROJECTS_VISIBLE_DEFAULT);
+  const hiddenCount     = projects.length - PROJECTS_VISIBLE_DEFAULT;
 
   return (
     <section id="projects" className="py-24 px-6 md:px-10 bg-[#0a0a0f]">
@@ -153,10 +170,33 @@ export default function PortfolioSection() {
           viewport={{ once: true, amount: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {projects.map((p) => (
-            <ProjectCard key={p.id} p={p} t={t} />
-          ))}
+          <AnimatePresence initial={false}>
+            {visibleProjects.map((p, i) => (
+              <ProjectCard key={p.id} p={p} t={t} revealed={i >= PROJECTS_VISIBLE_DEFAULT} />
+            ))}
+          </AnimatePresence>
         </motion.div>
+
+        {hiddenCount > 0 && (
+          <div className="flex justify-center mt-12">
+            <motion.button
+              onClick={() => setShowAll((v) => !v)}
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 320, damping: 20 }}
+              className="inline-flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-200 px-5 py-2.5 rounded-full border border-white/10 hover:border-teal-500/30 bg-[#111218] hover:bg-teal-500/5"
+            >
+              {showAll ? t("showLess") : t("showMore", { count: hiddenCount })}
+              <motion.span
+                animate={{ rotate: showAll ? 180 : 0 }}
+                transition={{ type: "spring", stiffness: 320, damping: 22 }}
+                className="flex"
+              >
+                <ChevronDown size={16} />
+              </motion.span>
+            </motion.button>
+          </div>
+        )}
       </div>
     </section>
   );

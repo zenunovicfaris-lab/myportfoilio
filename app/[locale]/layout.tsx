@@ -111,7 +111,7 @@ function buildJsonLd(locale: Locale) {
       "https://github.com/zenunovicfaris-lab",
     ],
     knowsAbout: ["SEO", "Technical SEO", "Content Optimization", "Next.js", "React", "WordPress"],
-    worksFor: { "@type": "Organization", name: "Freelance" },
+    worksFor: { "@type": "Organization", name: "ZT Media" },
   };
 }
 

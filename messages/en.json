@@ -32,6 +32,8 @@
     "description": "A selection of SEO campaigns, web projects, and digital strategies I've worked on.",
     "viewDetails": "View Details",
     "live": "Live",
+    "showMore": "Show {count} more",
+    "showLess": "Show less",
     "projects": [
       {
         "title": "SEO Growth – esports.net",
@@ -44,7 +46,7 @@
         "tags": ["SEO", "Affiliate SEO", "Crypto"]
       },
       {
-        "title": "Startup SEO – kakolako.com",
+        "title": "Startup SEO – kakolako.org",
         "description": "Built SEO landing pages and optimized site structure to improve keyword rankings and organic traffic for a startup project.",
         "tags": ["SEO", "Google Search Console", "Technical SEO"]
       },
@@ -98,18 +100,18 @@
         "role": "Freelance SEO Specialist",
         "company": "Independent Clients",
         "bullets": [
-          "Planned and executed end-to-end SEO strategies for local and regional clients across multiple industries.",
-          "Developed and optimized SEO landing pages for kakolako.com, improving keyword coverage and click-through rates in the local Bosnian market.",
-          "Delivered consistent organic traffic growth through structured content planning, internal linking, and on-page improvements."
+          "Planned and delivered SEO and web projects end to end for local and regional clients, building sites from scratch in Next.js, React, and TypeScript plus WordPress for lighter requirements.",
+          "Ranked eko-box.hr to an average Google position of 2 (2,340 clicks, 34,600 impressions) with no paid links, and grew Auratherm from zero to ~200 monthly organic clicks (16.8% CTR).",
+          "Developed and optimized SEO landing pages for kakolako.org, improving keyword coverage and click-through rates in the local Bosnian market."
         ],
-        "caption": "Google Search Console - kakolako.com: Organic click growth following on-page SEO and content optimization."
+        "caption": "Google Search Console - kakolako.org: Organic click growth following on-page SEO and content optimization."
       },
       {
         "period": "2022 – 2024",
-        "role": "SEO Manager",
-        "company": "Imperia Marketing / Finixio",
+        "role": "SEO Specialist (Outsourced via Imperia Marketing)",
+        "company": "Finixio",
         "bullets": [
-          "Led SEO strategy for a portfolio of affiliate websites in the crypto, fintech, and regulated financial sectors.",
+          "Managed SEO for a portfolio of affiliate websites in the crypto, fintech, and regulated finance sectors.",
           "Identified and targeted high-intent financial keywords - covering cards, payments, investing, and crypto exchanges - using Ahrefs and SEMrush.",
           "Executed content gap analysis and competitor benchmarking to capture underserved search demand in competitive regulated markets.",
           "Collaborated with editorial and dev teams to implement technical SEO improvements, improving crawlability and indexation across key properties."
@@ -118,16 +120,48 @@
       },
       {
         "period": "2024 – 2026",
-        "role": "Content Creator & SEO Specialist",
+        "role": "SEO Content Specialist",
         "company": "ClickOut Media",
         "bullets": [
-          "Produced and optimized long-form SEO content - including comparison guides, review articles, and topical hubs - across finance, crypto, and online services verticals.",
-          "Contributed to organic performance improvements on esports.net by supporting content restructuring, internal linking, and technical SEO initiatives.",
-          "Used Ahrefs and SEMrush for continuous keyword opportunity analysis, ensuring content aligned with evolving search intent and SERP features.",
-          "Worked within large-scale editorial systems, balancing SEO best practices with brand voice and content quality standards."
+          "Produced and optimized long-form SEO content - guides, reviews, and topical hubs - across crypto and igaming, published in WordPress with metadata optimization and internal linking.",
+          "Supported organic performance on esports.net through content restructuring and technical SEO, and ran QA on live pages, fixing broken links and redirects to maintain crawl health.",
+          "Used Ahrefs and SEMrush for keyword and intent analysis across international and Asian markets.",
+          "Role ended February 2026 following a company-wide restructuring."
         ],
         "caption": "SEMrush - esports.net: 43K+ organic keywords tracked, contributing to technical SEO and content restructuring efforts."
+      },
+      {
+        "period": "2026 – Present",
+        "role": "Co-Founder, SEO & Web Developer",
+        "company": "ZT Media",
+        "bullets": [
+          "Co-founded a web and SEO agency serving local and regional businesses.",
+          "Lead SEO strategy and full website builds for agency clients across automotive, manufacturing, and retail."
+        ]
       }
+    ]
+  },
+  "education": {
+    "label": "Education & Languages",
+    "heading": "Education & Languages",
+    "description": "My academic background and the languages I work in.",
+    "educationLabel": "Education",
+    "languagesLabel": "Languages",
+    "items": [
+      {
+        "degree": "Bachelor of Marketing Communications",
+        "institution": "IPI Academy Tuzla (Internacionalna poslovno-informaciona akademija)",
+        "period": "Expected graduation 2026"
+      },
+      {
+        "degree": "IT Gimnazija Živinice",
+        "institution": "High School",
+        "period": "2019 – 2023"
+      }
+    ],
+    "languages": [
+      { "name": "Bosnian", "level": "Native" },
+      { "name": "English", "level": "Professional working proficiency (full reading and writing; conversational speaking)" }
     ]
   },
   "skills": {
@@ -154,15 +188,15 @@
     "ctaAudit": "Free audit",
     "stat1Value": "3x",
     "stat1Label": "Average organic traffic growth",
-    "stat2Value": "40+",
-    "stat2Label": "Optimized web projects",
+    "stat2Value": "50+",
+    "stat2Label": "Websites built from scratch",
     "stat3Value": "Top 3",
     "stat3Label": "Rankings for targeted keywords",
     "stat4Value": "6mo",
     "stat4Label": "To visible results",
     "whyTag": "Why me",
     "whyTitle": "SEO specialist, not an agency",
-    "whyDesc": "4+ years of SEO experience across crypto, iGaming and startup projects. Worked with platforms like esports.net (43K keywords), 99Bitcoins (DA 51) and kakolako.com. Direct communication, no agency middlemen, no long-term contracts.",
+    "whyDesc": "Working independently since 2022 across technical SEO, content, and web development. Worked with platforms like esports.net (43K keywords) and 99Bitcoins (DA 51), and ranked local clients like eko-box.hr to an average Google position of 2. Direct communication, no agency middlemen, no long-term contracts.",
     "whyDiff1": "Direct communication - you always speak with me, not an account manager",
     "whyDiff2": "Transparent reporting - you see exactly what was done and what the results are",
     "whyDiff3": "No long-term contracts - flexible collaboration based on trust and results",
@@ -212,9 +246,12 @@
     "result2Title": "99Bitcoins",
     "result2Metric": "DA 51 · 76K+ visits/mo",
     "result2Desc": "SEO strategy and keyword optimization for a high-authority crypto affiliate platform.",
-    "result3Title": "kakolako.com",
+    "result3Title": "kakolako.org",
     "result3Metric": "Organic click growth (GSC)",
     "result3Desc": "SEO landing pages and on-page optimization for a local Bosnian startup.",
+    "result4Title": "eko-box.hr",
+    "result4Metric": "Avg. position 2 · 2,340 clicks",
+    "result4Desc": "Ranked to an average Google position of 2 (34,600 impressions) for a Croatian client with no paid links.",
     "resultsCta": "View all projects",
     "processTag": "How I work",
     "processTitle": "SEO process from audit to results",

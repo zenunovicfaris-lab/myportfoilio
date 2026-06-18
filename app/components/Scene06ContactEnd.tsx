@@ -41,7 +41,7 @@ export default function Scene06ContactEnd() {
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
           >
             <Link
-              href="mailto:hello@fariszenunovic.com"
+              href="mailto:zenunovicfaris@gmail.com"
               className="group relative inline-flex items-center justify-center rounded-xl px-8 py-4 font-medium text-white transform transition-transform duration-300 hover:scale-105"
             >
               <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-cyan-500/35 via-cyan-400/20 to-indigo-400/25" />
@@ -62,12 +62,10 @@ export default function Scene06ContactEnd() {
             </Link>
 
             <Link
-              href="https://linkedin.com/in/fariszenunovic"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:zenunovicfaris@gmail.com"
               className="relative inline-block text-gray-300/85 hover:text-cyan-200 transition-colors group/link"
             >
-              hello@fariszenunovic.com
+              zenunovicfaris@gmail.com
               <span className="absolute left-0 -bottom-1 h-px w-0 bg-cyan-300 transition-all duration-300 group-hover/link:w-full" />
             </Link>
           </motion.div>

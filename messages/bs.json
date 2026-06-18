@@ -32,6 +32,8 @@
     "description": "Odabir SEO kampanja, web projekata i digitalnih strategija na kojima sam radio.",
     "viewDetails": "Pogledaj Detalje",
     "live": "Live",
+    "showMore": "Prikaži još {count}",
+    "showLess": "Prikaži manje",
     "projects": [
       {
         "title": "SEO Rast – esports.net",
@@ -44,7 +46,7 @@
         "tags": ["SEO", "Affiliate SEO", "Crypto"]
       },
       {
-        "title": "Startup SEO – kakolako.com",
+        "title": "Startup SEO – kakolako.org",
         "description": "Izrađene SEO landing stranice i optimizirana struktura sajta za poboljšanje rangiranja i organskog prometa na lokalnom tržištu.",
         "tags": ["SEO", "Google Search Console", "Technical SEO"]
       },
@@ -98,18 +100,18 @@
         "role": "Freelance SEO Specialist",
         "company": "Individualni klijenti",
         "bullets": [
-          "Planiranje i izvođenje end-to-end SEO strategija za lokalne i regionalne klijente u različitim industrijama.",
-          "Razvoj i optimizacija SEO landing stranica za kakolako.com, poboljšanje pokrivenosti ključnih riječi i CTR-a na lokalnom BiH tržištu.",
-          "Dosljedan rast organskog prometa kroz strukturirano planiranje sadržaja, interno linkovanje i on-page poboljšanja."
+          "Planiranje i isporuka SEO i web projekata od početka do kraja za lokalne i regionalne klijente; izrada sajtova od nule u Next.js, React i TypeScript, te WordPress za lakše zahtjeve.",
+          "Rangiran eko-box.hr na prosječnu Google poziciju 2 (2.340 klikova, 34.600 impresija) bez plaćenih linkova, te rast Auratherma od nule do ~200 organskih klikova mjesečno (16,8% CTR).",
+          "Razvoj i optimizacija SEO landing stranica za kakolako.org, poboljšanje pokrivenosti ključnih riječi i CTR-a na lokalnom BiH tržištu."
         ],
-        "caption": "Google Search Console - kakolako.com: Rast organskih klikova nakon on-page SEO i content optimizacije."
+        "caption": "Google Search Console - kakolako.org: Rast organskih klikova nakon on-page SEO i content optimizacije."
       },
       {
         "period": "2022 – 2024",
-        "role": "SEO Manager",
-        "company": "Imperia Marketing / Finixio",
+        "role": "SEO Specialist (outsourced preko Imperia Marketing)",
+        "company": "Finixio",
         "bullets": [
-          "Vođenje SEO strategije za portfolio affiliate sajtova u kripto, fintech i reguliranom finansijskom sektoru.",
+          "Upravljanje SEO-om za portfolio affiliate sajtova u kripto, fintech i reguliranom finansijskom sektoru.",
           "Identifikacija i targetiranje high-intent finansijskih ključnih riječi - kartice, plaćanja, investicije i kripto berze - koristeći Ahrefs i SEMrush.",
           "Izvršavanje content gap analize i benchmarkinga konkurencije za osvajanje podcijenjene potražnje u kompetitivnim tržištima.",
           "Saradnja s editorial i dev timovima na tehničkim SEO poboljšanjima, unapređenje crawlability i indexacije."
@@ -118,16 +120,48 @@
       },
       {
         "period": "2024 – 2026",
-        "role": "Content Creator & SEO Specialist",
+        "role": "SEO Content Specialist",
         "company": "ClickOut Media",
         "bullets": [
-          "Produkcija i optimizacija long-form SEO sadržaja - uključujući comparison guides, review članke i topical hubove - u finansijskom, kripto i online services vertikalu.",
-          "Doprinos organskim poboljšanjima na esports.net podrškom content restrukturiranju, internom linkovanju i tehničkim SEO inicijativama.",
-          "Korištenje Ahrefs i SEMrush za kontinuiranu analizu keyword mogućnosti, usklađivanje sadržaja s evolucijom search intent i SERP features.",
-          "Rad unutar large-scale editorial sistema, balansiranje SEO best practices s brand voiceom i standardima kvalitete sadržaja."
+          "Produkcija i optimizacija long-form SEO sadržaja - vodiči, recenzije i topical hubovi - u kripto i igaming nišama, objavljeno u WordPressu uz optimizaciju metapodataka i interno linkovanje.",
+          "Podrška organskim performansama na esports.net kroz content restrukturiranje i tehnički SEO, te QA na živim stranicama uz popravak pokvarenih linkova i redirekcija radi zdravlja crawla.",
+          "Korištenje Ahrefs i SEMrush za analizu ključnih riječi i namjere pretrage na međunarodnim i azijskim tržištima.",
+          "Uloga je završena u februaru 2026. nakon restrukturiranja kompanije."
         ],
         "caption": "SEMrush - esports.net: 43K+ organskih ključnih riječi, doprinos tehničkom SEO i content restrukturiranju."
+      },
+      {
+        "period": "2026 – Danas",
+        "role": "Co-Founder, SEO & Web Developer",
+        "company": "ZT Media",
+        "bullets": [
+          "Suosnivač web i SEO agencije koja opslužuje lokalne i regionalne biznise.",
+          "Vodim SEO strategiju i kompletne izrade sajtova za klijente agencije u automobilskoj, proizvodnoj i maloprodajnoj industriji."
+        ]
       }
+    ]
+  },
+  "education": {
+    "label": "Edukacija & Jezici",
+    "heading": "Edukacija & Jezici",
+    "description": "Moje akademsko obrazovanje i jezici na kojima radim.",
+    "educationLabel": "Edukacija",
+    "languagesLabel": "Jezici",
+    "items": [
+      {
+        "degree": "Bachelor marketinških komunikacija",
+        "institution": "IPI Akademija Tuzla (Internacionalna poslovno-informaciona akademija)",
+        "period": "Očekivano diplomiranje 2026."
+      },
+      {
+        "degree": "IT Gimnazija Živinice",
+        "institution": "Srednja škola",
+        "period": "2019 – 2023"
+      }
+    ],
+    "languages": [
+      { "name": "Bosanski", "level": "Maternji" },
+      { "name": "Engleski", "level": "Profesionalna radna razina (potpuno čitanje i pisanje; konverzacijski govor)" }
     ]
   },
   "skills": {
@@ -154,15 +188,15 @@
     "ctaAudit": "Besplatni audit",
     "stat1Value": "3x",
     "stat1Label": "Prosjecan rast organskog saobracaja",
-    "stat2Value": "40+",
-    "stat2Label": "Optimizovanih web projekata",
+    "stat2Value": "50+",
+    "stat2Label": "Sajtova izgrađenih od nule",
     "stat3Value": "Top 3",
     "stat3Label": "Pozicije za targetirane kljucne rijeci",
     "stat4Value": "6mj",
     "stat4Label": "Do vidljivih rezultata",
     "whyTag": "Zašto ja",
     "whyTitle": "SEO stručnjak, ne agencija",
-    "whyDesc": "4+ godine SEO iskustva na crypto, iGaming i startup projektima. Radio sam sa platformama poput esports.net (43K keywords), 99Bitcoins (DA 51) i kakolako.com. Direktna komunikacija, bez agencijskih posrednika, bez dugih ugovora.",
+    "whyDesc": "Radim samostalno od 2022. na tehničkom SEO-u, sadržaju i web developmentu. Radio sam sa platformama poput esports.net (43K keywords) i 99Bitcoins (DA 51), te rangirao lokalne klijente poput eko-box.hr na prosječnu Google poziciju 2. Direktna komunikacija, bez agencijskih posrednika, bez dugih ugovora.",
     "whyDiff1": "Direktna komunikacija - uvijek razgovarate sa mnom, ne sa account managerom",
     "whyDiff2": "Transparentno izvještavanje - vidite tacno šta je uradeno i koji su rezultati",
     "whyDiff3": "Bez dugih ugovora - fleksibilna saradnja bazirana na povjerenju i rezultatima",
@@ -212,9 +246,12 @@
     "result2Title": "99Bitcoins",
     "result2Metric": "DA 51 · 76K+ posjeta/mj",
     "result2Desc": "SEO strategija i keyword optimizacija za visoko-autoritativnu crypto affiliate platformu.",
-    "result3Title": "kakolako.com",
+    "result3Title": "kakolako.org",
     "result3Metric": "Organski rast klikova (GSC)",
     "result3Desc": "SEO landing stranice i on-page optimizacija za lokalni BiH startup.",
+    "result4Title": "eko-box.hr",
+    "result4Metric": "Prosj. pozicija 2 · 2.340 klikova",
+    "result4Desc": "Rangiran na prosječnu Google poziciju 2 (34.600 impresija) za klijenta iz Hrvatske bez plaćenih linkova.",
     "resultsCta": "Pogledaj sve projekte",
     "processTag": "Kako radim",
     "processTitle": "SEO proces od audita do rezultata",

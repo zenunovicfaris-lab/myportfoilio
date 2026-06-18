@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const EMAIL = "hello@fariszenunovic.com";
+const EMAIL = "zenunovicfaris@gmail.com";
 
 export default function ContactCTASection() {
   return (

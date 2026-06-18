@@ -26,7 +26,8 @@ const TIMELINE_STATIC = [
   { muted: true,  proof: undefined,                         caption: undefined                    },
   { muted: false, proof: "/images/kakolako-gsc.jpg",        caption: undefined                    },
   { muted: false, proof: "/images/99bitcoins-semrush.jpg",  caption: undefined                    },
-  { muted: false, proof: "/images/esports.net SEMrush.jpg", caption: undefined, current: true     },
+  { muted: false, proof: "/images/esports.net SEMrush.jpg", caption: undefined                    },
+  { muted: false, proof: undefined,                         caption: undefined, current: true     },
 ] as const;
 
 type TimelineMsg = {

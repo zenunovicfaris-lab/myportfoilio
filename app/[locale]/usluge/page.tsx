@@ -162,6 +162,7 @@ export default async function UslugePage({ params }: Props) {
     { title: t("result1Title"), metric: t("result1Metric"), desc: t("result1Desc") },
     { title: t("result2Title"), metric: t("result2Metric"), desc: t("result2Desc") },
     { title: t("result3Title"), metric: t("result3Metric"), desc: t("result3Desc") },
+    { title: t("result4Title"), metric: t("result4Metric"), desc: t("result4Desc") },
   ];
 
   const process = [
