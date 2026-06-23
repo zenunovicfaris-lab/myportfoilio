@@ -95,7 +95,7 @@ function buildJsonLd(locale: Locale) {
     alternateName: "Faris Zenunovic",
     url: `https://fariszenunovic.com/${locale}`,
     image: "https://fariszenunovic.com/images/faris-about-me.jpg",
-    jobTitle: "Freelance SEO Specialist",
+    jobTitle: "SEO Specialist",
     description: isBS
       ? "Freelance SEO Specialist iz Bosne i Hercegovine. Tehničke SEO usluge, optimizacija sadržaja i organski rast."
       : "Freelance SEO Specialist from Živinice, Bosnia and Herzegovina. Technical SEO, content optimization & multilingual organic growth.",
