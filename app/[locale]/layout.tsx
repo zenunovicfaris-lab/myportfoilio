@@ -60,7 +60,14 @@ export async function generateMetadata({
     openGraph: {
       title: t("ogTitle"),
       description: t("description"),
-      images: ["/og-image.jpg"],
+      images: [
+        {
+          url: `https://fariszenunovic.com/${locale}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: "Faris Zenunović | SEO Specialist - Technical SEO, Content & Web Development",
+        },
+      ],
       type: "website",
       locale: ogLocale,
       siteName: "Faris Zenunović",
@@ -70,7 +77,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("ogTitle"),
       description: t("description"),
-      images: ["/og-image.jpg"],
+      images: [`https://fariszenunovic.com/${locale}/opengraph-image`],
     },
     robots: {
       index: true,

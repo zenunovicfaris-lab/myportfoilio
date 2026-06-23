@@ -35,6 +35,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://fariszenunovic.com/${locale}/usluge`,
       siteName: "Faris Zenunovic",
       type: "website",
+      images: [
+        {
+          url: `https://fariszenunovic.com/${locale}/usluge/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: isBS ? "SEO Usluge BiH | Faris Zenunović" : "SEO Services | Faris Zenunović",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -42,6 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isBS
         ? "Profesionalne SEO usluge za biznise u BiH. Besplatna analiza."
         : "Professional SEO services for businesses in BiH. Free audit.",
+      images: [`https://fariszenunovic.com/${locale}/usluge/opengraph-image`],
     },
     robots: {
       index: true,

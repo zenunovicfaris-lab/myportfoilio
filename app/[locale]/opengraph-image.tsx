@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "SEO Usluge BiH | Faris Zenunović";
+export const alt = "Faris Zenunović | SEO Specialist - Technical SEO, Content & Web Development";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,7 +22,7 @@ export default async function OGImage({
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #0f1117 0%, #0d1f2d 100%)",
+          background: "linear-gradient(135deg, #0a0a0f 0%, #0d1f2d 100%)",
           padding: "80px",
           fontFamily: "sans-serif",
           position: "relative",
@@ -43,13 +43,13 @@ export default async function OGImage({
         <div
           style={{
             position: "absolute",
-            top: -100,
-            right: -100,
-            width: 500,
-            height: 500,
+            top: -120,
+            right: -120,
+            width: 520,
+            height: 520,
             borderRadius: "50%",
-            background: "rgba(20, 184, 166, 0.15)",
-            filter: "blur(80px)",
+            background: "rgba(20, 184, 166, 0.16)",
+            filter: "blur(90px)",
           }}
         />
 
@@ -68,58 +68,52 @@ export default async function OGImage({
             style={{
               fontSize: 18,
               color: "#14b8a6",
-              letterSpacing: "0.1em",
+              letterSpacing: "0.12em",
               textTransform: "uppercase",
               fontWeight: 600,
             }}
           >
-            {isBS ? "SEO Strucnjak · BiH" : "SEO Expert · BiH"}
+            {isBS ? "SEO Specialist · BiH" : "SEO Specialist · Bosnia"}
           </span>
         </div>
 
-        {/* Main title */}
+        {/* Name */}
         <div
           style={{
-            fontSize: 80,
+            fontSize: 84,
             fontWeight: 800,
             color: "#ffffff",
-            lineHeight: 1.05,
+            lineHeight: 1.02,
             letterSpacing: "-0.03em",
-            marginBottom: 24,
+            marginBottom: 22,
           }}
         >
-          {isBS ? "SEO Usluge" : "SEO Services"}
-          <br />
-          <span style={{ color: "rgba(255,255,255,0.3)", fontStyle: "italic" }}>
-            {isBS ? "koje donose" : "that deliver"}
-          </span>
-          <br />
-          {isBS ? "rezultate." : "results."}
+          Faris Zenunović
         </div>
 
-        {/* Description */}
+        {/* Title line */}
         <div
           style={{
-            fontSize: 24,
+            fontSize: 30,
             color: "#9ca3af",
-            maxWidth: 700,
-            lineHeight: 1.5,
+            maxWidth: 820,
+            lineHeight: 1.4,
             marginBottom: 48,
           }}
         >
           {isBS
-            ? "Profesionalna SEO optimizacija za biznise u BiH i regiji."
-            : "Professional SEO optimization for businesses in BiH and the region."}
+            ? "Technical SEO · Content · Web Development"
+            : "Technical SEO · Content · Web Development"}
         </div>
 
         {/* Stats row */}
         <div style={{ display: "flex", gap: 48 }}>
           {[
+            { value: "50+", label: isBS ? "Sajtova" : "Websites built" },
             { value: "3x", label: isBS ? "Rast saobracaja" : "Traffic growth" },
-            { value: "50+", label: isBS ? "Sajtova" : "Websites" },
             { value: "4+", label: isBS ? "Godine iskustva" : "Years experience" },
           ].map((stat) => (
-            <div key={stat.value} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+            <div key={stat.label} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
               <span style={{ fontSize: 36, fontWeight: 800, color: "#14b8a6", letterSpacing: "-0.03em" }}>
                 {stat.value}
               </span>
@@ -128,7 +122,7 @@ export default async function OGImage({
           ))}
         </div>
 
-        {/* Author */}
+        {/* Domain */}
         <div
           style={{
             position: "absolute",
