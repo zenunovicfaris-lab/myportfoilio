@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 
-import { SITE, PERSON_ID } from "../../../lib/entity";
+import { SITE, PERSON_ID, PERSON_URL } from "../../../lib/entity";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -88,7 +88,7 @@ export default async function UslugePage({ params }: Props) {
       "@type": "Person",
       "@id": PERSON_ID,
       name: "Faris Zenunović",
-      url: SITE,
+      url: PERSON_URL,
       jobTitle: "SEO Specialist",
     },
     areaServed: { "@type": "Country", name: "Bosna i Hercegovina" },

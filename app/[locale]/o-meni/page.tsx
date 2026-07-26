@@ -7,6 +7,7 @@ import { routing } from "../../../i18n/routing";
 import {
   SITE,
   PERSON_ID,
+  PERSON_URL,
   ORGANIZATION,
   ORG_URL,
   SAME_AS,
@@ -107,7 +108,7 @@ export default async function OMeniPage({ params }: Props) {
       "@id": PERSON_ID,
       name: "Faris Zenunović",
       alternateName: ["Faris Zenunovic", "Zenunović Faris"],
-      url: SITE,
+      url: PERSON_URL,
       mainEntityOfPage: url,
       description: t("lead"),
       image: [

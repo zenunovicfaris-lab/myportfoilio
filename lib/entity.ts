@@ -20,6 +20,14 @@ export const SITE = "https://www.fariszenunovic.com";
  * this exact string, so changing it would split the entity in two. Leave it alone.
  */
 export const PERSON_ID = "https://fariszenunovic.com/#faris";
+
+/**
+ * Person.url — one fixed value, not per-locale. All pages emit a single node under
+ * one @id, so a url that varied by locale would give that node conflicting values.
+ * Points at /bs rather than the root because the root 307-redirects to /en, and
+ * because ZT Media already ships this exact value for the same node.
+ */
+export const PERSON_URL = `${SITE}/bs`;
 export const ORG_ID = "https://www.zt-media.digital/#organization";
 export const ORG_URL = "https://www.zt-media.digital";
 

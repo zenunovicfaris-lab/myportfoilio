@@ -8,6 +8,7 @@ import { routing, type Locale } from "../../i18n/routing";
 import {
   SITE,
   PERSON_ID,
+  PERSON_URL,
   ORGANIZATION,
   SAME_AS,
   KNOWS_ABOUT,
@@ -112,7 +113,7 @@ function buildJsonLd(locale: Locale) {
     "@id": PERSON_ID,
     name: "Faris Zenunović",
     alternateName: ["Faris Zenunovic", "Zenunović Faris"],
-    url: SITE,
+    url: PERSON_URL,
     // Points Google at /o-meni as the authoritative page describing this person.
     mainEntityOfPage: `${SITE}/${locale}/o-meni`,
     // Wide image first — it is the one eligible for Discover and large previews.
