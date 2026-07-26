@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
+
+import { PROFILES } from "../../lib/entity";
 import { Mail, Phone, Linkedin, Github, MapPin, ChevronRight } from "lucide-react";
 
 import PortfolioSection  from "../components/PortfolioSection";
@@ -95,6 +98,14 @@ export default function Home() {
               >
                 <MapPin size={13} className="text-teal-500 shrink-0" />
                 {t("location")}
+                <span aria-hidden="true" className="text-gray-700">·</span>
+                {/* Internal link to the entity home — passes authority to /o-meni */}
+                <Link
+                  href={`/${locale}/o-meni`}
+                  className="text-teal-400 hover:text-teal-300 transition-colors underline underline-offset-4 decoration-teal-500/30"
+                >
+                  {t("aboutLink")}
+                </Link>
               </motion.div>
 
               <motion.div
@@ -235,7 +246,7 @@ export default function Home() {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com/in/fariszenunovic"
+              href={PROFILES.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
@@ -249,7 +260,7 @@ export default function Home() {
             </motion.a>
 
             <motion.a
-              href="https://github.com/zenunovicfaris-lab"
+              href={PROFILES.github}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}

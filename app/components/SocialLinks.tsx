@@ -1,28 +1,16 @@
 "use client";
 
-import { FaInstagram, FaFacebook, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedinIn, FaGithub, FaYoutube } from "react-icons/fa";
 
+import { PROFILES } from "../../lib/entity";
+
+// Hrefs come from PROFILES so the visible links can never drift from schema sameAs.
 const socials = [
-  {
-    href: "https://www.instagram.com/znnvyc/",
-    label: "Instagram",
-    icon: FaInstagram,
-  },
-  {
-    href: "https://www.facebook.com/faris.zenunovic.9/",
-    label: "Facebook",
-    icon: FaFacebook,
-  },
-  {
-    href: "https://www.linkedin.com/in/fariszenunovic/",
-    label: "LinkedIn",
-    icon: FaLinkedinIn,
-  },
-  {
-    href: "https://github.com/zenunovicfaris-lab",
-    label: "GitHub",
-    icon: FaGithub,
-  },
+  { href: PROFILES.instagram, label: "Instagram", icon: FaInstagram },
+  { href: PROFILES.facebook, label: "Facebook", icon: FaFacebook },
+  { href: PROFILES.linkedin, label: "LinkedIn", icon: FaLinkedinIn },
+  { href: PROFILES.youtube, label: "YouTube", icon: FaYoutube },
+  { href: PROFILES.github, label: "GitHub", icon: FaGithub },
 ];
 
 export default function SocialLinks() {

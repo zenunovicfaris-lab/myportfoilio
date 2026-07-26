@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+import { SITE } from "../lib/entity";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -9,7 +11,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://fariszenunovic.com/sitemap.xml",
-    host: "https://fariszenunovic.com",
+    sitemap: `${SITE}/sitemap.xml`,
+    host: SITE,
   };
 }

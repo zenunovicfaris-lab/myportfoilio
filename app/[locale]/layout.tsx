@@ -2,10 +2,21 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import Script from "next/script";
 import "../globals.css";
 
 import { routing, type Locale } from "../../i18n/routing";
+import {
+  SITE,
+  PERSON_ID,
+  ORGANIZATION,
+  SAME_AS,
+  KNOWS_ABOUT,
+  EMAIL,
+  TELEPHONE,
+  IMAGE_WIDE,
+  IMAGE_PORTRAIT,
+  imageObject,
+} from "../../lib/entity";
 import Sidebar from "../components/Sidebar";
 import MobileNav from "../components/MobileNav";
 import ClientOnly from "../components/ClientOnly";
@@ -28,10 +39,10 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "meta" });
 
   const ogLocale = locale === "bs" ? "bs_BA" : "en_US";
-  const url = `https://fariszenunovic.com/${locale}`;
+  const url = `${SITE}/${locale}`;
 
   return {
-    metadataBase: new URL("https://fariszenunovic.com"),
+    metadataBase: new URL(SITE),
     title: {
       default: t("title"),
       template: "%s | Faris Zenunović",
@@ -52,9 +63,9 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
       languages: {
-        en: "https://fariszenunovic.com/en",
-        bs: "https://fariszenunovic.com/bs",
-        "x-default": "https://fariszenunovic.com/en",
+        en: `${SITE}/en`,
+        bs: `${SITE}/bs`,
+        "x-default": `${SITE}/en`,
       },
     },
     openGraph: {
@@ -62,7 +73,7 @@ export async function generateMetadata({
       description: t("description"),
       images: [
         {
-          url: `https://fariszenunovic.com/${locale}/opengraph-image`,
+          url: `${SITE}/${locale}/opengraph-image`,
           width: 1200,
           height: 630,
           alt: "Faris Zenunović | SEO Specialist - Technical SEO, Content & Web Development",
@@ -77,7 +88,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("ogTitle"),
       description: t("description"),
-      images: [`https://fariszenunovic.com/${locale}/opengraph-image`],
+      images: [`${SITE}/${locale}/opengraph-image`],
     },
     robots: {
       index: true,
@@ -98,27 +109,32 @@ function buildJsonLd(locale: Locale) {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": PERSON_ID,
     name: "Faris Zenunović",
-    alternateName: "Faris Zenunovic",
-    url: `https://fariszenunovic.com/${locale}`,
-    image: "https://fariszenunovic.com/images/faris-about-me.jpg",
+    alternateName: ["Faris Zenunovic", "Zenunović Faris"],
+    url: SITE,
+    // Points Google at /o-meni as the authoritative page describing this person.
+    mainEntityOfPage: `${SITE}/${locale}/o-meni`,
+    // Wide image first — it is the one eligible for Discover and large previews.
+    image: [
+      imageObject(IMAGE_WIDE, "Faris Zenunović, SEO Specialist"),
+      imageObject(IMAGE_PORTRAIT, "Faris Zenunović, SEO Specialist"),
+    ],
     jobTitle: "SEO Specialist",
     description: isBS
       ? "Freelance SEO Specialist iz Bosne i Hercegovine. Tehničke SEO usluge, optimizacija sadržaja i organski rast."
       : "Freelance SEO Specialist from Živinice, Bosnia and Herzegovina. Technical SEO, content optimization & multilingual organic growth.",
+    nationality: { "@type": "Country", name: "Bosnia and Herzegovina" },
     address: {
       "@type": "PostalAddress",
-      addressLocality: isBS ? "Bosna i Hercegovina" : "Živinice",
+      addressLocality: "Živinice",
       addressCountry: "BA",
     },
-    email: "zenunovicfaris@gmail.com",
-    telephone: "+387603055894",
-    sameAs: [
-      "https://linkedin.com/in/fariszenunovic",
-      "https://github.com/zenunovicfaris-lab",
-    ],
-    knowsAbout: ["SEO", "Technical SEO", "Content Optimization", "Next.js", "React", "WordPress"],
-    worksFor: { "@type": "Organization", name: "ZT Media" },
+    email: EMAIL,
+    telephone: TELEPHONE,
+    sameAs: SAME_AS,
+    knowsAbout: KNOWS_ABOUT,
+    worksFor: ORGANIZATION,
   };
 }
 
@@ -145,14 +161,14 @@ export default async function LocaleLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         {/* hreflang — also declared in metadata.alternates but some crawlers prefer <link> */}
-        <link rel="alternate" hrefLang="en" href="https://fariszenunovic.com/en" />
-        <link rel="alternate" hrefLang="bs" href="https://fariszenunovic.com/bs" />
-        <link rel="alternate" hrefLang="x-default" href="https://fariszenunovic.com/en" />
-        <Script
-          id="json-ld"
+        <link rel="alternate" hrefLang="en" href={`${SITE}/en`} />
+        <link rel="alternate" hrefLang="bs" href={`${SITE}/bs`} />
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/en`} />
+        {/* Plain <script>, not next/script — next/script injects client-side, which
+            left this JSON-LD out of the server-rendered HTML entirely. */}
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          strategy="beforeInteractive"
         />
       </head>
       <body

@@ -19,7 +19,8 @@ export default function Sidebar() {
 
   // Absolute locale-prefixed hrefs so links work from any page (e.g. /bs/usluge)
   const NAV_ITEMS: NavItem[] = [
-    { href: `/${locale}#about`,    label: t("nav.about"),    id: "about",    icon: User     },
+    // Full page, not an anchor — /o-meni is the entity home for the Person node.
+    { href: `/${locale}/o-meni`,   label: t("nav.about"),    id: "about",    icon: User     },
     { href: `/${locale}#projects`, label: t("nav.projects"), id: "projects", icon: Code     },
     { href: `/${locale}#resume`,   label: t("nav.resume"),   id: "resume",   icon: FileText },
     { href: `/${locale}#contact`,  label: t("nav.contact"),  id: "contact",  icon: Phone    },

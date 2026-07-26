@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 
+import { SITE, PERSON_ID } from "../../../lib/entity";
+
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -21,10 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? ["SEO usluge", "SEO usluge BiH", "SEO optimizacija", "SEO Bosna", "SEO strucnjak BiH", "Google optimizacija", "lokalni SEO", "SEO agencija Bosna"]
       : ["SEO services Bosnia", "SEO optimization BiH", "SEO expert Bosnia", "Google optimization Bosnia"],
     alternates: {
-      canonical: `https://fariszenunovic.com/${locale}/usluge`,
+      canonical: `${SITE}/${locale}/usluge`,
       languages: {
-        bs: "https://fariszenunovic.com/bs/usluge",
-        en: "https://fariszenunovic.com/en/usluge",
+        bs: `${SITE}/bs/usluge`,
+        en: `${SITE}/en/usluge`,
+        "x-default": `${SITE}/en/usluge`,
       },
     },
     openGraph: {
@@ -32,12 +35,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isBS
         ? "Profesionalne SEO usluge. Organski rast i vidljivost na Googleu za biznise u BiH."
         : "Professional SEO services. Organic growth and Google visibility for businesses in BiH.",
-      url: `https://fariszenunovic.com/${locale}/usluge`,
+      url: `${SITE}/${locale}/usluge`,
       siteName: "Faris Zenunovic",
       type: "website",
       images: [
         {
-          url: `https://fariszenunovic.com/${locale}/usluge/opengraph-image`,
+          url: `${SITE}/${locale}/usluge/opengraph-image`,
           width: 1200,
           height: 630,
           alt: isBS ? "SEO Usluge BiH | Faris Zenunović" : "SEO Services | Faris Zenunović",
@@ -50,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isBS
         ? "Profesionalne SEO usluge za biznise u BiH. Besplatna analiza."
         : "Professional SEO services for businesses in BiH. Free audit.",
-      images: [`https://fariszenunovic.com/${locale}/usluge/opengraph-image`],
+      images: [`${SITE}/${locale}/usluge/opengraph-image`],
     },
     robots: {
       index: true,
@@ -76,19 +79,17 @@ export default async function UslugePage({ params }: Props) {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `https://fariszenunovic.com/${locale}/usluge#seo-usluge`,
+    "@id": `${SITE}/${locale}/usluge#seo-usluge`,
     name: "SEO Usluge",
     description: "Profesionalne SEO usluge za biznise u Bosni i Hercegovini.",
+    // Reference the canonical Person node by @id instead of redeclaring it — a second
+    // inline Person would register as a separate entity and split the knowledge graph.
     provider: {
       "@type": "Person",
-      name: "Faris Zenunovic",
-      url: "https://fariszenunovic.com",
-      jobTitle: "SEO Strucnjak",
-      address: {
-        "@type": "PostalAddress",
-        addressCountry: "BA",
-        addressRegion: "Bosna i Hercegovina",
-      },
+      "@id": PERSON_ID,
+      name: "Faris Zenunović",
+      url: SITE,
+      jobTitle: "SEO Specialist",
     },
     areaServed: { "@type": "Country", name: "Bosna i Hercegovina" },
     offers: [
@@ -129,13 +130,13 @@ export default async function UslugePage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: locale === "bs" ? "Početna" : "Home",
-        item: `https://fariszenunovic.com/${locale}`,
+        item: `${SITE}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: locale === "bs" ? "SEO Usluge" : "SEO Services",
-        item: `https://fariszenunovic.com/${locale}/usluge`,
+        item: `${SITE}/${locale}/usluge`,
       },
     ],
   };
