@@ -77,6 +77,14 @@ export const KNOWS_ABOUT = [
 ];
 
 export const EMAIL = "zenunovicfaris@gmail.com";
+
+/**
+ * Web3Forms access key for the contact form — submissions are emailed to the
+ * address the key was created for. It is a public form identifier, meant to sit
+ * in client code (Web3Forms only allows browser-side calls on the free plan).
+ * Get one at https://web3forms.com by entering the inbox that should receive mail.
+ */
+export const WEB3FORMS_ACCESS_KEY = "a3511645-9d2d-4625-a77d-78f02983be16";
 export const TELEPHONE = "+387603055894";
 
 export function imageObject(
