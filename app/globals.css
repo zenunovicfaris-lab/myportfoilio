@@ -1,7 +1,17 @@
 @import "tailwindcss";
 
-* {
+html {
   scroll-behavior: smooth;
+  /* Anchor jumps land below the fixed mobile top bar (h-16) */
+  scroll-padding-top: 4rem;
+}
+
+@media (min-width: 1024px) {
+  html { scroll-padding-top: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 body {

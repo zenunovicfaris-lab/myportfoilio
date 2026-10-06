@@ -1,7 +1,10 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
+import { motion, useMotionValue, useReducedMotion, useScroll, useTransform, type MotionValue } from "framer-motion";
+import { useTranslations } from "next-intl";
+
+import { useHydrated } from "../../lib/useHydrated";
 
 // ─── SVG geometry ─────────────────────────────────────────────────────────────
 
@@ -111,6 +114,15 @@ export default function GrowthScrollAnimation() {
   // The outer div is tall so the user has scroll room.
   // The inner div is sticky, keeping the graphic on-screen the whole time.
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("growth");
+
+  // Reduced motion: no scroll-driven drawing, the finished chart is shown in a
+  // normal-height section instead of a 220vh scroll track.
+  // Gated on hydration: the server cannot know the preference, so the first
+  // client render must match the server markup (full animated version).
+  const hydrated = useHydrated();
+  const prefersReduced = useReducedMotion();
+  const reduceMotion = hydrated && prefersReduced === true;
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -118,18 +130,23 @@ export default function GrowthScrollAnimation() {
   });
 
   // Core animations driven by scroll
-  const pathLength  = useTransform(scrollYProgress, [0.05, 0.88], [0, 1]);
-  const areaOpacity = useTransform(scrollYProgress, [0.05, 0.45], [0, 0.38]);
+  const drawn       = useTransform(scrollYProgress, [0.05, 0.88], [0, 1]);
+  const areaDrawn   = useTransform(scrollYProgress, [0.05, 0.45], [0, 0.38]);
   const headingOp   = useTransform(scrollYProgress, [0.00, 0.10], [0, 1]);
   const headingY    = useTransform(scrollYProgress, [0.00, 0.10], [20, 0]);
   const hintOpacity = useTransform(scrollYProgress, [0.00, 0.14], [1, 0]);
+  const full        = useMotionValue(1);
+  const fullArea    = useMotionValue(0.38);
+
+  const pathLength  = reduceMotion ? full : drawn;
+  const areaOpacity = reduceMotion ? fullArea : areaDrawn;
 
   return (
     // 220 vh gives ~120 vh of usable scroll distance (220 − 100)
-    <div ref={containerRef} className="relative h-[220vh] bg-[#0a0a0f]">
+    <div ref={containerRef} className={`relative bg-[#0a0a0f] ${reduceMotion ? "" : "h-[220vh]"}`}>
 
       {/* ── Sticky viewport ─────────────────────────────────────────────── */}
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-14 overflow-hidden">
+      <div className="sticky top-0 min-h-screen py-16 flex flex-col items-center justify-center px-4 sm:px-8 md:px-14 overflow-hidden">
 
         {/* Edge rules */}
         <div className="absolute top-0    inset-x-0 h-px bg-gradient-to-r from-transparent via-white/8 to-transparent" />
@@ -137,17 +154,17 @@ export default function GrowthScrollAnimation() {
 
         {/* ── Heading ───────────────────────────────────────────────────── */}
         <motion.div
-          style={{ opacity: headingOp, y: headingY }}
+          style={reduceMotion ? undefined : { opacity: headingOp, y: headingY }}
           className="text-center mb-6 sm:mb-10 max-w-2xl"
         >
           <span className="inline-block text-[10px] font-semibold tracking-[0.22em] uppercase text-teal-400/60 mb-3 select-none">
-            Organic Growth
+            {t("label")}
           </span>
           <h2 className="font-[family-name:var(--font-space)] text-2xl sm:text-3xl md:text-[2.15rem] font-bold text-white tracking-tight leading-snug">
-            Scaling your organic presence,{" "}
+            {t("heading")}{" "}
             <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent">
-              steadily and predictably.
+              {t("headingAccent")}
             </span>
           </h2>
         </motion.div>
@@ -258,19 +275,30 @@ export default function GrowthScrollAnimation() {
           </svg>
         </div>
 
+        {/* The curve is a typical trajectory, not one client's data — say so,
+            since the real numbers live in the portfolio and case studies. */}
+        <p className="mt-4 max-w-xl text-center text-xs text-gray-500">
+          {t("caption")}{" "}
+          <a href="#projects" className="text-teal-400 hover:text-teal-300 underline underline-offset-4 decoration-teal-500/30">
+            {t("captionLink")}
+          </a>
+        </p>
+
         {/* ── Scroll hint (fades out once the user starts scrolling) ──── */}
-        <motion.p
-          style={{ opacity: hintOpacity }}
-          className="mt-4 sm:mt-6 text-[10px] text-gray-600 tracking-[0.18em] uppercase flex items-center gap-2 select-none"
-        >
-          Scroll to reveal
-          <motion.span
-            animate={{ y: [0, 4, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+        {!reduceMotion && (
+          <motion.p
+            style={{ opacity: hintOpacity }}
+            className="mt-4 sm:mt-6 text-[10px] text-gray-600 tracking-[0.18em] uppercase flex items-center gap-2 select-none"
           >
-            ↓
-          </motion.span>
-        </motion.p>
+            {t("hint")}
+            <motion.span
+              animate={{ y: [0, 4, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+            >
+              ↓
+            </motion.span>
+          </motion.p>
+        )}
 
       </div>
     </div>

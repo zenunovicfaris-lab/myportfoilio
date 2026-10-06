@@ -3,24 +3,16 @@
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { ArrowUpRight, ExternalLink, ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
+
+import { PROJECTS, type ProjectStatic } from "../../lib/projects";
 
 const PROJECTS_VISIBLE_DEFAULT = 6;
 
-// Non-translatable data (links, flags, image paths) — same for all locales
-const PROJECTS_STATIC = [
-  { id: 1, image: "/images/esports.net SEMrush.jpg", link: "https://www.esports.net/",                 newTab: true,  nofollow: true  },
-  { id: 2, image: "/images/99bitcoins-semrush.jpg",  link: "https://99bitcoins.com/",                  newTab: true,  nofollow: true  },
-  { id: 3, image: "/images/kakolako-gsc.jpg",        link: "https://kakolako.org/",                    newTab: true,  nofollow: false },
-  { id: 4, image: "/images/alfa-metabo-seo-site.jpg",link: null,                                       newTab: false, nofollow: false },
-  { id: 5, image: "/images/ai-saas-project.jpg",     link: "https://www.instagram.com/salecloser.ba/", newTab: true,  nofollow: false },
-  { id: 6, image: "/images/auratherm-website.jpg",   link: "https://www.auratherm.ba/",                newTab: true,  nofollow: false },
-  { id: 7, image: "/images/casino-bih.jpg",          link: "https://www.casino-bih.com/",              newTab: true,  nofollow: false },
-] as const;
-
 type ProjectMsg = { title: string; description: string; tags: string[] };
-type Project    = ProjectMsg & (typeof PROJECTS_STATIC)[number];
+type Project    = ProjectMsg & ProjectStatic;
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 48, scale: 0.96, filter: "blur(4px)" },
@@ -43,6 +35,7 @@ const tagVariants: Variants = {
 };
 
 function ProjectCard({ p, t, revealed }: { p: Project; t: ReturnType<typeof useTranslations>; revealed?: boolean }) {
+  const locale = useLocale();
   // Cards revealed via "Show more" animate themselves in/out; the initial
   // cards inherit their enter animation from the parent grid's scroll stagger.
   const animationProps = revealed
@@ -60,12 +53,10 @@ function ProjectCard({ p, t, revealed }: { p: Project; t: ReturnType<typeof useT
 
       <div className="relative aspect-video bg-[#1a1d27] overflow-hidden">
         <Image
-          src={p.image}
+          src={p.image.src}
           alt={p.title}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          quality={90}
-          unoptimized
           className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.06]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111218]/60 via-transparent to-transparent" />
@@ -108,8 +99,29 @@ function ProjectCard({ p, t, revealed }: { p: Project; t: ReturnType<typeof useT
           ))}
         </motion.div>
 
-        <div className="flex justify-end border-t border-white/6 pt-4">
-          {p.link ? (
+        <div className="flex items-center justify-between gap-3 border-t border-white/6 pt-4">
+          {p.slug ? (
+            // Internal case study first: keeps the visitor on the site and links the
+            // portfolio to pages that can rank on their own. External site stays secondary.
+            <>
+              <Link
+                href={`/${locale}/projekti/${p.slug}`}
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors"
+              >
+                {t("caseStudy")} <ArrowUpRight size={14} />
+              </Link>
+              {p.link && (
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel={["noopener noreferrer", p.nofollow ? "nofollow" : ""].filter(Boolean).join(" ")}
+                  className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-300 transition-colors"
+                >
+                  {t("visitSite")} <ExternalLink size={11} />
+                </a>
+              )}
+            </>
+          ) : p.link ? (
             <motion.a
               href={p.link}
               target={p.newTab ? "_blank" : undefined}
@@ -138,7 +150,7 @@ export default function PortfolioSection() {
   // Merge translated strings with static data by index
   const projects: Project[] = (t.raw("projects") as ProjectMsg[]).map((msg, i) => ({
     ...msg,
-    ...PROJECTS_STATIC[i],
+    ...PROJECTS[i],
   }));
 
   const visibleProjects = showAll ? projects : projects.slice(0, PROJECTS_VISIBLE_DEFAULT);

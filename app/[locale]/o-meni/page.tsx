@@ -133,6 +133,14 @@ export default async function OMeniPage({ params }: Props) {
         },
         { "@type": "EducationalOrganization", name: "IT Gimnazija Živinice" },
       ],
+      hasCredential: {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        educationalLevel: "Bachelor",
+        name: isBS ? "Bachelor marketinških komunikacija" : "Bachelor of Marketing Communications",
+        dateCreated: "2026",
+        recognizedBy: { "@type": "CollegeOrUniversity", name: "IPI Akademija Tuzla", url: "https://ipi-akademija.ba" },
+      },
       knowsLanguage: [
         { "@type": "Language", name: "Bosnian", alternateName: "bs" },
         { "@type": "Language", name: "English", alternateName: "en" },
@@ -189,7 +197,7 @@ export default async function OMeniPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <main className="bg-[#0f1117] text-[#e5e7eb]">
+      <div className="bg-[#0f1117] text-[#e5e7eb]">
 
         {/* BREADCRUMB */}
         <nav aria-label="Breadcrumb" className="max-w-4xl mx-auto px-6 md:px-10 pt-6">
@@ -385,7 +393,7 @@ export default async function OMeniPage({ params }: Props) {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }

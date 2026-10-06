@@ -13,14 +13,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isBS = locale === "bs";
 
   return {
-    title: isBS
-      ? "SEO Usluge u BiH | Faris Zenunovic - SEO Strucnjak"
-      : "SEO Services Bosnia | Faris Zenunovic - SEO Expert",
+    // absolute: the layout's "%s | Faris Zenunović" template would repeat the name
+    title: {
+      absolute: isBS
+        ? "SEO Usluge u BiH | Faris Zenunović - SEO Stručnjak"
+        : "SEO Services Bosnia | Faris Zenunović - SEO Expert",
+    },
     description: isBS
-      ? "Profesionalne SEO usluge za biznise u Bosni i Hercegovini. Organski rast, tehnicki SEO, izrada sadrzaja i link building. Besplatna SEO analiza."
+      ? "Profesionalne SEO usluge za biznise u Bosni i Hercegovini. Organski rast, tehnički SEO, izrada sadržaja i link building. Besplatna SEO analiza."
       : "Professional SEO services for businesses in Bosnia and Herzegovina. Organic growth, technical SEO, content creation and link building. Free SEO audit.",
     keywords: isBS
-      ? ["SEO usluge", "SEO usluge BiH", "SEO optimizacija", "SEO Bosna", "SEO strucnjak BiH", "Google optimizacija", "lokalni SEO", "SEO agencija Bosna"]
+      ? ["SEO usluge", "SEO usluge BiH", "SEO optimizacija", "SEO Bosna", "SEO stručnjak BiH", "Google optimizacija", "lokalni SEO", "SEO agencija Bosna"]
       : ["SEO services Bosnia", "SEO optimization BiH", "SEO expert Bosnia", "Google optimization Bosnia"],
     alternates: {
       canonical: `${SITE}/${locale}/usluge`,
@@ -31,12 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: isBS ? "SEO Usluge BiH | Faris Zenunovic" : "SEO Services Bosnia | Faris Zenunovic",
+      title: isBS ? "SEO Usluge BiH | Faris Zenunović" : "SEO Services Bosnia | Faris Zenunović",
       description: isBS
         ? "Profesionalne SEO usluge. Organski rast i vidljivost na Googleu za biznise u BiH."
         : "Professional SEO services. Organic growth and Google visibility for businesses in BiH.",
       url: `${SITE}/${locale}/usluge`,
-      siteName: "Faris Zenunovic",
+      siteName: "Faris Zenunović",
       type: "website",
       images: [
         {
@@ -49,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: isBS ? "SEO Usluge BiH | Faris Zenunovic" : "SEO Services BiH",
+      title: isBS ? "SEO Usluge BiH | Faris Zenunović" : "SEO Services BiH",
       description: isBS
         ? "Profesionalne SEO usluge za biznise u BiH. Besplatna analiza."
         : "Professional SEO services for businesses in BiH. Free audit.",
@@ -76,12 +79,17 @@ export default async function UslugePage({ params }: Props) {
     { q: t("faq4Q"), a: t("faq4A") },
   ];
 
+  const isBS = locale === "bs";
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `${SITE}/${locale}/usluge#seo-usluge`,
-    name: "SEO Usluge",
-    description: "Profesionalne SEO usluge za biznise u Bosni i Hercegovini.",
+    name: isBS ? "SEO Usluge" : "SEO Services",
+    serviceType: "Search Engine Optimization",
+    description: isBS
+      ? "Profesionalne SEO usluge za biznise u Bosni i Hercegovini."
+      : "Professional SEO services for businesses in Bosnia and Herzegovina.",
     // Reference the canonical Person node by @id instead of redeclaring it — a second
     // inline Person would register as a separate entity and split the knowledge graph.
     provider: {
@@ -91,12 +99,14 @@ export default async function UslugePage({ params }: Props) {
       url: PERSON_URL,
       jobTitle: "SEO Specialist",
     },
-    areaServed: { "@type": "Country", name: "Bosna i Hercegovina" },
+    areaServed: { "@type": "Country", name: "Bosnia and Herzegovina", identifier: "BA" },
     offers: [
       {
         "@type": "Offer",
         name: "SEO Starter",
-        description: "SEO audit, on-page optimizacija, keyword research i Google Search Console setup.",
+        description: isBS
+          ? "SEO audit, on-page optimizacija, keyword research i Google Search Console setup."
+          : "SEO audit, on-page optimization, keyword research and Google Search Console setup.",
         price: "299",
         priceCurrency: "BAM",
         priceSpecification: { "@type": "UnitPriceSpecification", billingDuration: "P1M" },
@@ -104,7 +114,9 @@ export default async function UslugePage({ params }: Props) {
       {
         "@type": "Offer",
         name: "SEO Pro",
-        description: "Kompletna SEO strategija, link building, SEO sadrzaj, tehnicke popravke i mjesecno izvjestavanje.",
+        description: isBS
+          ? "Kompletna SEO strategija, link building, SEO sadržaj, tehničke popravke i mjesečno izvještavanje."
+          : "Full SEO strategy, link building, SEO content, technical fixes and monthly reporting.",
         price: "699",
         priceCurrency: "BAM",
         priceSpecification: { "@type": "UnitPriceSpecification", billingDuration: "P1M" },
@@ -222,7 +234,7 @@ export default async function UslugePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <main className="bg-[#0f1117] text-[#e5e7eb]">
+      <div className="bg-[#0f1117] text-[#e5e7eb]">
 
         {/* BREADCRUMB */}
         <nav aria-label="Breadcrumb" className="max-w-5xl mx-auto px-6 md:px-10 pt-6 pb-0">
@@ -623,7 +635,7 @@ export default async function UslugePage({ params }: Props) {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }

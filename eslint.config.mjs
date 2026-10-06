@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Separate checked-out repo, not part of this site
+    "awesome-claude-plugins/**",
   ]),
 ]);
 

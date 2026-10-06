@@ -3,15 +3,18 @@
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { User, Code, FileText, Phone, type LucideIcon } from "lucide-react";
+import { User, Code, FileText, Phone, Briefcase, type LucideIcon } from "lucide-react";
+
+import { useHydrated } from "../../lib/useHydrated";
 import LanguageSwitcher from "./LanguageSwitcher";
 import SocialLinks from "./SocialLinks";
 
 const SECTIONS = ["about", "projects", "resume", "contact"] as const;
 type Section = (typeof SECTIONS)[number];
 
-type NavItem = { href: string; label: string; id: Section; icon: LucideIcon };
+type NavItem = { href: string; label: string; id: Section | "services"; icon: LucideIcon };
 
 export default function Sidebar() {
   const t      = useTranslations("sidebar");
@@ -23,16 +26,19 @@ export default function Sidebar() {
     { href: `/${locale}/o-meni`,   label: t("nav.about"),    id: "about",    icon: User     },
     { href: `/${locale}#projects`, label: t("nav.projects"), id: "projects", icon: Code     },
     { href: `/${locale}#resume`,   label: t("nav.resume"),   id: "resume",   icon: FileText },
+    { href: `/${locale}/usluge`,   label: t("nav.services"), id: "services", icon: Briefcase },
     { href: `/${locale}#contact`,  label: t("nav.contact"),  id: "contact",  icon: Phone    },
   ];
 
-  const [activeSection, setActiveSection] = useState<Section>("about");
-  const [mounted, setMounted] = useState(false);
-  const lastActiveRef = useRef(activeSection);
+  // Sub-pages own their nav item; scroll-spy only applies on the home page
+  const pathname = usePathname();
+  const pageSection: NavItem["id"] | null =
+    pathname.endsWith("/usluge") ? "services" : pathname.endsWith("/o-meni") ? "about" : pathname.includes("/projekti/") ? "projects" : null;
+  const isHome = pathname === `/${locale}`;
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const [activeSection, setActiveSection] = useState<Section>("about");
+  const mounted = useHydrated();
+  const lastActiveRef = useRef(activeSection);
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -130,7 +136,7 @@ export default function Sidebar() {
           <motion.div
             onMouseMove={onAvatarMove}
             onMouseLeave={onAvatarLeave}
-            style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
+            style={mounted ? { rotateX, rotateY, transformStyle: "preserve-3d" } : undefined}
             className="relative w-14 h-14 rounded-2xl shrink-0"
           >
             <div className="absolute -inset-2 rounded-[18px] bg-gradient-to-r from-teal-500/20 to-cyan-400/20" />
@@ -187,7 +193,7 @@ export default function Sidebar() {
           }
 
           // ── After mount: full animated version with active state ──────────
-          const active = activeSection === item.id;
+          const active = (isHome ? activeSection : pageSection) === item.id;
 
           return (
             <motion.a

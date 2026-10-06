@@ -20,7 +20,6 @@ import {
 } from "../../lib/entity";
 import Sidebar from "../components/Sidebar";
 import MobileNav from "../components/MobileNav";
-import ClientOnly from "../components/ClientOnly";
 import ClickSoundProvider from "../components/ClickSoundProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -177,16 +176,13 @@ export default async function LocaleLayout({
         suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
-          <ClientOnly fallback={<div className="lg:hidden fixed top-0 left-0 right-0 h-16 z-50 bg-[#0d0f16]/80 border-b border-white/8" aria-hidden="true" />}>
-            <MobileNav />
-          </ClientOnly>
+          {/* Server-rendered so the nav links are in the initial HTML for crawlers */}
+          <MobileNav />
 
           <div className="min-h-screen flex">
-            <ClientOnly fallback={<div className="hidden lg:block w-72 shrink-0" aria-hidden="true" />}>
-              <div className="hidden lg:block w-72 shrink-0">
-                <Sidebar />
-              </div>
-            </ClientOnly>
+            <div className="hidden lg:block w-72 shrink-0">
+              <Sidebar />
+            </div>
             <main className="flex-1 min-w-0 pt-16 lg:pt-0">
               {children}
             </main>

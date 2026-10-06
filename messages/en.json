@@ -26,16 +26,16 @@
     "bgHeading": "Background",
     "bgP1": "It started in 2022 with self-taught study - technical audits, on-page optimization, keyword research and content strategy, applied to his own test sites. What stuck from that period is a structured workflow for competitive analysis and SERP evaluation that still sits behind every project.",
     "bgP2": "Since 2022 he has worked as a freelance SEO specialist for local and regional clients, building sites from scratch in Next.js, React and TypeScript, and in WordPress for lighter requirements. In parallel he ran SEO for a portfolio of affiliate sites in the crypto, fintech and regulated finance space through Finixio, then produced and optimized long-form content for ClickOut Media across crypto and igaming niches.",
-    "bgP3": "In 2026 he co-founded ZT Media, a web and SEO agency serving local and regional businesses in the automotive, manufacturing and retail sectors. He is also completing a bachelor's degree in marketing communications at IPI Academy in Tuzla.",
+    "bgP3": "In 2026 he co-founded ZT Media, a web and SEO agency serving local and regional businesses in the automotive, manufacturing and retail sectors. He graduated in marketing communications from IPI Academy in Tuzla in 2026.",
     "resultsHeading": "Results",
     "resultsIntro": "A few measurable outcomes from recent years:",
     "result1": "Ranked eko-box.hr to an average Google position of 2 - 2,340 clicks and 34,600 impressions, with no paid links.",
-    "result2": "Grew Auratherm from zero to roughly 200 organic clicks per month at a 16.8% CTR.",
+    "result2": "Grew Auratherm from zero to 490 organic clicks in three months, at a 14.9% CTR and an average position of 6.",
     "result3": "esports.net - contributed technical SEO and content restructuring on a site with over 43,000 organic keywords.",
     "result4": "99bitcoins.com - SEO content work on a site with a domain authority score of 51 and over 76,000 monthly organic visits.",
     "expertiseHeading": "Areas of work",
     "eduHeading": "Education",
-    "edu1": "BA in Marketing Communications - IPI Academy Tuzla, expected graduation 2026.",
+    "edu1": "BA in Marketing Communications - IPI Academy Tuzla, graduated 2026.",
     "edu2": "IT Gymnasium Živinice - secondary school, 2019-2023.",
     "orgHeading": "ZT Media",
     "orgP": "ZT Media is a web development and SEO agency co-founded in 2026, working with businesses across Bosnia and Herzegovina and the wider region. Within the agency, Faris Zenunović leads SEO strategy and full website builds for clients.",
@@ -53,20 +53,29 @@
       "about": "About Me",
       "projects": "Portfolio",
       "resume": "Resume",
-      "contact": "Contact"
+      "contact": "Contact",
+      "services": "SEO Services"
     }
   },
   "hero": {
     "srOnly": "– SEO Specialist and Web Developer from Živinice, Bosnia",
     "role": "SEO Specialist · Technical SEO, Content & Web Development",
-    "description": "I specialize in technical SEO, content optimization, and scaling multi-language projects. Explore my most powerful projects below.",
+    "description": "I help businesses grow through organic search: technical SEO, content and fast websites, from local Bosnian brands to international crypto and igaming publishers.",
     "location": "Živinice, Bosnia and Herzegovina",
     "aboutLink": "Who is Faris Zenunović?",
     "ctaPortfolio": "View Portfolio",
     "ctaContact": "Contact Me",
     "available": "Available for projects",
     "platformsLabel": "Platforms I've worked with",
-    "rotatingWords": ["SEO Strategist", "Technical SEO", "Growth Partner", "Content Optimizer", "Link Builder", "Local SEO Expert"]
+    "rotatingWords": [
+      "SEO Strategist",
+      "Technical SEO",
+      "Growth Partner",
+      "Content Optimizer",
+      "Link Builder",
+      "Local SEO Expert"
+    ],
+    "ctaServices": "SEO Services"
   },
   "portfolio": {
     "label": "Portfolio",
@@ -78,41 +87,81 @@
     "showLess": "Show less",
     "projects": [
       {
-        "title": "SEO Growth – esports.net",
-        "description": "Contributed to long-form SEO content and technical optimization for esports.net, supporting organic traffic growth and visibility across competitive search queries.",
-        "tags": ["SEO", "Content Strategy", "SEMrush"]
+        "title": "Car Dealer Website & Local SEO – S-Line",
+        "description": "Website and local SEO for S-Line, a used-car importer and dealership in Živinice near Tuzla. 965 organic clicks at an average position of 7 in the last three months.",
+        "tags": [
+          "Web Development",
+          "Local SEO",
+          "Structured Data"
+        ]
       },
       {
-        "title": "Crypto SEO – 99Bitcoins",
-        "description": "SEO strategy and keyword optimization for a high-authority crypto affiliate platform targeting competitive blockchain and cryptocurrency search queries.",
-        "tags": ["SEO", "Affiliate SEO", "Crypto"]
+        "title": "Website & SEO – Auratherm",
+        "description": "Built the full website from scratch in Next.js and React for an outdoor sauna retailer in Bosnia. 490 organic clicks at a 14.9% CTR and an average position of 6 in the last three months.",
+        "tags": [
+          "Next.js",
+          "React",
+          "SEO",
+          "Technical SEO"
+        ]
+      },
+      {
+        "title": "Football Publisher – Soccer365",
+        "description": "English-language football site with guides, tactics explainers, rankings and transfer news. Reached 100K Google impressions in three months.",
+        "tags": [
+          "Content SEO",
+          "Publishing",
+          "International SEO"
+        ]
+      },
+      {
+        "title": "Bosnian Football Portal – Fudbal365",
+        "description": "Football portal covering the Bosnian national team, BH football, transfers and the Champions League, with player profiles and guides. 59K impressions at an average position of 9.5 in three months.",
+        "tags": [
+          "Content SEO",
+          "News SEO",
+          "Publishing"
+        ]
+      },
+      {
+        "title": "Manufacturer Website & SEO – Alu Line Systems",
+        "description": "Website and SEO for an aluminium fence, gate and shutter manufacturer from Srebrenik working across BiH, Croatia, Slovenia and Austria. 4.6K impressions and 230 clicks since launch in July 2026.",
+        "tags": [
+          "Web Development",
+          "Local SEO",
+          "Multi-market SEO"
+        ]
+      },
+      {
+        "title": "Agency Website – ZT Media",
+        "description": "Website for ZT Media, the web and SEO agency I co-founded: services, projects and a free consultation call to action.",
+        "tags": [
+          "Web Development",
+          "Branding",
+          "Conversion"
+        ]
+      },
+      {
+        "title": "Exam Prep App – Akademija znanja",
+        "description": "Web app for candidates preparing for the written Tuzla Canton police (MUP TK) test: daily challenges, a full exam simulation, mistake review and progress tracking with ranks and XP.",
+        "tags": [
+          "Web App",
+          "Gamification",
+          "EdTech"
+        ]
       },
       {
         "title": "Startup SEO – kakolako.org",
         "description": "Built SEO landing pages and optimized site structure to improve keyword rankings and organic traffic for a startup project.",
-        "tags": ["SEO", "Google Search Console", "Technical SEO"]
-      },
-      {
-        "title": "SEO Proposal Landing Page – Alfa Metabo",
-        "description": "Custom SEO proposal website created to demonstrate how targeted SEO strategy and content optimization could increase inbound leads for a local PVC window company.",
-        "tags": ["SEO Strategy", "Landing Page", "Lead Generation"]
-      },
-      {
-        "title": "AI Sales Automation Concept",
-        "description": "Concept and prototype for an AI-powered sales automation tool designed to help local businesses manage Instagram and WhatsApp customer inquiries.",
-        "tags": ["AI", "SaaS", "Automation"]
-      },
-      {
-        "title": "Web Build & SEO – Auratherm",
-        "description": "Built the full website from scratch using Next.js and React for a local outdoor sauna retailer in Bosnia. Currently driving SEO growth with measurable improvements in organic visibility.",
-        "tags": ["Next.js", "React", "SEO", "Technical SEO"]
-      },
-      {
-        "title": "Casino BiH – Independent Casino Reviews",
-        "description": "Built a full casino review platform from scratch using Next.js, React, and Tailwind CSS. The site delivers honest, unbiased ratings for online casinos targeting the Bosnian market.",
-        "tags": ["Next.js", "React", "Tailwind CSS", "Affiliate SEO"]
+        "tags": [
+          "SEO",
+          "Google Search Console",
+          "Technical SEO"
+        ]
       }
-    ]
+    ],
+    "caseStudy": "Read case study",
+    "visitSite": "Visit site"
   },
   "experience": {
     "label": "Background",
@@ -143,7 +192,7 @@
         "company": "Independent Clients",
         "bullets": [
           "Planned and delivered SEO and web projects end to end for local and regional clients, building sites from scratch in Next.js, React, and TypeScript plus WordPress for lighter requirements.",
-          "Ranked eko-box.hr to an average Google position of 2 (2,340 clicks, 34,600 impressions) with no paid links, and grew Auratherm from zero to ~200 monthly organic clicks (16.8% CTR).",
+          "Ranked eko-box.hr to an average Google position of 2 (2,340 clicks, 34,600 impressions) with no paid links, and grew Auratherm from zero to 490 organic clicks in three months (14.9% CTR, average position 6).",
           "Developed and optimized SEO landing pages for kakolako.org, improving keyword coverage and click-through rates in the local Bosnian market."
         ],
         "caption": "Google Search Console - kakolako.org: Organic click growth following on-page SEO and content optimization."
@@ -157,8 +206,7 @@
           "Identified and targeted high-intent financial keywords - covering cards, payments, investing, and crypto exchanges - using Ahrefs and SEMrush.",
           "Executed content gap analysis and competitor benchmarking to capture underserved search demand in competitive regulated markets.",
           "Collaborated with editorial and dev teams to implement technical SEO improvements, improving crawlability and indexation across key properties."
-        ],
-        "caption": "SEMrush - 99bitcoins.com: Domain authority score of 51 with 76K+ monthly organic visits across crypto content."
+        ]
       },
       {
         "period": "2024 – 2026",
@@ -169,8 +217,7 @@
           "Supported organic performance on esports.net through content restructuring and technical SEO, and ran QA on live pages, fixing broken links and redirects to maintain crawl health.",
           "Used Ahrefs and SEMrush for keyword and intent analysis across international and Asian markets.",
           "Role ended February 2026 following a company-wide restructuring."
-        ],
-        "caption": "SEMrush - esports.net: 43K+ organic keywords tracked, contributing to technical SEO and content restructuring efforts."
+        ]
       },
       {
         "period": "2026 – Present",
@@ -179,7 +226,8 @@
         "bullets": [
           "Co-founded a web and SEO agency serving local and regional businesses.",
           "Lead SEO strategy and full website builds for agency clients across automotive, manufacturing, and retail."
-        ]
+        ],
+        "caption": "Google Search Console - s-line-doo.com: 965 clicks and 10.8K impressions in the last three months, average position 7."
       }
     ]
   },
@@ -193,7 +241,7 @@
       {
         "degree": "Bachelor of Marketing Communications",
         "institution": "IPI Academy Tuzla (Internacionalna poslovno-informaciona akademija)",
-        "period": "Expected graduation 2026"
+        "period": "Graduated 2026"
       },
       {
         "degree": "IT Gimnazija Živinice",
@@ -202,8 +250,14 @@
       }
     ],
     "languages": [
-      { "name": "Bosnian", "level": "Native" },
-      { "name": "English", "level": "Professional working proficiency (full reading and writing; conversational speaking)" }
+      {
+        "name": "Bosnian",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Professional working proficiency (full reading and writing; conversational speaking)"
+      }
     ]
   },
   "skills": {
@@ -218,7 +272,17 @@
     "phone": "Phone",
     "email": "Email",
     "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "auditHeading": "Request a free SEO audit",
+    "auditDesc": "Send your website and a line about what you want to achieve. I'll look at it and get back to you.",
+    "formName": "Name",
+    "formWebsite": "Website URL",
+    "formMessage": "What do you want to achieve?",
+    "formSubmitEmail": "Send by email",
+    "formSubmitWhatsApp": "Send via WhatsApp",
+    "formNote": "Opens your email app or WhatsApp with the message filled in. Nothing is stored on this site.",
+    "formSubject": "Free SEO audit request"
   },
   "usluge": {
     "eyebrow": "SEO Expert · Bosnia and Herzegovina",
@@ -247,7 +311,7 @@
     "servicesDesc": "From technical foundations to link building - every segment of SEO covered with a methodical, data-driven approach.",
     "svc1Title": "Technical SEO",
     "svc1Desc": "The fundamentals that determine how well Google can read and index your website. Without a technical foundation, other SEO tactics cannot function.",
-    "svc1_1": "Core Web Vitals optimization (LCP, FID, CLS)",
+    "svc1_1": "Core Web Vitals optimization (LCP, INP, CLS)",
     "svc1_2": "Site speed and performance audit",
     "svc1_3": "Crawl budget optimization",
     "svc1_4": "Schema markup implementation",
@@ -282,15 +346,15 @@
     "resultsTag": "Proven results",
     "resultsTitle": "Real projects, measurable results",
     "resultsDesc": "Every number comes from real campaigns - not estimates.",
-    "result1Title": "esports.net",
-    "result1Metric": "43K+ organic keywords",
-    "result1Desc": "Contributed to technical SEO and content restructuring on a competitive gaming portal.",
-    "result2Title": "99Bitcoins",
-    "result2Metric": "DA 51 · 76K+ visits/mo",
-    "result2Desc": "SEO strategy and keyword optimization for a high-authority crypto affiliate platform.",
-    "result3Title": "kakolako.org",
-    "result3Metric": "Organic click growth (GSC)",
-    "result3Desc": "SEO landing pages and on-page optimization for a local Bosnian startup.",
+    "result1Title": "S-Line",
+    "result1Metric": "965 clicks · avg. position 7",
+    "result1Desc": "Website and local SEO for a used-car dealership in Živinice - 10.8K impressions in three months.",
+    "result2Title": "Auratherm",
+    "result2Metric": "14.9% CTR · avg. position 6",
+    "result2Desc": "Built from scratch in Next.js - 490 organic clicks in three months for an outdoor sauna retailer.",
+    "result3Title": "Soccer365",
+    "result3Metric": "100K impressions in 3 months",
+    "result3Desc": "English-language football publisher, grown from near zero with guides, tactics and rankings.",
     "result4Title": "eko-box.hr",
     "result4Metric": "Avg. position 2 · 2,340 clicks",
     "result4Desc": "Ranked to an average Google position of 2 (34,600 impressions) for a Croatian client with no paid links.",
@@ -355,5 +419,229 @@
     "auditTitle": "Get a free SEO audit of your website",
     "auditDesc": "I analyze your website and send a detailed report with concrete recommendations. Find out where you are losing rankings and what needs to be fixed.",
     "auditCta": "Request free audit"
+  },
+  "growth": {
+    "label": "Organic Growth",
+    "heading": "Scaling your organic presence,",
+    "headingAccent": "steadily and predictably.",
+    "hint": "Scroll to reveal",
+    "caption": "Illustrative curve of a typical SEO campaign, not one client's data.",
+    "captionLink": "Real, sourced results are in the projects below."
+  },
+  "caseStudy": {
+    "breadcrumbHome": "Home",
+    "breadcrumbProjects": "Portfolio",
+    "eyebrow": "Case study",
+    "clientLabel": "Client",
+    "roleLabel": "My role",
+    "periodLabel": "Period",
+    "workHeading": "What I did",
+    "resultsHeading": "Results",
+    "toolsHeading": "Tools & skills",
+    "proofHeading": "Proof",
+    "visitSite": "Visit the site",
+    "ctaHeading": "Want results like these for your site?",
+    "ctaText": "Start with a free SEO audit - I'll show you where you're losing rankings and what to fix first.",
+    "ctaButton": "Request a free audit",
+    "ctaServices": "See SEO services",
+    "otherProjects": "More case studies"
+  },
+  "caseStudies": {
+    "s-line": {
+      "title": "S-Line - car dealer website and local SEO",
+      "metaDescription": "Website and local SEO for S-Line, a used-car dealership in Živinice: 965 organic clicks, 10.8K impressions and an average Google position of 7 in three months.",
+      "client": "S-Line d.o.o., Živinice",
+      "role": "Web development & SEO (ZT Media)",
+      "period": "2026",
+      "summary": "S-Line is a car dealership in Živinice near Tuzla that imports inspected used vehicles from the Netherlands, Germany and Belgium. The site has to bring in local buyers searching for used cars in the Tuzla area and turn them into calls and visits.",
+      "work": [
+        "Built the website with pages for vehicles, services, reviews and contact, with calls and WhatsApp as the main conversion paths.",
+        "Targeted local search around the dealership's location in Živinice and the wider Tuzla area.",
+        "Implemented structured data - Google Search Console detects breadcrumbs and review snippets on the site.",
+        "Monitoring performance in Search Console and improving pages based on the queries that bring traffic."
+      ],
+      "results": [
+        {
+          "value": "965",
+          "label": "organic clicks"
+        },
+        {
+          "value": "10.8K",
+          "label": "impressions"
+        },
+        {
+          "value": "8.9%",
+          "label": "average CTR"
+        },
+        {
+          "value": "7",
+          "label": "average position"
+        }
+      ],
+      "resultsNote": "Google Search Console, last three months (July - October 2026).",
+      "proofCaption": "Google Search Console - s-line-doo.com, last three months.",
+      "siteCaption": "S-Line homepage."
+    },
+    "auratherm": {
+      "title": "Auratherm - website build and SEO from zero",
+      "metaDescription": "How I built the Auratherm website from scratch in Next.js and grew its organic search: 490 clicks at a 14.9% CTR and an average position of 6 in three months.",
+      "client": "Auratherm",
+      "role": "Web development & SEO",
+      "period": "Ongoing",
+      "summary": "Auratherm is an outdoor sauna and hot tub retailer in Bosnia and Herzegovina. The project started with no website and no organic presence, so both the site and its search visibility had to be built from scratch.",
+      "work": [
+        "Designed and built the full website from scratch in Next.js and React, with technical SEO in place from day one.",
+        "Set up the site structure, metadata and internal linking around the products and local search queries.",
+        "Implemented product and breadcrumb structured data, both detected in Google Search Console.",
+        "Ongoing SEO: monitoring performance in Search Console and improving pages based on the data."
+      ],
+      "results": [
+        {
+          "value": "490",
+          "label": "organic clicks"
+        },
+        {
+          "value": "3.3K",
+          "label": "impressions"
+        },
+        {
+          "value": "14.9%",
+          "label": "average CTR"
+        },
+        {
+          "value": "6",
+          "label": "average position"
+        }
+      ],
+      "resultsNote": "Google Search Console, last three months (July - October 2026).",
+      "proofCaption": "Google Search Console - auratherm.ba, last three months.",
+      "siteCaption": "Auratherm website, built in Next.js and React."
+    },
+    "soccer365": {
+      "title": "Soccer365 - football publisher built for search",
+      "metaDescription": "Soccer365, an English-language football site with guides, tactics and rankings, reached 100K Google impressions and an average position of 8.9 in three months.",
+      "client": "Soccer365",
+      "role": "Web development & content SEO",
+      "period": "2026",
+      "summary": "Soccer365 is an English-language football site covering news, results, the Premier League, transfers, tactics and the World Cup. Its guides answer the questions football coverage rarely explains, from formations and player roles to rankings.",
+      "work": [
+        "Built the site with clear topic sections - news, results, guides, Premier League, transfers, tactics and World Cup.",
+        "Planned evergreen content around search demand: tactics explainers, formation guides and player rankings.",
+        "Designed consistent branded cover images for every article.",
+        "Implemented breadcrumb structured data and monitored growth in Search Console."
+      ],
+      "results": [
+        {
+          "value": "100K",
+          "label": "impressions"
+        },
+        {
+          "value": "455",
+          "label": "organic clicks"
+        },
+        {
+          "value": "8.9",
+          "label": "average position"
+        },
+        {
+          "value": "0.5%",
+          "label": "average CTR"
+        }
+      ],
+      "resultsNote": "Google Search Console, last three months (July - October 2026). Impressions climbed from near zero in July.",
+      "proofCaption": "Google Search Console - soccer365.news, last three months.",
+      "siteCaption": "Soccer365 guides section."
+    },
+    "fudbal365": {
+      "title": "Fudbal365 - Bosnian football portal",
+      "metaDescription": "Fudbal365, a Bosnian football portal with results, transfers and player profiles: 59K Google impressions and an average position of 9.5 in three months.",
+      "client": "Fudbal365",
+      "role": "Web development & content SEO",
+      "period": "2026",
+      "summary": "Fudbal365 is a Bosnian-language football portal covering the national team, BH football, transfers and the Champions League. Alongside news it publishes player profiles and guides that keep bringing search traffic after the news cycle moves on.",
+      "work": [
+        "Built the portal with sections for results, guides, BH football, transfers and the Champions League.",
+        "Created player profile articles with career, transfer and statistics coverage for Bosnian players abroad.",
+        "Implemented breadcrumb and review snippet structured data, detected in Search Console.",
+        "Tracked queries and positions in Search Console to steer new content."
+      ],
+      "results": [
+        {
+          "value": "59K",
+          "label": "impressions"
+        },
+        {
+          "value": "400",
+          "label": "organic clicks"
+        },
+        {
+          "value": "9.5",
+          "label": "average position"
+        },
+        {
+          "value": "0.7%",
+          "label": "average CTR"
+        }
+      ],
+      "resultsNote": "Google Search Console, last three months (July - October 2026).",
+      "proofCaption": "Google Search Console - fudbal365.com, last three months.",
+      "siteCaption": "Fudbal365 homepage."
+    },
+    "alu-line-systems": {
+      "title": "Alu Line Systems - manufacturer website and SEO",
+      "metaDescription": "Website and SEO for Alu Line Systems, an aluminium fence and gate manufacturer from Srebrenik: 4.6K impressions and 230 clicks since launch in July 2026.",
+      "client": "Alu Line Systems, Srebrenik",
+      "role": "Web development & SEO (ZT Media)",
+      "period": "2026",
+      "summary": "Alu Line Systems makes and installs aluminium fences, gates and shutters to measure, without subcontractors, and works in BiH, Croatia, Slovenia and Austria. The site needed to win searches across several markets and turn them into quote requests.",
+      "work": [
+        "Built the website with service, location, project and blog sections, plus calls, WhatsApp and quote requests as conversion paths.",
+        "Created location pages to cover searches across the markets the company works in.",
+        "Implemented breadcrumb structured data, detected in Search Console.",
+        "Monitoring the new domain in Search Console from launch in July 2026."
+      ],
+      "results": [
+        {
+          "value": "4.6K",
+          "label": "impressions"
+        },
+        {
+          "value": "230",
+          "label": "organic clicks"
+        },
+        {
+          "value": "5%",
+          "label": "average CTR"
+        },
+        {
+          "value": "20.5",
+          "label": "average position"
+        }
+      ],
+      "resultsNote": "Google Search Console, from launch in July to October 2026. A young domain, so positions are still climbing.",
+      "proofCaption": "Google Search Console - alu-line-systems.com, since launch.",
+      "siteCaption": "Alu Line Systems homepage."
+    },
+    "kakolako": {
+      "title": "kakolako.org - startup SEO landing pages",
+      "metaDescription": "SEO landing pages and on-page optimization for kakolako.org, a Bosnian startup, with organic click growth in Google Search Console.",
+      "client": "kakolako.org",
+      "role": "Freelance SEO Specialist",
+      "period": "2022 - present",
+      "summary": "kakolako.org is a startup project targeting the local Bosnian market. The goal was to build search visibility from a young domain through landing pages built around real search demand.",
+      "work": [
+        "Built SEO landing pages around researched keyword clusters.",
+        "Optimized site structure and on-page elements to improve keyword coverage.",
+        "Improved titles and meta descriptions to lift click-through rate in search results."
+      ],
+      "results": [
+        {
+          "value": "↑",
+          "label": "organic click growth in Google Search Console"
+        }
+      ],
+      "resultsNote": "See the Search Console screenshot below.",
+      "proofCaption": "Google Search Console - kakolako.org: organic click growth after on-page SEO and content optimization."
+    }
   }
 }

@@ -22,13 +22,15 @@ const TOOLS = [
 const TOOLS_VISIBLE_DEFAULT = 6;
 
 // Non-translatable static data per timeline entry (by index)
-const TIMELINE_STATIC = [
-  { muted: true,  proof: undefined,                         caption: undefined                    },
-  { muted: false, proof: "/images/kakolako-gsc.jpg",        caption: undefined                    },
-  { muted: false, proof: "/images/99bitcoins-semrush.jpg",  caption: undefined                    },
-  { muted: false, proof: "/images/esports.net SEMrush.jpg", caption: undefined                    },
-  { muted: false, proof: undefined,                         caption: undefined, current: true     },
-] as const;
+// No `caption` here: it comes from the message files, and a static `caption: undefined`
+// spread after the message would wipe it out.
+const TIMELINE_STATIC: { muted?: boolean; current?: boolean; proof?: string }[] = [
+  { muted: true },
+  { proof: "/images/kakolako-gsc.jpg" },
+  {},
+  {},
+  { proof: "/images/s-line-gsc.png", current: true },
+];
 
 type TimelineMsg = {
   period:  string;
@@ -272,8 +274,7 @@ export default function ExperienceSection() {
                           alt={entry.caption ?? t("trafficProofLabel")}
                           width={1200}
                           height={600}
-                          quality={100}
-                          unoptimized
+                          quality={90}
                           sizes="(max-width: 768px) 100vw, 700px"
                           className="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover/proof:scale-[1.02] group-hover/proof:brightness-110"
                         />

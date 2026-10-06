@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+
+import { useHydrated } from "../../lib/useHydrated";
 
 const LOGOS = [
   { file: "adventuregamers.png", name: "Adventure Gamers" },
@@ -30,8 +31,7 @@ export default function HeroLogoStrip() {
    * This prevents the motion.div initial={opacity:0} inline style
    * from being in the SSR HTML and potentially mismatching.
    */
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  const mounted = useHydrated();
 
   if (!mounted) {
     // SSR / pre-hydration: reserve the space, no animation state in HTML

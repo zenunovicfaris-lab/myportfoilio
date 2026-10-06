@@ -39,3 +39,31 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Agent skill copies installed per tool (canonical copy: skills/ + .claude/skills/)
+/.agents/
+/.codebuddy/
+/.commandcode/
+/.continue/
+/.crush/
+/.factory/
+/.goose/
+/.junie/
+/.kilocode/
+/.kiro/
+/.kode/
+/.mcpjam/
+/.mux/
+/.neovate/
+/.openhands/
+/.pi/
+/.pochi/
+/.qoder/
+/.qwen/
+/.roo/
+/.trae/
+/.windsurf/
+/.zencoder/
+
+# Separate repo checked out here, not part of the site
+/awesome-claude-plugins/
