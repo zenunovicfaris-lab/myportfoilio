@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Megaphone, Phone, MessageCircle } from "lucide-react";
 
-import { META_ADS_CLIENTS, type MetaAdsFeaturedMsg } from "../../lib/metaAds";
+import { META_ADS_CLIENTS, type MetaAdsClient, type MetaAdsFeaturedMsg } from "../../lib/metaAds";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -21,6 +21,19 @@ const stagger: Variants = {
 
 // Goal icon per featured client: conversations vs. calls
 const GOAL_ICON = { epoxy387: MessageCircle, vorbild: Phone } as const;
+
+function ClientLogo({ client, className = "" }: { client: MetaAdsClient; className?: string }) {
+  return (
+    <Image
+      src={client.logo.src}
+      alt={`${client.name} logo`}
+      width={client.logo.w}
+      height={client.logo.h}
+      sizes="80px"
+      className={`h-auto w-auto object-contain ${client.logoTile ? "rounded-lg" : ""} ${className}`}
+    />
+  );
+}
 
 export default function MetaAdsSection() {
   const t = useTranslations("metaAds");
@@ -59,10 +72,10 @@ export default function MetaAdsSection() {
             <motion.li
               key={c.id}
               variants={fadeUp}
-              className="flex items-center gap-3 rounded-xl border border-white/8 bg-[#111218] px-4 py-3 lg:flex-col lg:items-start lg:gap-2"
+              className="group flex items-center gap-4 rounded-xl border border-white/8 bg-[#111218] px-4 py-3 hover:border-teal-500/30 transition-colors lg:flex-col lg:items-center lg:gap-3 lg:px-4 lg:py-5 lg:text-center"
             >
-              <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-teal-500/10 text-teal-400">
-                <Megaphone size={15} />
+              <span className="flex h-14 w-16 shrink-0 items-center justify-center lg:h-20 lg:w-full">
+                <ClientLogo client={c} className="max-h-full max-w-full" />
               </span>
               <span className="min-w-0">
                 <span className="block text-sm font-semibold text-white leading-snug">{c.name}</span>
@@ -87,9 +100,14 @@ export default function MetaAdsSection() {
                 className="flex flex-col rounded-2xl border border-white/8 bg-[#111218] p-6 hover:border-teal-500/30 transition-colors"
               >
                 <div className="flex items-start justify-between gap-4 mb-3">
-                  <div>
-                    <h3 className="font-[family-name:var(--font-space)] text-xl font-bold text-white">{c.name}</h3>
-                    <p className="text-xs text-gray-500 mt-0.5">{t(`clients.${c.id}`)}</p>
+                  <div className="flex items-center gap-3 min-w-0">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+                      <ClientLogo client={c} className="max-h-full max-w-full" />
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="font-[family-name:var(--font-space)] text-xl font-bold text-white">{c.name}</h3>
+                      <p className="text-xs text-gray-500 mt-0.5">{t(`clients.${c.id}`)}</p>
+                    </div>
                   </div>
                   <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-teal-500/25 bg-teal-500/10 px-3 py-1 text-[11px] font-semibold text-teal-300">
                     <Icon size={12} /> {msg.goal}
