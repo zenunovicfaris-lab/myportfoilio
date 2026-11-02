@@ -74,6 +74,10 @@ export const KNOWS_ABOUT = [
   "React",
   "TypeScript",
   "WordPress",
+  "Meta Ads",
+  "Facebook Ads",
+  "Instagram Ads",
+  "Performance Marketing",
 ];
 
 export const EMAIL = "zenunovicfaris@gmail.com";

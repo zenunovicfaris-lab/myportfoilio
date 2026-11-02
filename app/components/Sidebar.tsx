@@ -5,13 +5,13 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { User, Code, FileText, Phone, Briefcase, type LucideIcon } from "lucide-react";
+import { User, Code, FileText, Phone, Briefcase, Megaphone, type LucideIcon } from "lucide-react";
 
 import { useHydrated } from "../../lib/useHydrated";
 import LanguageSwitcher from "./LanguageSwitcher";
 import SocialLinks from "./SocialLinks";
 
-const SECTIONS = ["about", "projects", "resume", "contact"] as const;
+const SECTIONS = ["about", "projects", "ads", "resume", "contact"] as const;
 type Section = (typeof SECTIONS)[number];
 
 type NavItem = { href: string; label: string; id: Section | "services"; icon: LucideIcon };
@@ -25,6 +25,7 @@ export default function Sidebar() {
     // Full page, not an anchor — /o-meni is the entity home for the Person node.
     { href: `/${locale}/o-meni`,   label: t("nav.about"),    id: "about",    icon: User     },
     { href: `/${locale}#projects`, label: t("nav.projects"), id: "projects", icon: Code     },
+    { href: `/${locale}#ads`,      label: t("nav.ads"),      id: "ads",      icon: Megaphone },
     { href: `/${locale}#resume`,   label: t("nav.resume"),   id: "resume",   icon: FileText },
     { href: `/${locale}/usluge`,   label: t("nav.services"), id: "services", icon: Briefcase },
     { href: `/${locale}#contact`,  label: t("nav.contact"),  id: "contact",  icon: Phone    },

@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Profesionalne SEO usluge za biznise u Bosni i Hercegovini. Organski rast, tehnički SEO, izrada sadržaja i link building. Besplatna SEO analiza."
       : "Professional SEO services for businesses in Bosnia and Herzegovina. Organic growth, technical SEO, content creation and link building. Free SEO audit.",
     keywords: isBS
-      ? ["SEO usluge", "SEO usluge BiH", "SEO optimizacija", "SEO Bosna", "SEO stručnjak BiH", "Google optimizacija", "lokalni SEO", "SEO agencija Bosna"]
-      : ["SEO services Bosnia", "SEO optimization BiH", "SEO expert Bosnia", "Google optimization Bosnia"],
+      ? ["SEO usluge", "SEO usluge BiH", "SEO optimizacija", "SEO Bosna", "SEO stručnjak BiH", "Google optimizacija", "lokalni SEO", "SEO agencija Bosna", "facebook reklame bih", "meta ads usluge"]
+      : ["SEO services Bosnia", "SEO optimization BiH", "SEO expert Bosnia", "Google optimization Bosnia", "Meta Ads Bosnia", "Facebook ads Bosnia"],
     alternates: {
       canonical: `${SITE}/${locale}/usluge`,
       languages: {
@@ -124,6 +124,20 @@ export default async function UslugePage({ params }: Props) {
     ],
   };
 
+  // Separate Service node for paid social, same provider @id. No prices: none are published.
+  const metaAdsSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE}/${locale}/usluge#meta-ads`,
+    name: "Meta Ads (Facebook & Instagram)",
+    serviceType: "Social Media Advertising",
+    description: isBS
+      ? "Facebook i Instagram kampanje za poruke, pozive i upite lokalnih biznisa u Bosni i Hercegovini."
+      : "Facebook and Instagram campaigns that bring messages, calls and leads for local businesses in Bosnia and Herzegovina.",
+    provider: { "@type": "Person", "@id": PERSON_ID, name: "Faris Zenunović", url: PERSON_URL },
+    areaServed: { "@type": "Country", name: "Bosnia and Herzegovina", identifier: "BA" },
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -178,6 +192,12 @@ export default async function UslugePage({ params }: Props) {
       desc: t("svc4Desc"),
       items: [t("svc4_1"), t("svc4_2"), t("svc4_3"), t("svc4_4"), t("svc4_5"), t("svc4_6")],
     },
+    {
+      icon: "📣",
+      title: t("svc5Title"),
+      desc: t("svc5Desc"),
+      items: [t("svc5_1"), t("svc5_2"), t("svc5_3"), t("svc5_4"), t("svc5_5"), t("svc5_6")],
+    },
   ];
 
   const results = [
@@ -185,6 +205,8 @@ export default async function UslugePage({ params }: Props) {
     { title: t("result2Title"), metric: t("result2Metric"), desc: t("result2Desc") },
     { title: t("result3Title"), metric: t("result3Metric"), desc: t("result3Desc") },
     { title: t("result4Title"), metric: t("result4Metric"), desc: t("result4Desc") },
+    { title: t("result5Title"), metric: t("result5Metric"), desc: t("result5Desc") },
+    { title: t("result6Title"), metric: t("result6Metric"), desc: t("result6Desc") },
   ];
 
   const process = [
@@ -224,6 +246,10 @@ export default async function UslugePage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(metaAdsSchema) }}
       />
       <script
         type="application/ld+json"
@@ -391,10 +417,11 @@ export default async function UslugePage({ params }: Props) {
             </header>
 
             <div className="grid md:grid-cols-2 gap-5">
-              {services.map((svc) => (
+              {services.map((svc, i) => (
                 <article
                   key={svc.title}
-                  className="bg-[#0d0f16] border border-white/8 hover:border-teal-500/25 rounded-2xl p-8 transition-colors duration-200"
+                  // An odd last card spans both columns instead of sitting alone
+                  className={`bg-[#0d0f16] border border-white/8 hover:border-teal-500/25 rounded-2xl p-8 transition-colors duration-200 ${services.length % 2 === 1 && i === services.length - 1 ? "md:col-span-2" : ""}`}
                 >
                   <span className="text-3xl mb-5 block" aria-hidden="true">{svc.icon}</span>
                   <h3 className="font-[family-name:var(--font-space)] text-xl font-bold text-white mb-3 tracking-tight">

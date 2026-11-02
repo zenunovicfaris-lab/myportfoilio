@@ -8,9 +8,9 @@ import { CASE_STUDY_SLUGS } from "../lib/projects";
  * moves on every build (new Date()) tells Google nothing, so it gets ignored.
  */
 const UPDATED = {
-  home: "2026-10-06",
+  home: "2026-11-02",
   about: "2026-10-06",
-  services: "2026-10-06",
+  services: "2026-11-02",
   caseStudies: "2026-10-06",
 };
 

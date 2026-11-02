@@ -20,7 +20,7 @@
     "factCompanyLabel": "Company",
     "factCompanyValue": "ZT Media (co-founder)",
     "factFocusLabel": "Focus",
-    "factFocusValue": "Technical SEO, content systems, organic growth",
+    "factFocusValue": "Technical SEO, content systems, organic growth, Meta Ads",
     "factLanguagesLabel": "Languages",
     "factLanguagesValue": "Bosnian (native), English (professional working level)",
     "bgHeading": "Background",
@@ -46,7 +46,7 @@
     "servicesCta": "See SEO services"
   },
   "sidebar": {
-    "role": "SEO Specialist",
+    "role": "SEO & Meta Ads Specialist",
     "available": "Available for projects",
     "cta": "Get In Touch",
     "nav": {
@@ -54,13 +54,14 @@
       "projects": "Portfolio",
       "resume": "Resume",
       "contact": "Contact",
-      "services": "SEO Services"
+      "services": "SEO Services",
+      "ads": "Meta Ads"
     }
   },
   "hero": {
     "srOnly": "– SEO Specialist and Web Developer from Živinice, Bosnia",
-    "role": "SEO Specialist · Technical SEO, Content & Web Development",
-    "description": "I help businesses grow through organic search: technical SEO, content and fast websites, from local Bosnian brands to international crypto and igaming publishers.",
+    "role": "SEO & Meta Ads Specialist · Technical SEO, Content & Web Development",
+    "description": "I help businesses grow through search and social: technical SEO, content, fast websites and Meta Ads campaigns, from local Bosnian brands to international publishers.",
     "location": "Živinice, Bosnia and Herzegovina",
     "aboutLink": "Who is Faris Zenunović?",
     "ctaPortfolio": "View Portfolio",
@@ -69,6 +70,7 @@
     "platformsLabel": "Platforms I've worked with",
     "rotatingWords": [
       "SEO Strategist",
+      "Meta Ads",
       "Technical SEO",
       "Growth Partner",
       "Content Optimizer",
@@ -143,11 +145,12 @@
       },
       {
         "title": "Exam Prep App – Akademija znanja",
-        "description": "Web app for candidates preparing for the written Tuzla Canton police (MUP TK) test: daily challenges, a full exam simulation, mistake review and progress tracking with ranks and XP.",
+        "description": "Web app for candidates preparing for the written Tuzla Canton police (MUP TK) test: daily challenges, a full exam simulation, mistake review and progress tracking with ranks and XP. Its Meta campaign brought 60 conversations at 0.19 € each.",
         "tags": [
           "Web App",
           "Gamification",
-          "EdTech"
+          "EdTech",
+          "Meta Ads"
         ]
       },
       {
@@ -225,7 +228,8 @@
         "company": "ZT Media",
         "bullets": [
           "Co-founded a web and SEO agency serving local and regional businesses.",
-          "Lead SEO strategy and full website builds for agency clients across automotive, manufacturing, and retail."
+          "Lead SEO strategy and full website builds for agency clients across automotive, manufacturing, and retail.",
+          "Run Meta Ads (Facebook and Instagram) campaigns for local businesses in fencing, epoxy flooring and wholesale; the best Epoxy 387 creative brought 343 conversations at 0.11 € each."
         ],
         "caption": "Google Search Console - s-line-doo.com: 965 clicks and 10.8K impressions in the last three months, average position 7."
       }
@@ -325,8 +329,8 @@
     "whyDiff2": "Transparent reporting - you see exactly what was done and what the results are",
     "whyDiff3": "No long-term contracts - flexible collaboration based on trust and results",
     "servicesTag": "What I offer",
-    "servicesTitle": "Complete SEO services",
-    "servicesDesc": "From technical foundations to link building - every segment of SEO covered with a methodical, data-driven approach.",
+    "servicesTitle": "SEO & Meta Ads services",
+    "servicesDesc": "From technical foundations and link building to paid campaigns on Facebook and Instagram, every part covered with a methodical, data-driven approach.",
     "svc1Title": "Technical SEO",
     "svc1Desc": "The fundamentals that determine how well Google can read and index your website. Without a technical foundation, other SEO tactics cannot function.",
     "svc1_1": "Core Web Vitals optimization (LCP, INP, CLS)",
@@ -436,7 +440,21 @@
     "auditTag": "Free · No obligation",
     "auditTitle": "Get a free SEO audit of your website",
     "auditDesc": "I analyze your website and send a detailed report with concrete recommendations. Find out where you are losing rankings and what needs to be fixed.",
-    "auditCta": "Request free audit"
+    "auditCta": "Request free audit",
+    "svc5Title": "Meta Ads (Facebook & Instagram)",
+    "svc5Desc": "Paid campaigns that bring messages, calls and leads from your local market, with creatives made for Reels and clear tracking of what every result costs.",
+    "svc5_1": "Message, call and lead campaigns",
+    "svc5_2": "Reels and video creatives",
+    "svc5_3": "Targeting across Bosnia and Herzegovina",
+    "svc5_4": "Instant forms and WhatsApp inquiries",
+    "svc5_5": "Creative testing, weak ads paused",
+    "svc5_6": "Tracking cost per result and lead quality",
+    "result5Title": "Epoxy 387",
+    "result5Metric": "343 conversations · 0.11 €",
+    "result5Desc": "Meta Ads Reels campaign for an epoxy flooring company, 82% cheaper per conversation than similar ad sets.",
+    "result6Title": "Vorbild",
+    "result6Metric": "38 calls · 1.12 € per call",
+    "result6Desc": "Meta Ads call campaign for an aluminium supplies wholesaler, with buyers calling straight from the ad."
   },
   "growth": {
     "label": "Organic Growth",
@@ -661,5 +679,60 @@
       "resultsNote": "See the Search Console screenshot below.",
       "proofCaption": "Google Search Console - kakolako.org: organic click growth after on-page SEO and content optimization."
     }
+  },
+  "metaAds": {
+    "label": "Meta Ads",
+    "heading": "Meta Ads campaigns",
+    "description": "Facebook and Instagram campaigns for local businesses in Bosnia and Herzegovina, built to bring messages and phone calls, not just likes.",
+    "clientsLabel": "Clients",
+    "clients": {
+      "epoxy387": "Epoxy flooring",
+      "vorbild": "Aluminium supplies wholesale",
+      "beganovic": "Fence manufacturing and installation",
+      "selmont": "Fence manufacturing and installation",
+      "fimus": "Wholesale"
+    },
+    "featured": {
+      "epoxy387": {
+        "goal": "Messages",
+        "summary": "Reels campaign bringing message inquiries for an epoxy flooring company. Meta rated the cost per conversation 82% lower than similar ad sets.",
+        "metrics": [
+          {
+            "value": "343",
+            "label": "conversations started"
+          },
+          {
+            "value": "0.11 €",
+            "label": "per conversation"
+          },
+          {
+            "value": "38.66 €",
+            "label": "total spend"
+          }
+        ],
+        "extra": "A second creative brought 79 conversations at 0.47 € each, 26% below similar ad sets.",
+        "caption": "Meta Ads Manager - Epoxy 387, messaging campaign, October 2026."
+      },
+      "vorbild": {
+        "goal": "Calls",
+        "summary": "Reels campaign for an aluminium supplies wholesaler, built so buyers call straight from the ad.",
+        "metrics": [
+          {
+            "value": "38",
+            "label": "calls placed"
+          },
+          {
+            "value": "1.12 €",
+            "label": "per call"
+          },
+          {
+            "value": "42.39 €",
+            "label": "total spend"
+          }
+        ],
+        "caption": "Meta Ads Manager - Vorbild, call campaign, October 2026."
+      }
+    },
+    "sourceNote": "Results from Meta Ads Manager, October 2026. Figures are per campaign, not the whole ad account."
   }
 }

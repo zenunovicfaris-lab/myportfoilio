@@ -50,8 +50,8 @@ export async function generateMetadata({
     description: t("description"),
     keywords:
       locale === "bs"
-        ? ["seo usluge", "seo optimizacija", "seo za sajt", "seo specialist bosna", "seo bih", "seo usluge bih", "optimizacija sajta", "Faris Zenunović", "Bosna i Hercegovina"]
-        : ["SEO specialist", "technical SEO", "content optimization", "organic growth", "multilingual SEO", "freelance SEO", "Faris Zenunović", "Živinice", "Bosnia"],
+        ? ["seo usluge", "seo optimizacija", "seo za sajt", "seo specialist bosna", "seo bih", "seo usluge bih", "optimizacija sajta", "Faris Zenunović", "Bosna i Hercegovina", "meta ads bih", "facebook oglasi"]
+        : ["SEO specialist", "technical SEO", "content optimization", "organic growth", "multilingual SEO", "freelance SEO", "Faris Zenunović", "Živinice", "Bosnia", "Meta Ads specialist"],
     authors: [{ name: "Faris Zenunović" }],
     creator: "Faris Zenunović",
     icons: {

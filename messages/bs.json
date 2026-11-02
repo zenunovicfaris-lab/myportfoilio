@@ -20,7 +20,7 @@
     "factCompanyLabel": "Firma",
     "factCompanyValue": "ZT Media (suosnivač)",
     "factFocusLabel": "Fokus",
-    "factFocusValue": "Tehnički SEO, content sistemi, organski rast",
+    "factFocusValue": "Tehnički SEO, content sistemi, organski rast, Meta Ads",
     "factLanguagesLabel": "Jezici",
     "factLanguagesValue": "Bosanski (maternji), engleski (profesionalna razina)",
     "bgHeading": "Pozadina i put",
@@ -46,7 +46,7 @@
     "servicesCta": "Pogledaj SEO usluge"
   },
   "sidebar": {
-    "role": "SEO Specialist",
+    "role": "SEO & Meta Ads Specialist",
     "available": "Dostupan za projekte",
     "cta": "Kontaktiraj me",
     "nav": {
@@ -54,13 +54,14 @@
       "projects": "Portfolio",
       "resume": "CV",
       "contact": "Kontakt",
-      "services": "SEO usluge"
+      "services": "SEO usluge",
+      "ads": "Meta Ads"
     }
   },
   "hero": {
     "srOnly": "– SEO Specialist i Web Developer iz Bosne i Hercegovine",
-    "role": "SEO Specialist · Technical SEO, Content & Web Development",
-    "description": "Pomažem biznisima da rastu kroz organsku pretragu: tehnički SEO, sadržaj i brzi sajtovi, od lokalnih BiH brendova do međunarodnih kripto i igaming portala.",
+    "role": "SEO & Meta Ads Specialist · Technical SEO, Content & Web Development",
+    "description": "Pomažem biznisima da rastu kroz pretragu i društvene mreže: tehnički SEO, sadržaj, brzi sajtovi i Meta Ads kampanje, od lokalnih BiH brendova do međunarodnih portala.",
     "location": "Bosna i Hercegovina",
     "aboutLink": "Ko je Faris Zenunović?",
     "ctaPortfolio": "Pogledaj Portfolio",
@@ -69,6 +70,7 @@
     "platformsLabel": "Platforme s kojima sam radio",
     "rotatingWords": [
       "SEO Strateg",
+      "Meta Ads",
       "Tehničar za SEO",
       "Growth Partner",
       "Content Optimizator",
@@ -143,11 +145,12 @@
       },
       {
         "title": "Aplikacija za pripremu testa – Akademija znanja",
-        "description": "Web aplikacija za kandidate koji se pripremaju za pismeni test MUP-a TK: dnevni izazovi, simulacija ispita, ponavljanje grešaka i praćenje napretka kroz činove i XP.",
+        "description": "Web aplikacija za kandidate koji se pripremaju za pismeni test MUP-a TK: dnevni izazovi, simulacija ispita, ponavljanje grešaka i praćenje napretka kroz činove i XP. Meta kampanja donijela je 60 razgovora po 0,19 €.",
         "tags": [
           "Web aplikacija",
           "Gamifikacija",
-          "EdTech"
+          "EdTech",
+          "Meta Ads"
         ]
       },
       {
@@ -225,7 +228,8 @@
         "company": "ZT Media",
         "bullets": [
           "Suosnivač web i SEO agencije koja opslužuje lokalne i regionalne biznise.",
-          "Vodim SEO strategiju i kompletne izrade sajtova za klijente agencije u automobilskoj, proizvodnoj i maloprodajnoj industriji."
+          "Vodim SEO strategiju i kompletne izrade sajtova za klijente agencije u automobilskoj, proizvodnoj i maloprodajnoj industriji.",
+          "Vodim Meta Ads (Facebook i Instagram) kampanje za lokalne firme iz oblasti ograda, epoxy podova i veleprodaje; najbolja kreativa za Epoxy 387 donijela je 343 razgovora po 0,11 €."
         ],
         "caption": "Google Search Console - s-line-doo.com: 965 klikova i 10,8K impresija u zadnja tri mjeseca, prosječna pozicija 7."
       }
@@ -325,8 +329,8 @@
     "whyDiff2": "Transparentno izvještavanje - vidite tačno šta je urađeno i koji su rezultati",
     "whyDiff3": "Bez dugih ugovora - fleksibilna saradnja bazirana na povjerenju i rezultatima",
     "servicesTag": "Šta nudim",
-    "servicesTitle": "Kompletne SEO usluge",
-    "servicesDesc": "Od tehničkih temelja do link buildinga - svaki segment SEO optimizacije pokriven je metodičnim, data-driven pristupom.",
+    "servicesTitle": "SEO i Meta Ads usluge",
+    "servicesDesc": "Od tehničkih temelja i link buildinga do plaćenih kampanja na Facebooku i Instagramu, svaki segment pokriven je metodičnim, data-driven pristupom.",
     "svc1Title": "Tehnički SEO",
     "svc1Desc": "Fundamenti koji određuju koliko Google može da pročita i indeksira vaš website. Bez tehničke osnove, ostale SEO taktike ne mogu funkcionisati.",
     "svc1_1": "Core Web Vitals optimizacija (LCP, INP, CLS)",
@@ -436,7 +440,21 @@
     "auditTag": "Besplatno · Bez obaveze",
     "auditTitle": "Dobijte besplatni SEO audit vašeg websitea",
     "auditDesc": "Analiziram vaš website i šaljem detaljan izvještaj sa konkretnim preporukama. Saznajte gdje gubite pozicije i šta treba popraviti.",
-    "auditCta": "Zatraži besplatni audit"
+    "auditCta": "Zatraži besplatni audit",
+    "svc5Title": "Meta Ads (Facebook i Instagram)",
+    "svc5Desc": "Plaćene kampanje koje donose poruke, pozive i upite sa vašeg lokalnog tržišta, uz kreative napravljene za Reels i jasno praćenje koliko košta svaki rezultat.",
+    "svc5_1": "Kampanje za poruke, pozive i leadove",
+    "svc5_2": "Reels i video kreative",
+    "svc5_3": "Ciljanje cijele Bosne i Hercegovine",
+    "svc5_4": "Instant forme i upiti preko WhatsAppa",
+    "svc5_5": "Testiranje kreativa, gašenje slabih oglasa",
+    "svc5_6": "Praćenje cijene po rezultatu i kvaliteta upita",
+    "result5Title": "Epoxy 387",
+    "result5Metric": "343 razgovora · 0,11 €",
+    "result5Desc": "Meta Ads Reels kampanja za firmu koja radi epoxy podove, 82% jeftiniji razgovor od sličnih oglasa.",
+    "result6Title": "Vorbild",
+    "result6Metric": "38 poziva · 1,12 € po pozivu",
+    "result6Desc": "Meta Ads kampanja za pozive za veleprodaju alu repromaterijala, kupci zovu direktno iz oglasa."
   },
   "growth": {
     "label": "Organski rast",
@@ -661,5 +679,60 @@
       "resultsNote": "Pogledajte Search Console screenshot ispod.",
       "proofCaption": "Google Search Console - kakolako.org: rast organskih klikova nakon on-page SEO i content optimizacije."
     }
+  },
+  "metaAds": {
+    "label": "Meta Ads",
+    "heading": "Meta Ads kampanje",
+    "description": "Facebook i Instagram kampanje za lokalne firme u Bosni i Hercegovini, napravljene da donesu poruke i pozive, a ne samo lajkove.",
+    "clientsLabel": "Klijenti",
+    "clients": {
+      "epoxy387": "Epoxy podovi",
+      "vorbild": "Veleprodaja alu repromaterijala",
+      "beganovic": "Izrada i ugradnja ograda",
+      "selmont": "Izrada i ugradnja ograda",
+      "fimus": "Veleprodaja"
+    },
+    "featured": {
+      "epoxy387": {
+        "goal": "Poruke",
+        "summary": "Reels kampanja koja donosi upite porukama za firmu koja radi epoxy podove. Meta je ocijenila cijenu po razgovoru 82% nižom od sličnih oglasa.",
+        "metrics": [
+          {
+            "value": "343",
+            "label": "započeta razgovora"
+          },
+          {
+            "value": "0,11 €",
+            "label": "po razgovoru"
+          },
+          {
+            "value": "38,66 €",
+            "label": "ukupno potrošeno"
+          }
+        ],
+        "extra": "Druga kreativa donijela je 79 razgovora po 0,47 €, 26% ispod prosjeka sličnih oglasa.",
+        "caption": "Meta Ads Manager - Epoxy 387, kampanja za poruke, oktobar 2026."
+      },
+      "vorbild": {
+        "goal": "Pozivi",
+        "summary": "Reels kampanja za veleprodaju alu repromaterijala, napravljena da kupci zovu direktno iz oglasa.",
+        "metrics": [
+          {
+            "value": "38",
+            "label": "poziva"
+          },
+          {
+            "value": "1,12 €",
+            "label": "po pozivu"
+          },
+          {
+            "value": "42,39 €",
+            "label": "ukupno potrošeno"
+          }
+        ],
+        "caption": "Meta Ads Manager - Vorbild, kampanja za pozive, oktobar 2026."
+      }
+    },
+    "sourceNote": "Rezultati iz Meta Ads Managera, oktobar 2026. Brojke su po kampanji, ne za cijeli ad account."
   }
 }

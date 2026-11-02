@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 
 import HomeHero              from "../components/HomeHero";
 import PortfolioSection      from "../components/PortfolioSection";
+import MetaAdsSection        from "../components/MetaAdsSection";
 import ExperienceSection     from "../components/ExperienceSection";
 import EducationSection      from "../components/EducationSection";
 import ContactSection        from "../components/ContactSection";
@@ -25,6 +26,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       {/* ═══ 3. PORTFOLIO (id="projects") ══════════════════════════════════ */}
       <PortfolioSection />
+
+      {/* ═══ 3b. META ADS (id="ads") ═══════════════════════════════════════ */}
+      <MetaAdsSection />
 
       {/* ═══ 4+5. SKILLS & EXPERIENCE (id="resume") ════════════════════════ */}
       <ExperienceSection />
