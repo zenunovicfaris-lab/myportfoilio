@@ -518,41 +518,6 @@
       "proofCaption": "Google Search Console - s-line-doo.com, zadnja tri mjeseca.",
       "siteCaption": "Početna stranica S-Line sajta."
     },
-    "auratherm": {
-      "title": "Auratherm - web sajt i SEO za proizvođača vanjskih sauna",
-      "metaDescription": "Web sajt i SEO za Auratherm, proizvođača vanjskih sauna i hot tub kada sa vlastitom proizvodnjom: prosječna Google pozicija 6 i CTR od 14,9%.",
-      "client": "Auratherm",
-      "role": "Izrada web sajta i SEO",
-      "period": "U toku",
-      "summary": "Auratherm je proizvođač vanjskih sauna i hot tub kada sa vlastitom proizvodnjom iz Bosne i Hercegovine. Za Auratherm sam izradio web sajt koji predstavlja njihovu ponudu i vodim SEO, kako bi ih kupci i poslovni partneri lakše pronašli na Googleu.",
-      "work": [
-        "Dizajn i izrada web sajta u Next.js-u i Reactu, sa tehničkim SEO-om ugrađenim od prvog dana.",
-        "Struktura sajta, metapodaci i interno linkovanje oko proizvoda i upita kupaca.",
-        "Implementacija strukturiranih podataka za proizvode i breadcrumbs, koje Google Search Console prepoznaje.",
-        "Kontinuirani SEO: praćenje performansi u Search Consoleu i poboljšanje stranica na osnovu podataka."
-      ],
-      "results": [
-        {
-          "value": "490",
-          "label": "organskih klikova"
-        },
-        {
-          "value": "3,3K",
-          "label": "impresija"
-        },
-        {
-          "value": "14,9%",
-          "label": "prosječan CTR"
-        },
-        {
-          "value": "6",
-          "label": "prosječna pozicija"
-        }
-      ],
-      "resultsNote": "Google Search Console, zadnja tri mjeseca (jul - oktobar 2026).",
-      "proofCaption": "Google Search Console - auratherm.ba, zadnja tri mjeseca.",
-      "siteCaption": "Auratherm web sajt."
-    },
     "soccer365": {
       "title": "Soccer365 - fudbalski portal građen za pretragu",
       "metaDescription": "Soccer365, fudbalski sajt na engleskom sa vodičima, taktikom i rang listama, dostigao je 100K impresija na Googleu i prosječnu poziciju 8,9 za tri mjeseca.",

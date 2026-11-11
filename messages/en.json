@@ -518,41 +518,6 @@
       "proofCaption": "Google Search Console - s-line-doo.com, last three months.",
       "siteCaption": "S-Line homepage."
     },
-    "auratherm": {
-      "title": "Auratherm - website and SEO for an outdoor sauna manufacturer",
-      "metaDescription": "Website and SEO for Auratherm, a manufacturer of outdoor saunas and hot tubs with its own production: an average Google position of 6 and a 14.9% CTR.",
-      "client": "Auratherm",
-      "role": "Website development & SEO",
-      "period": "Ongoing",
-      "summary": "Auratherm is a manufacturer of outdoor saunas and hot tubs with its own production in Bosnia and Herzegovina. I built the website that presents their range and run their SEO, so customers and business partners can find them easily on Google.",
-      "work": [
-        "Designed and built the website in Next.js and React, with technical SEO built in from day one.",
-        "Site structure, metadata and internal linking around the products and customer searches.",
-        "Implemented product and breadcrumb structured data, both detected in Google Search Console.",
-        "Ongoing SEO: monitoring performance in Search Console and improving pages based on the data."
-      ],
-      "results": [
-        {
-          "value": "490",
-          "label": "organic clicks"
-        },
-        {
-          "value": "3.3K",
-          "label": "impressions"
-        },
-        {
-          "value": "14.9%",
-          "label": "average CTR"
-        },
-        {
-          "value": "6",
-          "label": "average position"
-        }
-      ],
-      "resultsNote": "Google Search Console, last three months (July - October 2026).",
-      "proofCaption": "Google Search Console - auratherm.ba, last three months.",
-      "siteCaption": "Auratherm website."
-    },
     "soccer365": {
       "title": "Soccer365 - football publisher built for search",
       "metaDescription": "Soccer365, an English-language football site with guides, tactics and rankings, reached 100K Google impressions and an average position of 8.9 in three months.",

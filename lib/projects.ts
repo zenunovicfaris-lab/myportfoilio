@@ -29,9 +29,10 @@ export const PROJECTS: Project[] = [
     link: "https://www.s-line-doo.com/", newTab: true, nofollow: false,
   },
   {
-    id: 2, slug: "auratherm",
+    // No case study page, at the client's request: the card links straight to their site.
+    id: 2, slug: null,
     image: { src: "/images/auratherm-website.jpg", w: 1200, h: 596 },
-    gsc:   { src: "/images/auratherm-gsc.png",     w: 1907, h: 684 },
+    gsc: null,
     link: "https://www.auratherm.ba/", newTab: true, nofollow: false,
   },
   {
