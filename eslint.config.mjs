@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Separate checked-out repo, not part of this site
     "awesome-claude-plugins/**",
+    // Claude Code skills and their helper scripts, not part of this site
+    ".claude/**",
   ]),
 ]);
 

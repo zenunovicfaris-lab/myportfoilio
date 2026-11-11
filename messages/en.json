@@ -30,7 +30,7 @@
     "resultsHeading": "Results",
     "resultsIntro": "A few measurable outcomes from recent years:",
     "result1": "Ranked eko-box.hr to an average Google position of 2 - 2,340 clicks and 34,600 impressions, with no paid links.",
-    "result2": "Grew Auratherm from zero to 490 organic clicks in three months, at a 14.9% CTR and an average position of 6.",
+    "result2": "Auratherm, an outdoor sauna manufacturer: a website with 490 organic clicks in three months, a 14.9% CTR and an average position of 6.",
     "result3": "esports.net - contributed technical SEO and content restructuring on a site with over 43,000 organic keywords.",
     "result4": "99bitcoins.com - SEO content work on a site with a domain authority score of 51 and over 76,000 monthly organic visits.",
     "expertiseHeading": "Areas of work",
@@ -99,7 +99,7 @@
       },
       {
         "title": "Website & SEO – Auratherm",
-        "description": "Built the full website from scratch in Next.js and React for an outdoor sauna retailer in Bosnia. 490 organic clicks at a 14.9% CTR and an average position of 6 in the last three months.",
+        "description": "Website and SEO for Auratherm, a manufacturer of outdoor saunas and hot tubs with its own production. Built in Next.js, with an average Google position of 6 and a 14.9% CTR over the last three months.",
         "tags": [
           "Next.js",
           "React",
@@ -163,7 +163,7 @@
         ]
       }
     ],
-    "caseStudy": "Read case study",
+    "caseStudy": "Project details",
     "visitSite": "Visit site"
   },
   "experience": {
@@ -195,7 +195,7 @@
         "company": "Independent Clients",
         "bullets": [
           "Planned and delivered SEO and web projects end to end for local and regional clients, building sites from scratch in Next.js, React, and TypeScript plus WordPress for lighter requirements.",
-          "Ranked eko-box.hr to an average Google position of 2 (2,340 clicks, 34,600 impressions) with no paid links, and grew Auratherm from zero to 490 organic clicks in three months (14.9% CTR, average position 6).",
+          "Ranked eko-box.hr to an average Google position of 2 (2,340 clicks, 34,600 impressions) with no paid links, and delivered the website and SEO for Auratherm, an outdoor sauna manufacturer (490 organic clicks in three months, 14.9% CTR, average position 6).",
           "Developed and optimized SEO landing pages for kakolako.org, improving keyword coverage and click-through rates in the local Bosnian market."
         ],
         "caption": "Google Search Console - kakolako.org: Organic click growth following on-page SEO and content optimization."
@@ -301,7 +301,7 @@
       "step2Text": "First findings go to {email}.",
       "step3Title": "We plan next steps",
       "step3Text": "If it makes sense, I suggest a plan. No obligation.",
-      "ctaProjects": "Browse case studies",
+      "ctaProjects": "Browse projects",
       "ctaWhatsApp": "Urgent? WhatsApp",
       "again": "Send another request"
     }
@@ -373,7 +373,7 @@
     "result1Desc": "Website and local SEO for a used-car dealership in Živinice - 10.8K impressions in three months.",
     "result2Title": "Auratherm",
     "result2Metric": "14.9% CTR · avg. position 6",
-    "result2Desc": "Built from scratch in Next.js - 490 organic clicks in three months for an outdoor sauna retailer.",
+    "result2Desc": "Next.js website for a manufacturer of outdoor saunas and hot tubs, 490 organic clicks in three months.",
     "result3Title": "Soccer365",
     "result3Metric": "100K impressions in 3 months",
     "result3Desc": "English-language football publisher, grown from near zero with guides, tactics and rankings.",
@@ -467,7 +467,7 @@
   "caseStudy": {
     "breadcrumbHome": "Home",
     "breadcrumbProjects": "Portfolio",
-    "eyebrow": "Case study",
+    "eyebrow": "Client project",
     "clientLabel": "Client",
     "roleLabel": "My role",
     "periodLabel": "Period",
@@ -480,7 +480,7 @@
     "ctaText": "Start with a free SEO audit - I'll show you where you're losing rankings and what to fix first.",
     "ctaButton": "Request a free audit",
     "ctaServices": "See SEO services",
-    "otherProjects": "More case studies"
+    "otherProjects": "More projects"
   },
   "caseStudies": {
     "s-line": {
@@ -519,15 +519,15 @@
       "siteCaption": "S-Line homepage."
     },
     "auratherm": {
-      "title": "Auratherm - website build and SEO from zero",
-      "metaDescription": "How I built the Auratherm website from scratch in Next.js and grew its organic search: 490 clicks at a 14.9% CTR and an average position of 6 in three months.",
+      "title": "Auratherm - website and SEO for an outdoor sauna manufacturer",
+      "metaDescription": "Website and SEO for Auratherm, a manufacturer of outdoor saunas and hot tubs with its own production: an average Google position of 6 and a 14.9% CTR.",
       "client": "Auratherm",
-      "role": "Web development & SEO",
+      "role": "Website development & SEO",
       "period": "Ongoing",
-      "summary": "Auratherm is an outdoor sauna and hot tub retailer in Bosnia and Herzegovina. The project started with no website and no organic presence, so both the site and its search visibility had to be built from scratch.",
+      "summary": "Auratherm is a manufacturer of outdoor saunas and hot tubs with its own production in Bosnia and Herzegovina. I built the website that presents their range and run their SEO, so customers and business partners can find them easily on Google.",
       "work": [
-        "Designed and built the full website from scratch in Next.js and React, with technical SEO in place from day one.",
-        "Set up the site structure, metadata and internal linking around the products and local search queries.",
+        "Designed and built the website in Next.js and React, with technical SEO built in from day one.",
+        "Site structure, metadata and internal linking around the products and customer searches.",
         "Implemented product and breadcrumb structured data, both detected in Google Search Console.",
         "Ongoing SEO: monitoring performance in Search Console and improving pages based on the data."
       ],
@@ -551,7 +551,7 @@
       ],
       "resultsNote": "Google Search Console, last three months (July - October 2026).",
       "proofCaption": "Google Search Console - auratherm.ba, last three months.",
-      "siteCaption": "Auratherm website, built in Next.js and React."
+      "siteCaption": "Auratherm website."
     },
     "soccer365": {
       "title": "Soccer365 - football publisher built for search",

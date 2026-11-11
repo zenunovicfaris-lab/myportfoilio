@@ -30,7 +30,7 @@
     "resultsHeading": "Rezultati",
     "resultsIntro": "Nekoliko mjerljivih ishoda iz posljednjih godina:",
     "result1": "eko-box.hr rangiran na prosječnu Google poziciju 2 - 2.340 klikova i 34.600 impresija, bez plaćenih linkova.",
-    "result2": "Auratherm od nule do 490 organskih klikova za tri mjeseca, uz CTR od 14,9% i prosječnu poziciju 6.",
+    "result2": "Auratherm, proizvođač vanjskih sauna: web sajt sa 490 organskih klikova za tri mjeseca, CTR od 14,9% i prosječnom pozicijom 6.",
     "result3": "esports.net - doprinos tehničkom SEO-u i content restrukturiranju na sajtu sa preko 43.000 organskih ključnih riječi.",
     "result4": "99bitcoins.com - SEO rad na sadržaju sajta sa domain authority scoreom 51 i preko 76.000 mjesečnih organskih posjeta.",
     "expertiseHeading": "Područja rada",
@@ -98,8 +98,8 @@
         ]
       },
       {
-        "title": "Izrada sajta i SEO – Auratherm",
-        "description": "Kompletan sajt izrađen od nule u Next.js-u i Reactu za prodavača vanjskih sauna u BiH. 490 organskih klikova uz CTR od 14,9% i prosječnu poziciju 6 u zadnja tri mjeseca.",
+        "title": "Web sajt i SEO – Auratherm",
+        "description": "Web sajt i SEO za Auratherm, proizvođača vanjskih sauna i hot tub kada sa vlastitom proizvodnjom. Sajt je izrađen u Next.js-u, uz prosječnu Google poziciju 6 i CTR od 14,9% u zadnja tri mjeseca.",
         "tags": [
           "Next.js",
           "React",
@@ -163,7 +163,7 @@
         ]
       }
     ],
-    "caseStudy": "Pročitaj case study",
+    "caseStudy": "Detalji projekta",
     "visitSite": "Posjeti sajt"
   },
   "experience": {
@@ -195,7 +195,7 @@
         "company": "Individualni klijenti",
         "bullets": [
           "Planiranje i isporuka SEO i web projekata od početka do kraja za lokalne i regionalne klijente; izrada sajtova od nule u Next.js, React i TypeScript, te WordPress za lakše zahtjeve.",
-          "Rangiran eko-box.hr na prosječnu Google poziciju 2 (2.340 klikova, 34.600 impresija) bez plaćenih linkova, te rast Auratherma od nule do 490 organskih klikova za tri mjeseca (14,9% CTR, prosječna pozicija 6).",
+          "Rangiran eko-box.hr na prosječnu Google poziciju 2 (2.340 klikova, 34.600 impresija) bez plaćenih linkova, te web sajt i SEO za Auratherm, proizvođača vanjskih sauna (490 organskih klikova za tri mjeseca, 14,9% CTR, prosječna pozicija 6).",
           "Razvoj i optimizacija SEO landing stranica za kakolako.org, poboljšanje pokrivenosti ključnih riječi i CTR-a na lokalnom BiH tržištu."
         ],
         "caption": "Google Search Console - kakolako.org: Rast organskih klikova nakon on-page SEO i content optimizacije."
@@ -301,7 +301,7 @@
       "step2Text": "Prva zapažanja šaljem na {email}.",
       "step3Title": "Dogovaramo korake",
       "step3Text": "Ako ima smisla, predložim plan. Bez obaveze.",
-      "ctaProjects": "Pogledaj case studies",
+      "ctaProjects": "Pogledaj projekte",
       "ctaWhatsApp": "Hitno? WhatsApp",
       "again": "Pošalji novi upit"
     }
@@ -373,7 +373,7 @@
     "result1Desc": "Sajt i lokalni SEO za auto salon iz Živinica - 10,8K impresija za tri mjeseca.",
     "result2Title": "Auratherm",
     "result2Metric": "14,9% CTR · prosj. pozicija 6",
-    "result2Desc": "Sajt izrađen od nule u Next.js-u - 490 organskih klikova za tri mjeseca za prodavača vanjskih sauna.",
+    "result2Desc": "Web sajt u Next.js-u za proizvođača vanjskih sauna i hot tub kada, 490 organskih klikova za tri mjeseca.",
     "result3Title": "Soccer365",
     "result3Metric": "100K impresija za 3 mjeseca",
     "result3Desc": "Fudbalski portal na engleskom, izgrađen skoro od nule kroz vodiče, taktiku i rang liste.",
@@ -467,7 +467,7 @@
   "caseStudy": {
     "breadcrumbHome": "Početna",
     "breadcrumbProjects": "Portfolio",
-    "eyebrow": "Case study",
+    "eyebrow": "Projekat",
     "clientLabel": "Klijent",
     "roleLabel": "Moja uloga",
     "periodLabel": "Period",
@@ -480,7 +480,7 @@
     "ctaText": "Počnite sa besplatnom SEO analizom - pokazaću vam gdje gubite pozicije i šta prvo treba popraviti.",
     "ctaButton": "Zatraži besplatnu analizu",
     "ctaServices": "Pogledaj SEO usluge",
-    "otherProjects": "Još case studyja"
+    "otherProjects": "Još projekata"
   },
   "caseStudies": {
     "s-line": {
@@ -519,15 +519,15 @@
       "siteCaption": "Početna stranica S-Line sajta."
     },
     "auratherm": {
-      "title": "Auratherm - izrada sajta i SEO od nule",
-      "metaDescription": "Kako sam izradio sajt za Auratherm od nule u Next.js-u i izgradio organsku vidljivost: 490 klikova uz CTR od 14,9% i prosječnu poziciju 6 za tri mjeseca.",
+      "title": "Auratherm - web sajt i SEO za proizvođača vanjskih sauna",
+      "metaDescription": "Web sajt i SEO za Auratherm, proizvođača vanjskih sauna i hot tub kada sa vlastitom proizvodnjom: prosječna Google pozicija 6 i CTR od 14,9%.",
       "client": "Auratherm",
-      "role": "Izrada sajta i SEO",
+      "role": "Izrada web sajta i SEO",
       "period": "U toku",
-      "summary": "Auratherm je prodavač vanjskih sauna i hot tub kada u Bosni i Hercegovini. Projekat je krenuo bez sajta i bez ikakve organske vidljivosti, pa je trebalo izgraditi i sajt i prisustvo u pretrazi od nule.",
+      "summary": "Auratherm je proizvođač vanjskih sauna i hot tub kada sa vlastitom proizvodnjom iz Bosne i Hercegovine. Za Auratherm sam izradio web sajt koji predstavlja njihovu ponudu i vodim SEO, kako bi ih kupci i poslovni partneri lakše pronašli na Googleu.",
       "work": [
-        "Dizajn i izrada kompletnog sajta od nule u Next.js-u i Reactu, sa tehničkim SEO-om od prvog dana.",
-        "Postavljanje strukture sajta, metapodataka i internog linkovanja oko proizvoda i lokalnih upita.",
+        "Dizajn i izrada web sajta u Next.js-u i Reactu, sa tehničkim SEO-om ugrađenim od prvog dana.",
+        "Struktura sajta, metapodaci i interno linkovanje oko proizvoda i upita kupaca.",
         "Implementacija strukturiranih podataka za proizvode i breadcrumbs, koje Google Search Console prepoznaje.",
         "Kontinuirani SEO: praćenje performansi u Search Consoleu i poboljšanje stranica na osnovu podataka."
       ],
@@ -551,7 +551,7 @@
       ],
       "resultsNote": "Google Search Console, zadnja tri mjeseca (jul - oktobar 2026).",
       "proofCaption": "Google Search Console - auratherm.ba, zadnja tri mjeseca.",
-      "siteCaption": "Auratherm sajt, izrađen u Next.js-u i Reactu."
+      "siteCaption": "Auratherm web sajt."
     },
     "soccer365": {
       "title": "Soccer365 - fudbalski portal građen za pretragu",
